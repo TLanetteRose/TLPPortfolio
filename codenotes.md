@@ -1,5 +1,9 @@
 # Coding Notes: TLP Portfolio
 
+### 11/13/2021
+
+Decided to redo my web design portfolio. I found an interesting tool to use called [Favicon.io](https://favicon.io/). You can generate our own favicon for your browser tab.
+
 /_ font-family: 'Architects Daughter', cursive;
 font-family: 'Open Sans', sans-serif; _/
 
