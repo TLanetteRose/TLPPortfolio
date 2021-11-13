@@ -4,6 +4,22 @@
 
 Decided to redo my web design portfolio. I found an interesting tool to use called [Favicon.io](https://favicon.io/). You can generate our own favicon for your browser tab.
 
+---
+
+My name is Trista Lanette Pollard. My journey towards becoming a Front-End Web Developer started over 4 years ago. I became interested in computer coding after a parent approached me about sponsoring the "Hour of Code" with Code.org at our school. Once I attended a training session in New York City, I was hooked!
+
+I started working on tutorials at FreeCodeCamp in January 2017. I have earned three certificates from FreeCodeCamp. I earned my Front-End Web Developer Nanodegree from Udacity in 2019.
+
+Credentials and Skills
+Certificates
+
+Front End Libraries, FreeCodeCamp, May 16, 2020
+Front-End Web Developer Nanodegree, Udacity, August 18, 2019
+JavaScript Algorithms and Data Structures, FreeCodeCamp, July 11, 2019
+Responsive Web Design, FreeCodeCamp, November 15, 2018
+
+---
+
 /_ font-family: 'Architects Daughter', cursive;
 font-family: 'Open Sans', sans-serif; _/
 
@@ -36,3 +52,8 @@ font-family: "Open Sans", sans-serif;
 }
 
 /_Navbar_/
+#696969 Dim Gray
+#FFE4E1 Misty Rose
+#000000 Black
+#A9A9A9 Dark Gray
+#F5F5F5 White Smoke

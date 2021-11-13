@@ -1,0 +1,55 @@
+/* font-family: 'Architects Daughter',
+cursive;
+font-family: 'Open Sans',
+sans-serif;*/
+
+ @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Open+Sans:wght@400;700&display=swap');
+
+ /* Variables */
+ :root {
+     --body-font-family: 'Open Sans', sans-serif;
+     --weight-normal: 400;
+     --weight-bold: 700;
+     --bg-color: #000000;
+     --primary-color: #FFE4E1;
+     --secondary-color: #F5F5F5;
+     --bottom-margin: 0.5rem;
+     --bottom-margin-2: 1rem;
+     --line-height: 1.7rem;
+     --transition: 0.3s;
+ }
+
+ /* CSS Resets */
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     outline: 1px solid white;
+ }
+
+ ul {
+     list-style-type: none;
+ }
+
+ a {
+     text-decoration: none;
+     color: var(--primary-color);
+ }
+
+ a:hover {
+     color: var(--secondary-color);
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5 {
+     font-family: "Architects Daughter", cursive;
+     color: var(--primary-color);
+ }
+
+ body {
+     font-family: var(--body-font-family);
+ }
