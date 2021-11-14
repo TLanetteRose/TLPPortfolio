@@ -2,11 +2,12 @@
 
 ### 11/13/2021
 
-Decided to redo my web design portfolio. I found an interesting tool to use called [Favicon.io](https://favicon.io/). You can generate our own favicon for your browser tab. I also used a [Fancy Border Radius Generator](https://9elements.github.io/fancy-border-radius/) to change the shape of my profile picture.
+Decided to redo my web design portfolio. I found an interesting tool to use called [Favicon.io](https://favicon.io/). You can generate our own favicon for your browser tab. I also used a [Fancy Border Radius Generator](https://9elements.github.io/fancy-border-radius/) to change the shape of my profile picture. I tried using a wave svg, but took it out. I included the website link because it's a good resource.
 
 Resources:
-* [CSS CodeLab](https://www.csscodelab.com/css-examples/): Great website for code examples in HTML, CSS, and JS.
-* [Waverly](https://wavelry.vercel.app/): used to make a wave svg for hero background. 
+
+- [CSS CodeLab](https://www.csscodelab.com/css-examples/): Great website for code examples in HTML, CSS, and JS.
+- [Waverly](https://wavelry.vercel.app/): used to make a wave svg for hero background.
 
 ---
 
@@ -61,6 +62,3 @@ font-family: "Open Sans", sans-serif;
 #000000 Black/ Light Black #202020
 #A9A9A9 Dark Gray
 #F5F5F5 White Smoke
-
-
-
