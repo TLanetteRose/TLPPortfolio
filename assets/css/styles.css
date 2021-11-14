@@ -11,8 +11,11 @@ sans-serif;*/
      --weight-normal: 400;
      --weight-bold: 700;
      --bg-color: #000000;
+     --secondary-bg-color: #202020;
      --primary-color: #FFE4E1;
      --secondary-color: #F5F5F5;
+     --primary-shadow: #d4d4d4;
+     --secondary-shadow: #E7C2BB;
      --bottom-margin: 0.5rem;
      --bottom-margin-2: 1rem;
      --line-height: 1.7rem;
@@ -26,6 +29,10 @@ sans-serif;*/
      padding: 0;
      box-sizing: border-box;
      outline: 1px solid white;
+ }
+
+ html {
+     font-size: 16px;
  }
 
  ul {
@@ -50,6 +57,137 @@ sans-serif;*/
      color: var(--primary-color);
  }
 
+ p {
+     color: var(--secondary-color);
+ }
+
  body {
      font-family: var(--body-font-family);
+     background-color: black;
+ }
+
+ .wrapper {
+     width: 100%;
+     height: 100%;
+ }
+
+ /* Nav*/
+ nav {
+     position: sticky;
+     top: 0;
+     left: 0;
+     z-index: 1;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 1.5rem 3.5rem;
+     background-color: var(--secondary-bg-color);
+     box-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.1);
+ }
+
+ nav a {
+     transition: var(--transition);
+ }
+
+ nav a:hover {
+     border-bottom: 2px solid var(--secondary-color);
+ }
+
+ nav ul {
+     display: flex;
+     gap: 1.9rem;
+ }
+
+ nav ul li {
+     font-weight: var(--weight-bold);
+     margin: .8rem;
+ }
+
+ .hamburger-menu {
+     color: var(--primary-color);
+     font-size: 2rem;
+     border: 0;
+     background-color: transparent;
+     cursor: pointer;
+     display: none;
+ }
+
+ /* Hero */
+
+ .hero {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     gap: 2.5rem;
+     height: 100%;
+     max-width: 100%;
+     
+
+ }
+
+ .hero img {
+     height: 30%;
+     width: 30%;
+     margin: 2rem;
+     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+ }
+
+ .bio {
+     width: 25rem;
+     padding: 1rem;
+     border-radius: .6rem;
+     /*box-shadow: 0 .2rem 1.5rem .2rem var(--secondary-color);*/
+ }
+
+ .bio h1 {
+     margin-bottom: var(--bottom-margin);
+ }
+
+ .bio p {
+     line-height: var(--line-height);
+     padding: 0.3rem 0;
+ }
+
+/* Media Queries for responsiveness */ 
+ @media screen and (max-width: 720px) {
+    nav {
+        padding: 1.5rem 1rem;
+    }
+    
+    nav h1 {
+        font-weight: var(--weight-bold);
+    }
+
+    nav ul {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 8.6rem;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+    }
+
+    nav ul li {
+        margin: .8rem;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    nav ul.show {
+        transform: translateX(0);
+    }
+    
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero img {
+        height: 35%;
+        width: 35%;
+    }
  }
