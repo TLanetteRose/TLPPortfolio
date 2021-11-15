@@ -2,7 +2,7 @@
 
 ### 11/13/2021
 
-Decided to redo my web design portfolio. I found an interesting tool to use called [Favicon.io](https://favicon.io/). You can generate our own favicon for your browser tab. I also used a [Fancy Border Radius Generator](https://9elements.github.io/fancy-border-radius/) to change the shape of my profile picture. I tried using a wave svg, but took it out. I included the website link because it's a good resource.
+Decided to redo my web design portfolio. I found an interesting tool to use called [Favicon.io](https://favicon.io/). You can generate our own favicon for your browser tab. I also used a [Fancy Border Radius Generator](https://9elements.github.io/fancy-border-radius/) to change the shape of my profile picture. I added a wave svg to my background. I included the website link because it's a good resource.
 
 Resources:
 

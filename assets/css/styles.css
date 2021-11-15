@@ -124,6 +124,10 @@ sans-serif;*/
      gap: 2.5rem;
      height: 100%;
      max-width: 100%;
+     background-image: url(/assets/images/bg_new_wave_.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: top center;
      
 
  }
