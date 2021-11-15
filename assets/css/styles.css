@@ -170,7 +170,52 @@ sans-serif;*/
      padding: 0.4rem;
  }
 
+ /* Skills */
+ .skills {
+     max-width: 100%;
+     margin: auto;
+     text-align: center;
+     margin-top: 2.5rem;
+ }
 
+ .skills-header {
+     margin-bottom: 1rem;
+ }
+
+ .skills-wrapper {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ .skills-wrapper img {
+     padding: 1.25rem;
+ }
+
+ .icon {
+     width: 11.875rem;
+     width: 11.25rem;
+ }
+
+ .credentials-wrapper {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+ }
+ .credentials-header {
+     margin-bottom: 1rem;
+ }
+
+ .credentials-list {
+     padding: 2rem;
+     text-align: left;
+ }
+
+.credential-item{
+    padding: 1rem;
+    border-bottom: 1px solid var(--primary-shadow);
+}
 /* Media Queries for responsiveness */ 
  @media screen and (max-width: 720px) {
     nav {
