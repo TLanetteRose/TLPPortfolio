@@ -10,12 +10,14 @@ sans-serif;*/
      --body-font-family: 'Open Sans', sans-serif;
      --weight-normal: 400;
      --weight-bold: 700;
-     --bg-color: #000000;
+     --primary-bg-color: #000000;
      --secondary-bg-color: #202020;
      --primary-color: #FFE4E1;
      --secondary-color: #F5F5F5;
      --primary-shadow: #d4d4d4;
      --secondary-shadow: #E7C2BB;
+     --bg-icon-card: #696969;
+     --bg-projects: #454545;
      --bottom-margin: 0.5rem;
      --bottom-margin-2: 1rem;
      --line-height: 1.7rem;
@@ -32,7 +34,7 @@ sans-serif;*/
  }
 
  html {
-     font-size: 16px;
+     font-size: 100%;
  }
 
  ul {
@@ -90,6 +92,7 @@ sans-serif;*/
 
  nav a {
      transition: var(--transition);
+     font-size: 1.2rem;
  }
 
  nav a:hover {
@@ -121,7 +124,7 @@ sans-serif;*/
      display: flex;
      align-items: center;
      justify-content: space-around;
-     gap: 2.5rem;
+     gap: 1.5rem;
      height: 100%;
      max-width: 100%;
      background-image: url(/assets/images/bg_new_wave_.png);
@@ -140,34 +143,44 @@ sans-serif;*/
  }
 
  .bio {
-     width: 25rem;
+     max-width: 40rem;
      padding: 1rem;
      border-radius: .6rem;
      /*box-shadow: 0 .2rem 1.5rem .2rem var(--secondary-color);*/
  }
 
- .bio h1 {
-     margin-bottom: var(--bottom-margin);
+ .bio h2 {
+     margin-bottom: var(--bottom-marg1in);
+     padding: 2rem;
+     font-size: 1.75em;
  }
 
  .bio p {
      line-height: var(--line-height);
-     padding: 0.3rem 0;
+     font-size: 2em;
+     line-height: 2rem;
+     padding: 2rem;
+     text-align: left;
  }
 
  .more-about {
-     background-color: var(--secondary-bg-color);
-     padding: 1rem 6rem;
+     max-width: 80rem;
+     margin: 4rem auto;
+     background-color: transparent;
+     padding: 2rem;
  }
 
  .more-about h2 {
      margin-bottom: var(--bottom-margin);
+     padding: 2rem;
      text-align: center;
+     font-size: 1.75em;
  }
 
  .more-about p {
-     line-height: var(--line-height);
-     padding: 0.4rem;
+     line-height: 2.5rem;
+     font-size: 1.5em;
+     padding: 1rem;
  }
 
  /* Skills */
@@ -178,23 +191,42 @@ sans-serif;*/
      margin-top: 2.5rem;
  }
 
- .skills-header {
+ .skill-header {
      margin-bottom: 1rem;
+     padding: 2rem;
+     font-size: 1.75em;
+ }
+
+ .skills-header {
+    margin-bottom: 1rem;
+    padding: 2rem;
  }
 
  .skills-wrapper {
      display: flex;
      justify-content: space-around;
      align-items: center;
+     margin-top: 2rem;
  }
 
  .skills-wrapper img {
      padding: 1.25rem;
  }
 
+ .skills-icons {
+     padding: 3rem;
+ }
  .icon {
      width: 11.875rem;
      width: 11.25rem;
+ }
+
+ .icon-card {
+     background-color: var(--bg-icon-card);
+     border-radius: 1.1rem;
+     box-shadow: 0 .3rem 1rem var(--secondary-shadow);
+     padding: 2rem;
+     margin: 1rem;
  }
 
  .credentials-wrapper {
@@ -204,20 +236,76 @@ sans-serif;*/
      align-items: center;
  }
  .credentials-header {
-     margin-bottom: 1rem;
+     margin-bottom: 2rem;
+     padding: 2rem;
  }
 
  .credentials-list {
+     margin-top: 1rem;
      padding: 2rem;
      text-align: left;
  }
 
 .credential-item{
     padding: 1rem;
+    font-size: 1.5em;
     border-bottom: 1px solid var(--primary-shadow);
 }
+
+/* Projects Sections */
+.projects {
+    background-color: var(--bg-projects);
+    padding: 3.2rem 0;
+    margin-top: 2rem;
+}
+
+.project-pic {
+    width: 65%;
+    height: 60%;
+}
+
+.projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.projects-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+}
+
+.projects-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    font-size: 1.75em;
+}
+
+.project-container {
+    text-align: center;
+    width: 33;
+    height: 33%;
+    margin: 0 2rem;
+}
+
+
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin: 1rem;
+}
+
 /* Media Queries for responsiveness */ 
- @media screen and (max-width: 720px) {
+ @media screen and (max-width: 768px) {
     nav {
         padding: 1.5rem 1rem;
     }
@@ -259,4 +347,20 @@ sans-serif;*/
         height: 35%;
         width: 35%;
     }
+
+    .skills-wrapper {
+        flex-direction: column;
+    }
+
+    .projects-row {
+        flex-direction: column;
+    }
+
+    .project-container {
+        
+    }
+
+
+
+    
  }
