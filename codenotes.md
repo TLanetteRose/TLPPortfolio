@@ -62,3 +62,6 @@ font-family: "Open Sans", sans-serif;
 #000000 Black/ Light Black #202020
 #A9A9A9 Dark Gray
 #F5F5F5 White Smoke
+
+
+<a target="_blank" href="https://icons8.comundefined">Envelope</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>

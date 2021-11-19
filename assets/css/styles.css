@@ -66,6 +66,10 @@ sans-serif;*/
      color: var(--secondary-color);
  }
 
+ p {
+     font-size: 1.25em;
+ }
+
  body {
      font-family: var(--body-font-family);
      background-color: black;
@@ -142,6 +146,17 @@ sans-serif;*/
      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
  }
 
+ .social-links {
+     display: flex;
+     font-size: 0.875em;
+     line-height: 1.4rem;
+     margin-bottom: 4rem;
+ }
+
+ .social-links span {
+     color: var(--primary-color);
+     padding: 0 0.5rem;
+ }
  .bio {
      max-width: 40rem;
      padding: 1rem;
@@ -262,6 +277,7 @@ sans-serif;*/
 .project-pic {
     width: 65%;
     height: 60%;
+    margin-bottom: 1rem;
 }
 
 .projects-wrapper {
@@ -293,6 +309,15 @@ sans-serif;*/
     margin: 0 2rem;
 }
 
+.project-container p {
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.project-title {
+    margin-bottom: 1rem;
+}
+
 
 
 .project-card {
@@ -302,6 +327,76 @@ sans-serif;*/
     align-items: center;
     padding: 2rem;
     margin: 1rem;
+}
+
+/* Contact Section */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin: 4rem 2rem;
+    text-align: center;
+}
+
+.contact-subtitle,
+.contact-title {
+    padding: 2rem;
+}
+
+.contact-title {
+    font-size: 1.75em;
+}
+
+.contact-text{
+    width: 80%;
+    line-height: 2.6rem;
+    margin-bottom: 1.3rem;
+}
+.contact-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    line-height: 6rem;
+    margin: 2rem;
+    background-color: var(--secondary-bg-color);
+}
+.contact-icon {
+    font-size: 2.3rem;
+}
+
+.contact-item span {
+    font-size: 1.25em;
+    padding: 0 2rem;
+}
+
+/* Socials Section */
+.socials {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1%;
+    bottom: 50%;
+}
+
+.socicon {
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 /* Media Queries for responsiveness */ 
