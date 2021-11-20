@@ -9,6 +9,10 @@ Resources:
 - [CSS CodeLab](https://www.csscodelab.com/css-examples/): Great website for code examples in HTML, CSS, and JS.
 - [Waverly](https://wavelry.vercel.app/): used to make a wave svg for hero background.
 
+### 11/20/2021
+
+Hi again. I decided to use Bootstrap for my portfolio page. I am taking too long to put this page together. 
+
 ---
 
 My name is Trista Lanette Pollard. My journey towards becoming a Front-End Web Developer started over 4 years ago. I became interested in computer coding after a parent approached me about sponsoring the "Hour of Code" with Code.org at our school. Once I attended a training session in New York City, I was hooked!
