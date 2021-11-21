@@ -75,25 +75,37 @@ sans-serif;*/
      /*background-color: black;*/
  }
 
- .bg-dark {
-     background-color: var(--primary-bg-color);
- }
-
  .container {
      width: 100%;
      height: 100%;
  }
 
- /* Navbar */
+ /* Overrides */
 
- .hamberger-icon {
-     background-color: var(--primary-color);
+ .mt-100 {
+     margin-top: 10rem;
  }
 
+ .w-10 {
+     width: 10%;
+ }
+ 
+ .w-65 {
+     width: 65%;
+ }
 
+ /* Navbar */
 
+ .navbar-dark, 
+ .navbar-brand, 
+ .navbar-toggler-icon, 
+ .nav-link {
+     color: var(--primary-color) !important;
+ }
 
-
+ .navbar-collapse {
+     text-align: center;
+ }
 
 
 
