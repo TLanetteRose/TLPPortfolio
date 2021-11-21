@@ -5,10 +5,10 @@
   <meta name="viewport" content="	width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="author" content="Trista L. Pollard">
-  <meta name="description" content="A Creative Front End Web Developer "/>
+  <meta name="description" content="A Creative Front End Web Developer who enjoys designing beautiful websites. "/>
 
   <!-- CSS Styles -->
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="dist/css/main.css" />
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/favicon_io/apple-touch-icon.png"/>
@@ -19,8 +19,67 @@
 </head>
 
 <body>
-  
-  
+  <!-- Mobile Menu button -->
+  <div id="home" class="visuallyHidden"></div>
+  <div class="menuButton" id="menuButton" tabindex="0">
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+  </div>
+  <!-- Side Menu -->
+  <aside class="sideMenu sideMenuShow" id="sideMenu">
+    <p class="logo">TLP.</p>
+
+    <nav>
+      <ul class="navBar"></ul>
+      </ul>
+        <li class="homeNav">
+          <a href="#home" class="navItem">
+            <ion-icon class="home-icon" name="home-outline"></ion-icon>
+            <span class="navItemName">home</span>
+          </a>
+        </li>
+        <li class="aboutNav">
+          <a href="#about" class="navItem">
+            <ion-icon class="person-icon" name="person-outline"></ion-icon>
+            <span class="navItemName">about</span>
+          </a>
+        </li>
+        <li class="skillsNav">
+          <a href="#skills" class="navItem">
+            <ion-icon class="skills-icon" name="laptop-outline"></ion-icon>
+            <span class="navItemName">skills</span>
+          </a>
+        </li>
+        <li class="homeNav">
+          <a href="#projects" class="navItem">
+            <ion-icon class="project-icon" name="briefcase-outline"></ion-icon>
+            <span class="navItemName">work</span>
+          </a>
+        </li>
+        <li class="homeNav">
+          <a href="#contact" class="navItem">
+            <ion-icon class="contact-icon" name="mail-outline"></ion-icon>
+            <span class="navItemName">contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    
+    <div class="scrollDown" id="scrollDown">
+      <ion-icon name="arrow-down-outline"></ion-icon>
+      <span class="navItemName scrollDownText">scroll down</span>
+    </div>
+  </aside>
+
+  <!-- Beginning of Main -->
+  <main>
+    <div class="outerWrapper">
+      <div class="innerWrapper">
+        
+      </div>
+    </div>
+  </main>
 
   <!-- Website Scripts -->
   <script src="assets/js/app.js"></script>

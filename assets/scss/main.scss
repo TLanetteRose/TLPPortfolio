@@ -1,3 +1,15 @@
-// Vendors
-@import 'vendors/normalize';
+// Configurations and helpers
+@import 
+    'abstracts/mixins',
+    'abstracts/variables';
 
+
+// Vendors
+@import 
+    'vendors/normalize';
+
+// Base Items
+@import 
+    'base/base',
+    'base/fonts',
+    'base/typography';
