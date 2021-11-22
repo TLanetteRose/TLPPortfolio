@@ -1,0 +1,60 @@
+header {
+    width: 100%;
+    background-color: $secondary-bg-color;
+
+    .navbar {
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        @include flex (row, space-between, center);
+        padding: 1.5rem 3.5rem;
+        box-shadow: 0 3px 5px $primary-shadow;
+
+        h1 {
+            color: $primary-font-color;
+            font-size: 2.5em;
+        }
+
+        .nav-link {
+            color: $primary-font-color;
+            font-size: 1.125em;
+            padding: 1rem 0;
+        }
+
+        .nav-link:hover {
+            color: $secondary-font-color;
+            border-bottom: .2rem solid $secondary-font-color;
+        }
+
+        ul {
+            width: 50%;
+            height: 3.5rem;
+            @include flex (row, space-around, center);
+            gap: 1.9rem;
+
+            li {
+                font-weight: $weight-bold;
+            }
+        }
+        .nav-social-icons {
+            @include flex (row, center, center);
+        
+
+            .social-icon {
+                font-size: 2rem;
+                color: $primary-font-color;
+                padding: 1rem;
+            }
+        }
+        .burger-menu {
+            color: $primary-font-color;
+            background-color: transparent;
+            font-size: 2rem;
+            border: 0;
+            cursor: pointer;
+            display: none;
+        }
+    }
+}
+

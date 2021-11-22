@@ -1,0 +1,56 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /*outline: 1px solid white;*/
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100%;
+    position: relative;
+    font-family: $body-font-family;
+    background-color: $primary-bg-color;
+}
+
+a {
+    font-family: $body-font-family;
+    text-decoration: none;
+}
+
+
+ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+section {
+    padding: 8rem 0;
+}
+
+.outerWrapper {
+    width: calc(100% - 90px);
+    margin-left: 9rem;
+    overflow: hidden;
+}
+
+.innerWrapper {
+    padding: 0 3.3rem;
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
