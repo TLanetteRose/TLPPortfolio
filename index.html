@@ -23,7 +23,7 @@
   <div id="home" class="visuallyHidden"></div>
   <div class="menuButton" id="menuButton" tabindex="0">
     <button class="burger-menu" id="burger-menu">
-      <ion-icon class="bars" name="menu-outline"></ion-icon>
+      <ion-icon name="menu"></ion-icon>
     </button>
   </div>
   <!-- Side Menu -->
@@ -35,31 +35,31 @@
       </ul>
         <li class="homeNav">
           <a href="#home" class="navItem">
-            <ion-icon class="home-icon" name="home-outline"></ion-icon>
+            <img class="menu-icons" src="assets/icons/home-outline.svg">
             <span class="navItemName">home</span>
           </a>
         </li>
         <li class="aboutNav">
           <a href="#about" class="navItem">
-            <ion-icon class="person-icon" name="person-outline"></ion-icon>
+            <img class="menu-icons" src="assets/icons/person-outline.svg">
             <span class="navItemName">about</span>
           </a>
         </li>
         <li class="skillsNav">
           <a href="#skills" class="navItem">
-            <ion-icon class="skills-icon" name="laptop-outline"></ion-icon>
+            <img class="menu-icons" src="assets/icons/laptop-outline.svg">
             <span class="navItemName">skills</span>
           </a>
         </li>
-        <li class="homeNav">
+        <li class="projectsNav">
           <a href="#projects" class="navItem">
-            <ion-icon class="project-icon" name="briefcase-outline"></ion-icon>
+            <img class="menu-icons" src="assets/icons/briefcase-outline.svg">
             <span class="navItemName">work</span>
           </a>
         </li>
         <li class="homeNav">
           <a href="#contact" class="navItem">
-            <ion-icon class="contact-icon" name="mail-outline"></ion-icon>
+            <img class="menu-icons" src="assets/icons/mail-outline.svg">
             <span class="navItemName">contact</span>
           </a>
         </li>
@@ -67,32 +67,137 @@
     </nav>
     
     <div class="scrollDown" id="scrollDown">
-      <ion-icon name="arrow-down-outline"></ion-icon>
+      <img src="assets/icons/arrow-down-outline.svg">
       <span class="navItemName scrollDownText">scroll down</span>
     </div>
   </aside>
 
   <!-- Beginning of Main -->
-  <main>
-    <div class="outerWrapper">
-      <div class="innerWrapper">
-        
-      </div>
-    </div>
-  </main>
+  <div class="outerWrapper">
+    <div class="innerWrapper">
+      <!-- Header -->
+      <header>
+        <div class="heroImageContainer">
+          <img src="assets/images/TLPProfileUP.JPG" alt="A picture of Trista Lanette Pollard.">
+        </div>
+        <div class="heroDescription">
+          <p class="greeting">Hi! I'm</p>
+          <h1><span>Trista Lanette</span> Pollard</h1>
+          <p class="smallBio">A <span>Creative Front End Developer </span> who enjoys designing beautiful websites.</p>
+          <div class="socialsResume">
+            <a class="resumeLink" href="" alt="Trista Lanette Pollard's resume" target="_blank" rel="noopener noreferrer">Resume</a>
+            <ul class="socialsList">
+              <li>
+                <a href="" target="_blank" rel="noopener noreferrer" aria-label="Link to Trista's LinkedIn page.">
+                  <img src="assets/icons/icons8-linkedin-50.png">
+                </a>
+              </li>
+              <li>
+                <a href="" target="_blank" rel="noopener noreferrer" aria-label="Link to Trista's GitHub page.">
+                  <img src="assets/icons/icons8-github-64.png">
+                </a>
+              </li>
+              <li>
+                <a href="" target="_blank" rel="noopener noreferrer" aria-label="Link to Trista's Twitter page.">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!-- Beginning of Main -->
+      <main>
+        <!-- About Section -->
+        <section class="aboutSection" id="about">
+          <div class="sectionHead">
+            <span>SOME INFO</span>
+            <h2 class="sectionHead-title">About Me</h2>
+          </div>
+
+          <article class="aboutContainer sectionContainer">
+            <p>I love to create websites.  </p>
+          </article>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skillsSection" id="skills">
+          <div class="sectionHead">
+            <span>CHECK OUT MY</span>
+            <h2 class="sectionHead-title">Skills</h2>
+          </div>
+           
+          <div class="skillsContainer sectionContainer">
+            <ul class="skillsGrid">
+              <li>
+                <div class="itemContainer">
+                  <ion-icon name="logo-html5"></ion-icon>
+                  <p>HTML</p>
+                </div>
+              </li>
+              <li>
+                <div class="itemContainer">
+                  <ion-icon name="logo-css3"></ion-icon>
+                  <p>CSS3</p>
+                </div>
+              </li>
+              <li>
+                <div class="itemContainer">
+                  <img src="assets/icons/icons8-html-5.svg">
+                  <p>SASS</p>
+                </div>
+              </li>
+              <li>
+                <div class="itemContainer">
+                  <img src="assets/icons/icons8-html-5.svg">
+                  <p>JavaScript</p>
+                </div>
+              </li>
+              <li>
+                <div class="itemContainer">
+                  <img src="assets/icons/icons8-html-5.svg">
+                  <p>JQuery</p>
+                </div>
+              </li>
+              <li>
+                <div class="itemContainer">
+                  <img src="assets/icons/icons8-html-5.svg">
+                  <p>React</p>
+                </div>
+              </li>
+              <li>
+                <div class="itemContainer">
+                  <img src="assets/icons/icons8-html-5.svg">
+                  <p>Git</p>
+                </div>
+              </li>
+              <li>
+                <div class="itemContainer">
+                  <img src="assets/icons/icons8-html-5.svg">
+                  <p>VS Code</p>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div> <!-- innerWrapper -->
+
+    <!-- Footer -->
+    <footer></footer>
+
+
+    <!-- Icons  also provided by https://icons8.com/icons/material -->
+  </div><!-- outerWrapper -->
+  
 
   <!-- Website Scripts -->
   <script src="assets/js/app.js"></script>
 
   <!-- Ion icons scripts -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
 </body>
 </html>

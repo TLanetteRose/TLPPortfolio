@@ -15,3 +15,11 @@ $body-font-family: 'Open Sans', sans-serif;
 $header-font-family: 'Gravitas', cursive;
 $weight-normal: 400;
 $weight-bold: 700;
+
+
+// Breakpoints 
+$bp-sm-mobile: 320px;
+$bp-lg-mobile: 767px;
+$bp-tablet-start: 768px;
+$bp-tablet-end: 1199px;
+$bp-desktop: 1200px;
