@@ -1,12 +1,12 @@
 html {
     box-sizing: border-box;
-    /*font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%*/
+    scroll-behavior: smooth;
 }
 
 * {
     margin: 0;
     padding: 0;
-    outline: 1px solid black;
+    /*outline: 1px solid white;*/
 }
 
 *,
@@ -19,15 +19,14 @@ body {
     height: 100%;
     position: relative;
     font-family: $body-font-family;
-    font-size: 125%;
-    @include flex(row, center, center);
-    
+    background-color: $primary-bg-color;
 }
 
 a {
     font-family: $body-font-family;
     text-decoration: none;
 }
+
 
 ul {
     list-style-type: none;
