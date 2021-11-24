@@ -9,7 +9,16 @@
 
     &-container {
         @include flex (row, space-between, center);
-        max-width: 80rem;
+        max-width: 65rem;
+
+        @include mobile-breakpoint {
+            flex-direction: column;
+            max-width: 22rem;
+        }
+
+        @include tablet-breakpoint {
+            max-width: 40rem;
+        }
 
         .hero-img {
             height: 40%;
@@ -19,7 +28,15 @@
         }
 
         .intro {
-            margin: 0 2rem;
+            margin: auto;
+            width: 25rem;
+            padding:0.625rem;
+            border-radius: .6rem;
+
+            @include mobile-breakpoint {
+                width: 15rem;
+            }
+
         
         
             .greeting,
@@ -35,6 +52,9 @@
 
             .intro-title {
                 font-size: 2.5em;
+                @include mobile-breakpoint {
+                    font-size: 2em;
+                }
             }
 
         }
