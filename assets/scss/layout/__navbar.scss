@@ -10,6 +10,7 @@ header {
         @include flex (row, space-between, center);
         padding: 1.5rem 3.5rem;
         box-shadow: 0 3px 5px $primary-shadow;
+  
 
         h1 {
             color: $primary-font-color;
@@ -54,6 +55,10 @@ header {
             border: 0;
             cursor: pointer;
             display: none;
+
+            @include mobile-breakpoint {
+                display: block;
+            }
         }
     }
 }

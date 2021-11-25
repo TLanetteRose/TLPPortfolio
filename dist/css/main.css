@@ -348,7 +348,7 @@ html {
 * {
   margin: 0;
   padding: 0;
-  /*outline: 1px solid white;*/
+  outline: 1px solid white;
 }
 
 *,
@@ -402,6 +402,7 @@ sans-serif;
 */
 body {
   font-family: "Open Sans", sans-serif;
+  color: #F5F5F5;
 }
 
 h1,
@@ -410,6 +411,7 @@ h3,
 h4,
 h5 {
   font-family: "Gravitas", cursive;
+  color: #FFE4E1;
 }
 
 .hero {
@@ -429,7 +431,18 @@ h5 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  max-width: 80rem;
+  max-width: 65rem;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .hero-container {
+    flex-direction: column;
+    max-width: 22rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-container {
+    max-width: 40rem;
+  }
 }
 .hero-container .hero-img {
   height: 40%;
@@ -438,7 +451,15 @@ h5 {
   border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
 }
 .hero-container .intro {
-  margin: 0 2rem;
+  margin: auto;
+  width: 25rem;
+  padding: 0.625rem;
+  border-radius: 0.6rem;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .hero-container .intro {
+    width: 15rem;
+  }
 }
 .hero-container .intro .greeting,
 .hero-container .intro .intro-title,
@@ -451,6 +472,11 @@ h5 {
 }
 .hero-container .intro .intro-title {
   font-size: 2.5em;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .hero-container .intro .intro-title {
+    font-size: 2em;
+  }
 }
 
 header {
@@ -513,4 +539,15 @@ header .navbar .burger-menu {
   border: 0;
   cursor: pointer;
   display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  header .navbar .burger-menu {
+    display: block;
+  }
+}
+
+.ion-card {
+  width: 10%;
+  height: 10%;
+  background-color: #F5F5F5;
 }/*# sourceMappingURL=main.css.map */
