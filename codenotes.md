@@ -17,7 +17,9 @@ Hi again. I decided to use Bootstrap for my portfolio page. I am taking too long
 
 Good afternoon. I decided to abandon Bootstrap. I remembered why I didn't want to use it as much--it's too restrictive in some cases. I'm trying a different approach. I am using a portfolio website as a guide. My indecision gets the best of me. I just need to make a portfolio webpage. I'm back to the tutorial from FreeCodeCamp.
 
-Resources:
+### 11/25/2021
+
+Happy Thanksgiving! I'm back. Trying to focus on the structure and design of my site before I deal with the wording of my about section.
 
 ---
 
