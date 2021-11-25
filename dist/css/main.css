@@ -544,4 +544,10 @@ header .navbar .burger-menu {
   header .navbar .burger-menu {
     display: block;
   }
+}
+
+.ion-card {
+  width: 10%;
+  height: 10%;
+  background-color: #F5F5F5;
 }/*# sourceMappingURL=main.css.map */
