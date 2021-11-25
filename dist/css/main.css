@@ -398,6 +398,12 @@ h5 {
   color: #FFE4E1;
 }
 
+.contact-icon {
+  background-color: #F5F5F5;
+  width: 3rem;
+  height: 3rem;
+}
+
 .hero {
   display: flex;
   flex-direction: column;

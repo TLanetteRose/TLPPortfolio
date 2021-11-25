@@ -56,14 +56,19 @@
 
   <!-- About Section -->
   <section class="more-about" id="about">
-    <h2>More About Me</h2>
+    <div class="more-about-header">
+      <h2 class="more-about-title">More About Me</h2>
+    </div>
+    
     <p>My journey towards becoming a Front-End Web Developer started over 4 years ago. I became interested in computer coding after a parent approached me about sponsoring the "Hour of Code" with Code.org at our school. Once I attended a training session in New York City, I was hooked!</p>
     <p>I started working on tutorials at FreeCodeCamp in January 2017. I have earned three certificates from FreeCodeCamp. I earned my Front-End Web Developer Nanodegree from Udacity in 2019.</p>
   </section>
 
   <!-- Skills Section -->
   <section class="skills"  id="skills">
-    <h2 class="skill-header">Credentials & Skills</h2>
+    <div class="skills-header">
+      <h2 class="skill-title">Credentials & Skills</h2>
+    </div>
     <article class="skills-container">
       <div class="credentials">
         <ul>
@@ -242,7 +247,35 @@
         </article><!-- project-card -->
     </div><!-- projects-container -->
   </section>
+
   <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="contact-header">
+      <h2 class="contact-title">Contact</h2>
+    </div>
+    <div class="contact-container">
+      <h3>Get in Touch</h3>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field" required />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field" required />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea id="message" cols="60" rows="10" name="message" class="input-field" required></textarea>
+            </div>
+            <input type="submit" value="submit" id="submit-btn" class="submit-btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- Scroll to Top  -->
   <!-- Footer -->
   
