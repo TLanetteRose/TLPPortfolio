@@ -379,22 +379,6 @@ li {
   text-decoration: none;
 }
 
-section {
-  padding: 8rem 0;
-}
-
-.outerWrapper {
-  width: calc(100% - 90px);
-  margin-left: 9rem;
-  overflow: hidden;
-}
-
-.innerWrapper {
-  padding: 0 3.3rem;
-  max-width: 114rem;
-  margin: 0 auto;
-}
-
 /* font-family: 'Gravitas',
 cursive;
 font-family: 'Open Sans',
@@ -546,8 +530,42 @@ header .navbar .burger-menu {
   }
 }
 
-.ion-card {
-  width: 10%;
-  height: 10%;
-  background-color: #F5F5F5;
+.projects {
+  padding: 3.2rem 0;
+  margin-top: 2rem;
+}
+.projects .project-pic {
+  width: 65%;
+  height: 60%;
+}
+.projects .projects-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .projects .projects-container {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.projects .projects-container .project-card {
+  text-align: center;
+  width: 30rem;
+  padding: 1rem;
+  margin: 2rem;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .projects .projects-container .project-card {
+    width: 20rem;
+    margin: 2rem 4rem;
+  }
+}
+.projects .projects-container .project-card ul {
+  padding: 0.4rem;
+}
+.projects .projects-container .project-card .project-work-container .project-title {
+  margin-bottom: 0.5rem;
 }/*# sourceMappingURL=main.css.map */

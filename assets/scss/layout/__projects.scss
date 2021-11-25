@@ -1,0 +1,49 @@
+.projects {
+    padding: 3.2rem 0;
+    margin-top: 2rem;
+
+    .project-pic {
+        width: 65%;
+        height: 60%;
+    }
+
+    .projects-container {
+        @include flex (row, center, center);
+        margin: auto;
+
+
+        @include mobile-breakpoint {
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .project-card {
+            text-align: center;
+            width: 30rem;
+            padding: 1rem;
+            margin: 2rem;
+
+            @include mobile-breakpoint {
+                width: 20rem;
+                margin: 2rem 4rem;
+            }
+
+            ul {
+                padding: 0.4rem;
+            }
+            .project-image-container {
+                
+            }
+            .project-work-container {
+                
+            
+                .project-title {
+                    margin-bottom: $bottom-margin;
+                }
+            }
+            
+        
+        }
+    }
+    
+}
