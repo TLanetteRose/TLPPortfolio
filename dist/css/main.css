@@ -399,6 +399,26 @@ h5 {
   color: #FFE4E1;
 }
 
+.more-about {
+  padding: 3rem 6rem;
+  margin: auto;
+  max-width: 68rem;
+}
+.more-about .more-about-header {
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+}
+.more-about .more-about-header .more-about-title {
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 2em;
+}
+.more-about .more-about-text {
+  font-size: 1.2em;
+  line-height: 1.7rem;
+  padding: 0.4rem;
+}
+
 .contact {
   background-color: #202020;
   padding: 5rem 0;
@@ -436,15 +456,18 @@ h5 {
   border-radius: 0.5rem;
   box-shadow: 0 0.3rem 1rem #5F5F5F;
 }
-.contact .contact-container .contact-form-container label {
+.contact .contact-container .contact-form-container .contact-form {
+  padding: 0 2rem;
+}
+.contact .contact-container .contact-form-container .contact-form label {
   line-height: 2.7em;
   font-weight: 700;
 }
-.contact .contact-container .contact-form-container textarea {
+.contact .contact-container .contact-form-container .contact-form textarea {
   min-height: 6.25rem;
   font-size: 1em;
 }
-.contact .contact-container .contact-form-container .input-field {
+.contact .contact-container .contact-form-container .contact-form .input-field {
   width: 100%;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -454,15 +477,15 @@ h5 {
   font-size: 1em;
   outline: none;
 }
-.contact .contact-container .contact-form-container .input-field::-moz-placeholder {
+.contact .contact-container .contact-form-container .contact-form .input-field::-moz-placeholder {
   padding: 0.5rem;
   color: #000000;
 }
-.contact .contact-container .contact-form-container .input-field:-ms-input-placeholder {
+.contact .contact-container .contact-form-container .contact-form .input-field:-ms-input-placeholder {
   padding: 0.5rem;
   color: #000000;
 }
-.contact .contact-container .contact-form-container .input-field::placeholder {
+.contact .contact-container .contact-form-container .contact-form .input-field::placeholder {
   padding: 0.5rem;
   color: #000000;
 }

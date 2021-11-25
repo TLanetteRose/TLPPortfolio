@@ -1,0 +1,21 @@
+.more-about {
+    padding: 3rem 6rem;
+    margin: auto;
+    max-width: 68rem;
+
+    .more-about-header {
+       padding: 2rem 0;
+       margin-bottom: 1rem;
+
+       .more-about-title {
+           margin-bottom: $bottom-margin;
+           text-align: center;
+           font-size: 2em;
+       }
+    }
+    .more-about-text {
+        font-size: 1.2em;
+        line-height: $line-height;
+        padding: 0.4rem;
+    }
+}
