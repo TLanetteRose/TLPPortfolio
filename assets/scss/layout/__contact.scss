@@ -1,6 +1,77 @@
+.contact {
 
-.contact-icon {
-    background-color: $secondary-font-color;
-    width: 3rem;
-    height: 3rem;
+    background-color: $secondary-bg-color;
+    padding: 5rem 0;
+
+    .contact-header {
+        @include flex (column, center, center);
+        padding: 2rem 0;
+        margin-bottom: 3rem;
+        
+
+        .contact-title {
+            text-align: center;
+            margin-bottom: $bottom-margin-2;
+            font-size: 2em;
+            
+        }
+
+        .contact-text {
+            width: 60%;
+            text-align: center;
+            margin: auto;
+            font-size: 1.5em;
+            line-height: 26px;
+        }
+    }
+    .contact-container {
+        h3 {
+          font-size: 1.5rem; 
+          text-align: center; 
+          padding: 2rem;
+        }
+
+        .contact-form-container {
+            background-color: $primary-bg-color;
+            max-width: 40.75rem;
+            margin: 0 auto;
+            padding: 0.938rem;
+            border-radius: .5rem;
+            box-shadow: 0 .3rem 1rem $primary-shadow;
+
+            label {
+                line-height: 2.7em;
+                font-weight: $weight-bold;
+            }
+
+            textarea {
+                min-height: 6.25rem;
+                font-size: 1em;
+            }
+
+            .input-field {
+                width: 100%;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                border-radius: .5rem;
+                border: none;
+                border: .2rem outset $primary-bg-color;
+                font-size: 1em;
+                outline: none;
+            }
+
+            .input-field::placeholder {
+                padding: 0.5rem;
+                color: $primary-bg-color;
+            }
+            
+
+            
+        }
+    }
 }
+
+
+
+
+
