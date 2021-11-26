@@ -668,4 +668,52 @@ header .navbar .burger-menu {
 }
 .projects .projects-container .project-card .project-work-container .project-title {
   margin-bottom: 0.5rem;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+}
+.skills .skills-header {
+  text-align: center;
+}
+.skills .skills-header .skills-title {
+  font-size: 2rem;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+.skills .skills-container .skill-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .skills .skills-container .skill-container {
+    flex-direction: column;
+  }
+}
+.skills .skills-container .skill-container .credentials {
+  width: 50%;
+  padding: 2rem;
+}
+.skills .skills-container .skill-container .skill-items {
+  width: 50%;
+  margin: auto;
+  padding: 2rem;
+}
+.skills .skills-container .skill-container .skill-items .skill-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .skills .skills-container .skill-container .skill-items .skill-row {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=main.css.map */

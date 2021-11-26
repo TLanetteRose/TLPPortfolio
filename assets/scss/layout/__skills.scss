@@ -1,4 +1,45 @@
 .skills {
-   
+   @include flex (column, space-between, center);
+   padding: 3rem 0;
+
+   .skills-header {
+       text-align: center;
+       
+       .skills-title {
+           font-size: 2rem;
+           padding: 2rem;
+           margin-bottom: 1rem;
+       }
+   }
     
+   .skills-container {
+       .skill-container {
+           @include flex (row, space-between, center);
+            gap: 1rem;
+
+           @include mobile-breakpoint {
+               flex-direction: column;
+           }
+
+           .credentials {
+               width: 50%;
+               padding: 2rem;
+               
+           }
+
+           .skill-items {
+               width: 50%;
+               margin: auto;
+               padding: 2rem;
+
+               .skill-row {
+                   @include flex(row, space-between, center);
+
+                   @include mobile-breakpoint {
+                       flex-direction: column;
+                   }
+               }
+           }
+       }
+   }
 }
