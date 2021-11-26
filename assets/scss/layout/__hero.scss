@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+    padding: 2rem 0;
 
     &-container {
         @include flex (row, space-between, center);
@@ -30,31 +31,37 @@
         .intro {
             margin: auto;
             width: 25rem;
-            padding:0.625rem;
+            padding: 1rem;
             border-radius: .6rem;
 
             @include mobile-breakpoint {
                 width: 15rem;
             }
 
-        
-        
-            .greeting,
-            .intro-title,
-            .intro-text {
-                color: $secondary-font-color;
-            }
+            .hero-header {
+                
+                .intro-title {
+                    font-size: 2.5em;
+                    line-height: 3rem;
+                    padding: 1rem 0;
 
-            .intro-title span,
-            .intro-text span {
-                color: $primary-font-color;
-            }
+                    @include mobile-breakpoint {
+                        font-size: 2em;
+                    }
 
-            .intro-title {
-                font-size: 2.5em;
-                @include mobile-breakpoint {
-                    font-size: 2em;
                 }
+            
+                .greeting,
+                .intro-title,
+                .intro-text {
+                    color: $secondary-font-color;
+                }
+
+                .intro-title span,
+                .intro-text span {
+                    color: $primary-font-color;
+                }
+
             }
 
         }

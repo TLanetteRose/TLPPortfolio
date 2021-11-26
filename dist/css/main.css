@@ -420,7 +420,7 @@ h5 {
 }
 
 .contact {
-  background-color: #202020;
+  background-color: #1c1b1d;
   padding: 5rem 0;
 }
 .contact .contact-header {
@@ -491,7 +491,7 @@ h5 {
 }
 
 footer {
-  background-color: #202020;
+  background-color: #1c1b1d;
   border-top: 0.2rem solid #FFE4E1;
 }
 
@@ -506,6 +506,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+  padding: 2rem 0;
 }
 .hero-container {
   display: flex;
@@ -534,7 +535,7 @@ footer {
 .hero-container .intro {
   margin: auto;
   width: 25rem;
-  padding: 0.625rem;
+  padding: 1rem;
   border-radius: 0.6rem;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -542,22 +543,24 @@ footer {
     width: 15rem;
   }
 }
-.hero-container .intro .greeting,
-.hero-container .intro .intro-title,
-.hero-container .intro .intro-text {
-  color: #F5F5F5;
-}
-.hero-container .intro .intro-title span,
-.hero-container .intro .intro-text span {
-  color: #FFE4E1;
-}
-.hero-container .intro .intro-title {
+.hero-container .intro .hero-header .intro-title {
   font-size: 2.5em;
+  line-height: 3rem;
+  padding: 1rem 0;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .hero-container .intro .intro-title {
+  .hero-container .intro .hero-header .intro-title {
     font-size: 2em;
   }
+}
+.hero-container .intro .hero-header .greeting,
+.hero-container .intro .hero-header .intro-title,
+.hero-container .intro .hero-header .intro-text {
+  color: #F5F5F5;
+}
+.hero-container .intro .hero-header .intro-title span,
+.hero-container .intro .hero-header .intro-text span {
+  color: #FFE4E1;
 }
 
 header {
