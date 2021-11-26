@@ -343,6 +343,7 @@ template {
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-size: 100%;
 }
 
 * {
@@ -379,22 +380,6 @@ li {
   text-decoration: none;
 }
 
-section {
-  padding: 8rem 0;
-}
-
-.outerWrapper {
-  width: calc(100% - 90px);
-  margin-left: 9rem;
-  overflow: hidden;
-}
-
-.innerWrapper {
-  padding: 0 3.3rem;
-  max-width: 114rem;
-  margin: 0 auto;
-}
-
 /* font-family: 'Gravitas',
 cursive;
 font-family: 'Open Sans',
@@ -414,6 +399,102 @@ h5 {
   color: #FFE4E1;
 }
 
+.more-about {
+  padding: 3rem 6rem;
+  margin: auto;
+  max-width: 68rem;
+}
+.more-about .more-about-header {
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+}
+.more-about .more-about-header .more-about-title {
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 2em;
+}
+.more-about .more-about-text {
+  font-size: 1.2em;
+  line-height: 1.7rem;
+  padding: 0.4rem;
+}
+
+.contact {
+  background-color: #1c1b1d;
+  padding: 5rem 0;
+}
+.contact .contact-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  margin-bottom: 3rem;
+}
+.contact .contact-header .contact-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2em;
+}
+.contact .contact-header .contact-text {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  font-size: 1.5em;
+  line-height: 26px;
+}
+.contact .contact-container h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2rem;
+}
+.contact .contact-container .contact-form-container {
+  background-color: #000000;
+  max-width: 40.75rem;
+  margin: 0 auto;
+  padding: 0.938rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.3rem 1rem #5F5F5F;
+}
+.contact .contact-container .contact-form-container .contact-form {
+  padding: 0 2rem;
+}
+.contact .contact-container .contact-form-container .contact-form label {
+  line-height: 2.7em;
+  font-weight: 700;
+}
+.contact .contact-container .contact-form-container .contact-form textarea {
+  min-height: 6.25rem;
+  font-size: 1em;
+}
+.contact .contact-container .contact-form-container .contact-form .input-field {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  border: 0.2rem outset #000000;
+  font-size: 1em;
+  outline: none;
+}
+.contact .contact-container .contact-form-container .contact-form .input-field::-moz-placeholder {
+  padding: 0.5rem;
+  color: #000000;
+}
+.contact .contact-container .contact-form-container .contact-form .input-field:-ms-input-placeholder {
+  padding: 0.5rem;
+  color: #000000;
+}
+.contact .contact-container .contact-form-container .contact-form .input-field::placeholder {
+  padding: 0.5rem;
+  color: #000000;
+}
+
+footer {
+  background-color: #1c1b1d;
+  border-top: 0.2rem solid #FFE4E1;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -425,6 +506,7 @@ h5 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+  padding: 2rem 0;
 }
 .hero-container {
   display: flex;
@@ -453,7 +535,7 @@ h5 {
 .hero-container .intro {
   margin: auto;
   width: 25rem;
-  padding: 0.625rem;
+  padding: 1rem;
   border-radius: 0.6rem;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -461,22 +543,24 @@ h5 {
     width: 15rem;
   }
 }
-.hero-container .intro .greeting,
-.hero-container .intro .intro-title,
-.hero-container .intro .intro-text {
-  color: #F5F5F5;
-}
-.hero-container .intro .intro-title span,
-.hero-container .intro .intro-text span {
-  color: #FFE4E1;
-}
-.hero-container .intro .intro-title {
+.hero-container .intro .hero-header .intro-title {
   font-size: 2.5em;
+  line-height: 3rem;
+  padding: 1rem 0;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .hero-container .intro .intro-title {
+  .hero-container .intro .hero-header .intro-title {
     font-size: 2em;
   }
+}
+.hero-container .intro .hero-header .greeting,
+.hero-container .intro .hero-header .intro-title,
+.hero-container .intro .hero-header .intro-text {
+  color: #F5F5F5;
+}
+.hero-container .intro .hero-header .intro-title span,
+.hero-container .intro .hero-header .intro-text span {
+  color: #FFE4E1;
 }
 
 header {
@@ -546,8 +630,90 @@ header .navbar .burger-menu {
   }
 }
 
-.ion-card {
-  width: 10%;
-  height: 10%;
-  background-color: #F5F5F5;
+.projects {
+  padding: 3.2rem 0;
+  margin-top: 2rem;
+}
+.projects .project-pic {
+  width: 65%;
+  height: 60%;
+}
+.projects .projects-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .projects .projects-container {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.projects .projects-container .project-card {
+  text-align: center;
+  width: 30rem;
+  padding: 1rem;
+  margin: 2rem;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .projects .projects-container .project-card {
+    width: 20rem;
+    margin: 2rem 4rem;
+  }
+}
+.projects .projects-container .project-card ul {
+  padding: 0.4rem;
+}
+.projects .projects-container .project-card .project-work-container .project-title {
+  margin-bottom: 0.5rem;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+}
+.skills .skills-header {
+  text-align: center;
+}
+.skills .skills-header .skills-title {
+  font-size: 2rem;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+.skills .skills-container .skill-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .skills .skills-container .skill-container {
+    flex-direction: column;
+  }
+}
+.skills .skills-container .skill-container .credentials {
+  width: 50%;
+  padding: 2rem;
+}
+.skills .skills-container .skill-container .skill-items {
+  width: 50%;
+  margin: auto;
+  padding: 2rem;
+}
+.skills .skills-container .skill-container .skill-items .skill-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .skills .skills-container .skill-container .skill-items .skill-row {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=main.css.map */

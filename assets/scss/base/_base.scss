@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-size: 100%;
 }
 
 * {
@@ -38,19 +39,6 @@ li {
     text-decoration: none;
 }
 
-section {
-    padding: 8rem 0;
-}
 
-.outerWrapper {
-    width: calc(100% - 90px);
-    margin-left: 9rem;
-    overflow: hidden;
-}
 
-.innerWrapper {
-    padding: 0 3.3rem;
-    max-width: 114rem;
-    margin: 0 auto;
-}
 
