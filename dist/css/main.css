@@ -589,13 +589,11 @@ footer {
   color: #FFE4E1;
 }
 
-header {
+.navbar {
   width: 100%;
-  background-color: #202020;
-}
-header .navbar {
   position: -webkit-sticky;
   position: sticky;
+  background-color: #202020;
   top: 0;
   left: 0;
   z-index: 1;
@@ -606,20 +604,20 @@ header .navbar {
   padding: 1.5rem 3.5rem;
   box-shadow: 0 3px 5px #5F5F5F;
 }
-header .navbar h1 {
+.navbar h1 {
   color: #FFE4E1;
   font-size: 2.5em;
 }
-header .navbar .nav-link {
+.navbar .nav-link {
   color: #FFE4E1;
   font-size: 1.125em;
   padding: 1rem 0;
 }
-header .navbar .nav-link:hover {
+.navbar .nav-link:hover {
   color: #F5F5F5;
   border-bottom: 0.2rem solid #F5F5F5;
 }
-header .navbar ul {
+.navbar ul {
   width: 50%;
   height: 3.5rem;
   display: flex;
@@ -628,21 +626,21 @@ header .navbar ul {
   align-items: center;
   gap: 1.9rem;
 }
-header .navbar ul li {
+.navbar ul li {
   font-weight: 700;
 }
-header .navbar .nav-social-icons {
+.navbar .nav-social-icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-header .navbar .nav-social-icons .social-icon {
+.navbar .nav-social-icons .social-icon {
   font-size: 2rem;
   color: #FFE4E1;
   padding: 1rem;
 }
-header .navbar .burger-menu {
+.navbar .burger-menu {
   color: #FFE4E1;
   background-color: transparent;
   font-size: 2rem;
@@ -651,7 +649,7 @@ header .navbar .burger-menu {
   display: none;
 }
 @media screen and (min-width: 375px) and (max-width: 767px) {
-  header .navbar .burger-menu {
+  .navbar .burger-menu {
     display: block;
   }
 }
@@ -773,8 +771,20 @@ header .navbar .burger-menu {
   display: inline-block;
   padding: 0 0.5rem;
 }
+.projects .projects-container .project-card .project-work-container .project-items {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  padding: 1rem 0;
+  font-size: 1.25em;
+}
+@media screen and (max-width: 374px) {
+  .projects .projects-container .project-card .project-work-container .project-items {
+    font-size: 0.9em;
+  }
+}
 .projects .projects-container .project-card .project-work-container .project-links {
   padding: 1rem 0;
+  margin-top: 1rem;
 }
 .projects .projects-container .project-card .project-work-container .project-links a {
   color: #FFE4E1;
