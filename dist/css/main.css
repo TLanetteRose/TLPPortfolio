@@ -380,6 +380,19 @@ li {
   text-decoration: none;
 }
 
+/* Scroll Up */
+.scroll-up {
+  position: fixed;
+  right: 0.5%;
+  bottom: 3%;
+  cursor: pointer;
+  background-color: #5F5F5F;
+}
+.scroll-up .up-arrow {
+  width: 3rem;
+  height: 3rem;
+}
+
 /* font-family: 'Gravitas',
 cursive;
 font-family: 'Open Sans',
@@ -503,6 +516,15 @@ h5 {
 footer {
   background-color: #1c1b1d;
   border-top: 0.2rem solid #FFE4E1;
+  padding: 1.25rem;
+  text-align: center;
+  margin: 2rem 0 0;
+}
+footer p {
+  margin-bottom: 1rem;
+}
+footer p a {
+  color: #FFE4E1;
 }
 
 .hero {
