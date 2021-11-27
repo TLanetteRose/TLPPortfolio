@@ -12,6 +12,10 @@
         @include flex (row, space-between, center);
         max-width: 65rem;
 
+        @include xs-mobile-breakpoint {
+            flex-direction: column;
+            max-width: 18rem;
+        }
         @include mobile-breakpoint {
             flex-direction: column;
             max-width: 22rem;
@@ -34,6 +38,10 @@
             padding: 1rem;
             border-radius: .6rem;
 
+            @include xs-mobile-breakpoint {
+                width: 16rem;
+            }
+
             @include mobile-breakpoint {
                 width: 15rem;
             }
@@ -45,6 +53,9 @@
                     line-height: 3rem;
                     padding: 1rem 0;
 
+                    @include xs-mobile-breakpoint {
+                        font-size: 1.75rem;
+                    }
                     @include mobile-breakpoint {
                         font-size: 2em;
                     }

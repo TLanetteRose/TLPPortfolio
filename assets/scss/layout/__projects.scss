@@ -1,5 +1,5 @@
 .projects {
-    padding: 3.2rem 0;
+    padding: 3.2rem 2rem;
     margin-top: 2rem;
 
     .project-pic {
@@ -8,42 +8,109 @@
     }
 
     .projects-container {
-        @include flex (row, center, center);
+        @include flex (column, space-between, center);
         margin: auto;
-
+        @include xs-mobile-breakpoint {
+            padding: 0;
+        }
 
         @include mobile-breakpoint {
-            flex-direction: column;
-            justify-content: space-between;
+            padding: 0;
         }
 
         .project-card {
-            text-align: center;
-            width: 30rem;
-            padding: 1rem;
+            @include flex (row, center, center);
             margin: 2rem;
+            padding: 3rem;
+            border-radius: 1rem;
+            border: 1px solid $primary-font-color;
+            box-shadow: 0 .3rem 1rem $secondary-shadow;
+
+            @include xs-mobile-breakpoint {
+                display: block;
+                padding: 0;
+            }
 
             @include mobile-breakpoint {
-                width: 20rem;
-                margin: 2rem 4rem;
+                display: block;
+                padding: 0;
             }
 
-            ul {
-                padding: 0.4rem;
+            @include tablet-breakpoint {
+                display: block;
+                padding: 0;
             }
+
             .project-image-container {
+                flex: 0 0 350px;
+                height: auto;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    border-radius: 10px;
+                    vertical-align: middle;
+                    padding: 1rem;
+
+                }
                 
             }
+
             .project-work-container {
-                
-            
+                flex: 0 1  calc(100% - 350px);
+                margin-left: 2.5rem;
+
+                @include xs-mobile-breakpoint {
+                    margin-left: 0;
+                    padding: 1rem;
+                }
+
+                @include mobile-breakpoint {
+                    margin-left: 0;
+                    padding: 1rem;
+                }
+
+                @include tablet-breakpoint {
+                    margin-left: 0;
+                    padding: 1rem;
+                }
+
                 .project-title {
-                    margin-bottom: $bottom-margin;
+                    display: block;
+                    font-family: $body-font-family;
+                    font-weight: $weight-bold;
+                    margin-block-start: 1em;
+                    margin-block-end: 1em;
+                    margin-inline-start: 0px;
+                    margin-inline-end: 0px;
+                }
+
+                .project-subtitle {
+                    font-weight: $weight-normal;
+                    display: block;
+                    margin-block-start: 1.33em;
+                    margin-block-end: 1.33em;
+                    margin-inline-start: 0px;
+                    margin-inline-end: 0px;
+
+                    .tech-stack {
+                        font-family: $body-font-family;
+                        display: inline-block;
+                        padding: 0 .5rem;
+                    }
+                }
+                .project-links {
+                    padding: 1rem 0;
+                }
+                .project-links a {
+                    color: $primary-font-color;
+                    padding: 1rem;
+                    cursor: pointer;
                 }
             }
-            
-        
         }
+
+        
     }
     
 }
