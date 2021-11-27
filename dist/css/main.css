@@ -404,6 +404,16 @@ h5 {
   margin: auto;
   max-width: 68rem;
 }
+@media screen and (max-width: 374px) {
+  .more-about {
+    padding: 2rem;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .more-about {
+    padding: 3rem 2rem;
+  }
+}
 .more-about .more-about-header {
   padding: 2rem 0;
   margin-bottom: 1rem;
@@ -515,7 +525,7 @@ footer {
   align-items: center;
   max-width: 65rem;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .hero-container {
     flex-direction: column;
     max-width: 22rem;
@@ -538,7 +548,7 @@ footer {
   padding: 1rem;
   border-radius: 0.6rem;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .hero-container .intro {
     width: 15rem;
   }
@@ -548,7 +558,7 @@ footer {
   line-height: 3rem;
   padding: 1rem 0;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .hero-container .intro .hero-header .intro-title {
     font-size: 2em;
   }
@@ -624,7 +634,7 @@ header .navbar .burger-menu {
   cursor: pointer;
   display: none;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   header .navbar .burger-menu {
     display: block;
   }
@@ -645,7 +655,7 @@ header .navbar .burger-menu {
   align-items: center;
   margin: auto;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .projects .projects-container {
     flex-direction: column;
     justify-content: space-between;
@@ -657,7 +667,7 @@ header .navbar .burger-menu {
   padding: 1rem;
   margin: 2rem;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .projects .projects-container .project-card {
     width: 20rem;
     margin: 2rem 4rem;
@@ -671,49 +681,87 @@ header .navbar .burger-menu {
 }
 
 .skills {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3rem 0;
+  margin-top: 2.5rem;
+  margin: auto;
+  padding: 3rem 6rem;
+}
+@media screen and (max-width: 374px) {
+  .skills {
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .skills {
+    padding: 3rem 2rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .skills {
+    padding: 3rem 1rem;
+  }
 }
 .skills .skills-header {
-  text-align: center;
+  margin-bottom: 1rem;
+  padding: 2rem 0;
 }
 .skills .skills-header .skills-title {
-  font-size: 2rem;
-  padding: 2rem;
-  margin-bottom: 1rem;
+  font-size: 2em;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
-.skills .skills-container .skill-container {
+.skills .skill-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+.skills .skill-container .credentials {
+  padding: 2rem;
+  margin: 2rem;
+}
+.skills .skill-container .skill-items {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.skills .skill-container .skill-items .skill-items-header {
+  margin-bottom: 1rem;
+  padding: 2rem 0;
+}
+.skills .skill-container .skill-items .skill-items-header .skill-items-title {
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 1.5em;
+}
+.skills .skill-container .skill-items .skill-row {
+  margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  padding: 2rem;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .skills .skills-container .skill-container {
+@media screen and (max-width: 374px) {
+  .skills .skill-container .skill-items .skill-row {
     flex-direction: column;
   }
 }
-.skills .skills-container .skill-container .credentials {
-  width: 50%;
-  padding: 2rem;
+.skills .skill-container .skill-items .icon {
+  width: 10rem;
+  height: 10rem;
 }
-.skills .skills-container .skill-container .skill-items {
-  width: 50%;
-  margin: auto;
-  padding: 2rem;
+@media screen and (max-width: 374px) {
+  .skills .skill-container .skill-items .icon {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
 }
-.skills .skills-container .skill-container .skill-items .skill-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .skills .skills-container .skill-container .skill-items .skill-row {
-    flex-direction: column;
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .skills .skill-container .skill-items .icon {
+    width: 4rem;
+    height: 4rem;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -3,6 +3,14 @@
     margin: auto;
     max-width: 68rem;
 
+    @include xs-mobile-breakpoint {
+        padding: 2rem;
+    }
+
+    @include mobile-breakpoint {
+        padding: 3rem 2rem;
+    }
+
     .more-about-header {
        padding: 2rem 0;
        margin-bottom: 1rem;

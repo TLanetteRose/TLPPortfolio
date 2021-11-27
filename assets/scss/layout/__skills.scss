@@ -1,45 +1,87 @@
 .skills {
-   @include flex (column, space-between, center);
-   padding: 3rem 0;
+    margin-top: 2.5rem;
+    margin: auto;
+    padding: 3rem 6rem;
 
-   .skills-header {
-       text-align: center;
-       
-       .skills-title {
-           font-size: 2rem;
-           padding: 2rem;
-           margin-bottom: 1rem;
-       }
-   }
-    
-   .skills-container {
-       .skill-container {
-           @include flex (row, space-between, center);
-            gap: 1rem;
+    @include xs-mobile-breakpoint {
+        padding: 1rem;
+    }
 
-           @include mobile-breakpoint {
-               flex-direction: column;
-           }
+    @include mobile-breakpoint {
+        padding: 3rem 2rem;
+    }
 
-           .credentials {
-               width: 50%;
-               padding: 2rem;
+    @include tablet-breakpoint {
+        padding: 3rem 1rem;
+    }
+
+    .skills-header {
+        margin-bottom: 1rem;
+        padding: 2rem 0;
+
+        .skills-title {
+            font-size: 2em;
+            margin-bottom: $bottom-margin;
+            text-align: center;
+        }
+    }
+
+    .skill-container {
+        @include flex (column, space-around, center);
+        padding: 1rem;
+        
+
+        .credentials {
+            padding: 2rem;
+            margin: 2rem;
+        }
+
+        .skill-items {
+            padding: 1rem;
+            @include flex (column, space-around, center);
+
+            .skill-items-header {
+                margin-bottom: 1rem;
+                padding: 2rem 0;
+
+                .skill-items-title {
+                    margin-bottom: $bottom-margin;
+                    text-align: center;
+                    font-size: 1.5em;
+                }
+
+                
+
+                
                
-           }
+            }
 
-           .skill-items {
-               width: 50%;
-               margin: auto;
-               padding: 2rem;
+            .skill-row {
+                margin: auto;
+                @include flex(row, space-between, center);
+                padding: 2rem;
 
-               .skill-row {
-                   @include flex(row, space-between, center);
+                @include xs-mobile-breakpoint {
+                    flex-direction: column;
+                }
+            }
 
-                   @include mobile-breakpoint {
-                       flex-direction: column;
-                   }
-               }
-           }
-       }
-   }
+            .icon {
+                width: 10rem;
+                height: 10rem;
+
+                @include xs-mobile-breakpoint {
+                    width: 4.8rem;
+                    height: 4.8rem;
+                }
+
+                @include mobile-breakpoint {
+                    width: 4rem;
+                    height: 4rem;
+                }
+            }
+        }
+    }
+
 }
+   
