@@ -14,7 +14,11 @@ scrollUp.addEventListener('click', () => {
 const burger = document.querySelector('#burger-menu');
 const ul = document.querySelector('nav ul');
 const nav = document.querySelector('nav');
+const navLink = document.querySelector('.nav-link');
 
+// Open hamburger menu when button is clicked
 burger.addEventListener('click', () => {
     ul.classList.toggle('show');
 });
+
+//Close hamburger menu when a link is clicked
