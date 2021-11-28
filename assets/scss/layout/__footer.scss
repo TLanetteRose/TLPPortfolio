@@ -1,4 +1,15 @@
 footer {
     background-color: $secondary-bg-color-2;
     border-top: .2rem solid $primary-font-color;
+    padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+    p a {
+        color: $primary-font-color;
+    }
 }
