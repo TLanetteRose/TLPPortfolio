@@ -383,7 +383,7 @@ li {
 /* Scroll Up */
 .scroll-up {
   position: fixed;
-  right: 0.5%;
+  right: 1%;
   bottom: 3%;
   cursor: pointer;
   background-color: #5F5F5F;
@@ -396,6 +396,12 @@ li {
   .scroll-up .up-arrow {
     width: 1.5rem;
     height: 1.5rem;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .scroll-up .up-arrow {
+    width: 2rem;
+    height: 2rem;
   }
 }
 
@@ -632,18 +638,14 @@ footer p a {
   padding: 1.5rem 3.5rem;
   box-shadow: 0 3px 5px #5F5F5F;
 }
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .navbar {
+    padding: 1.5rem 1rem;
+  }
+}
 .navbar h1 {
   color: #FFE4E1;
   font-size: 2.5em;
-}
-.navbar .nav-link {
-  color: #FFE4E1;
-  font-size: 1.125em;
-  padding: 1rem 0;
-}
-.navbar .nav-link:hover {
-  color: #F5F5F5;
-  border-bottom: 0.2rem solid #F5F5F5;
 }
 .navbar ul {
   width: 50%;
@@ -654,19 +656,83 @@ footer p a {
   align-items: center;
   gap: 1.9rem;
 }
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .navbar ul {
+    flex-direction: column;
+    position: fixed;
+    background-color: #000000;
+    top: 120px;
+    left: 0%;
+    width: 100%;
+    height: 85%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
+}
+@media screen and (max-width: 374px) {
+  .navbar ul {
+    flex-direction: column;
+    position: fixed;
+    justify-content: flex-start;
+    background-color: #000000;
+    top: 120px;
+    left: 0%;
+    width: 100%;
+    height: 85%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
+}
 .navbar ul li {
   font-weight: 700;
 }
-.navbar .nav-social-icons {
+@media screen and (max-width: 374px) {
+  .navbar ul li {
+    padding: 0;
+    margin: 1.2rem 0;
+  }
+}
+.navbar ul .nav-link {
+  color: #FFE4E1;
+  font-size: 1.125em;
+  padding: 1rem 0;
+}
+@media screen and (max-width: 374px) {
+  .navbar ul .nav-link {
+    font-size: 0.9em;
+    padding: 0.5rem;
+  }
+}
+.navbar ul .nav-link:hover {
+  color: #F5F5F5;
+  border-bottom: 0.2rem solid #F5F5F5;
+}
+.navbar ul .nav-social-icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.navbar .nav-social-icons .social-icon {
+@media screen and (max-width: 374px) {
+  .navbar ul .nav-social-icons {
+    padding: 0.5rem 0;
+    margin-top: 3rem;
+  }
+}
+.navbar ul .nav-social-icons .social-icon {
   font-size: 2rem;
   color: #FFE4E1;
   padding: 1rem;
+}
+@media screen and (max-width: 374px) {
+  .navbar ul .nav-social-icons .social-icon {
+    font-size: 1rem;
+  }
+}
+.navbar ul.show {
+  transform: translateX(0);
 }
 .navbar .burger-menu {
   color: #FFE4E1;
@@ -676,7 +742,7 @@ footer p a {
   cursor: pointer;
   display: none;
 }
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .navbar .burger-menu {
     display: block;
   }
