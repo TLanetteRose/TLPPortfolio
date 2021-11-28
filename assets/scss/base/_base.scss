@@ -42,7 +42,7 @@ li {
 /* Scroll Up */
 .scroll-up {
     position: fixed;
-    right: 0.5%;
+    right: 1%;
     bottom: 3%;
     cursor: pointer;
     background-color: $primary-shadow;
@@ -54,6 +54,11 @@ li {
         @include xs-mobile-breakpoint {
             width: 1.5rem;
             height: 1.5rem;
+        }
+
+        @include mobile-breakpoint {
+            width: 2rem;
+            height: 2rem;
         }
     }
 }

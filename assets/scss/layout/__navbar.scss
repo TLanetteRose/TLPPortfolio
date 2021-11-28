@@ -12,41 +12,64 @@
     padding: 1.5rem 3.5rem;
     box-shadow: 0 3px 5px $primary-shadow;
 
+    @include mobile-breakpoint {
+        padding: 1.5rem 1rem;
+    }
+
 
     h1 {
         color: $primary-font-color;
         font-size: 2.5em;
     }
+    .nav-container {
+        @include flex(row, space-around, center);
+        width: 80%;
 
-    .nav-link {
-        color: $primary-font-color;
-        font-size: 1.125em;
-        padding: 1rem 0;
-    }
-
-    .nav-link:hover {
-        color: $secondary-font-color;
-        border-bottom: .2rem solid $secondary-font-color;
-    }
-
-    ul {
-        width: 50%;
-        height: 3.5rem;
-        @include flex (row, space-around, center);
-        gap: 1.9rem;
-
-        li {
-            font-weight: $weight-bold;
+        @include mobile-breakpoint {
+            flex-direction: column;
+            position: fixed;
+            background-color: $primary-bg-color;
+            top: 8.6rem;
+            left: 10%;
+            width: 80%;
+            text-align: center;
+            transform: translateX(120%);
+            transition: transform 0.5s ease-in;
         }
-    }
-    .nav-social-icons {
-        @include flex (row, center, center);
-    
-
-        .social-icon {
-            font-size: 2rem;
+        .nav-link {
             color: $primary-font-color;
-            padding: 1rem;
+            font-size: 1.125em;
+            padding: 1rem 0;
+        }
+
+        .nav-link:hover {
+            color: $secondary-font-color;
+            border-bottom: .2rem solid $secondary-font-color;
+        }
+
+        ul {
+            width: 50%;
+            height: 3.5rem;
+            @include flex (row, space-around, center);
+            gap: 1.9rem;
+
+            @include mobile-breakpoint {
+                
+            }
+
+            li {
+                font-weight: $weight-bold;
+            }
+        }
+        .nav-social-icons {
+            @include flex (row, center, center);
+        
+
+            .social-icon {
+                font-size: 2rem;
+                color: $primary-font-color;
+                padding: 1rem;
+            }
         }
     }
     .burger-menu {
