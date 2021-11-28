@@ -50,6 +50,11 @@ li {
     .up-arrow {
         width: 3rem;
         height: 3rem;
+
+        @include xs-mobile-breakpoint {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
     }
 }
 

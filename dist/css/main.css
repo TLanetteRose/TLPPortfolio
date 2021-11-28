@@ -392,6 +392,12 @@ li {
   width: 3rem;
   height: 3rem;
 }
+@media screen and (max-width: 374px) {
+  .scroll-up .up-arrow {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
 
 /* font-family: 'Gravitas',
 cursive;
