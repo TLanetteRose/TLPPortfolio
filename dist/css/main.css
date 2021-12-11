@@ -343,7 +343,7 @@ template {
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-size: 100%;
+  font-size: 16px;
 }
 
 * {
@@ -425,7 +425,7 @@ h5 {
 }
 
 .more-about {
-  padding: 3rem 6rem;
+  padding: 3rem;
   margin: 3rem auto;
 }
 @media screen and (max-width: 374px) {
@@ -881,11 +881,13 @@ footer p a {
 }
 
 .skills {
-  width: 100%;
+  padding: 2rem;
 }
 .skills-header {
-  max-width: 80%;
+  padding: 1.25rem 0;
   margin: auto;
+  margin-bottom: 1rem;
+  max-width: 90%;
 }
 .skills-header .skills-title {
   margin-bottom: 0.5rem;
@@ -893,6 +895,65 @@ footer p a {
   font-size: 2em;
 }
 .skills-container {
-  max-width: 80%;
+  max-width: 90%;
   margin: 1.25rem auto;
+}
+.skills-container .skill-container .credentials {
+  margin: 1.25rem 0;
+}
+.skills-container .skill-container .credentials .credentials-header {
+  padding: 1rem;
+}
+.skills-container .skill-container .credentials .credentials-header .credentials-title {
+  font-size: 1.75em;
+}
+.skills-container .skill-container .credential-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+}
+.skills-container .skill-container .credential-item-icon {
+  width: 10%;
+}
+.skills-container .skill-container .credential-item-text {
+  width: 80%;
+}
+.skills-container .skill-container .skill-items {
+  padding: 1rem;
+  margin: 1.25rem 0;
+}
+.skills-container .skill-container .skill-items-header {
+  padding: 1rem;
+}
+.skills-container .skill-container .skill-items-header .skill-items-title {
+  font-size: 1.75em;
+}
+.skills-container .skill-container .skill-items .skill-row-container .skill-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 1rem auto;
+}
+.skills-container .skill-container .skill-items .skill-row-container .skill-row .icon-card {
+  background-color: #4a484b;
+  border-radius: 0.6875rem;
+  box-shadow: 0 0.1875rem 0.625rem #E7C2BB;
+  margin: 0.625rem;
+  padding: 0.25rem;
+}
+@media screen and (max-width: 374px) {
+  .skills-container .skill-container .skill-items .skill-row-container .skill-row .icon {
+    width: 3rem;
+    margin: 0.5rem;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .skills-container .skill-container .skill-items .skill-row-container .skill-row .icon {
+    width: 3rem;
+    margin: 1rem;
+  }
 }/*# sourceMappingURL=main.css.map */
