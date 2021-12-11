@@ -737,9 +737,8 @@ footer p a {
 }
 
 .projects {
+  padding: 3rem;
   margin: 3rem auto;
-  padding: 3rem 6rem;
-  max-width: 70rem;
 }
 .projects-header {
   margin-bottom: 1rem;
@@ -878,6 +877,12 @@ footer p a {
   color: #FFE4E1;
   padding: 0.5rem;
   cursor: pointer;
+}
+@media screen and (max-width: 374px) {
+  .projects .projects-container .project-card .project-work-container .project-links a {
+    padding: 0.125rem;
+    font-size: 0.875rem;
+  }
 }
 
 .skills {

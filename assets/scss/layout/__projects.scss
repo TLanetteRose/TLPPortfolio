@@ -1,8 +1,7 @@
 .projects {
+    padding: 3rem;
     margin: 3rem auto;
-    padding: 3rem 6rem;
-    max-width: 70rem;
-    
+
 
     &-header {
         margin-bottom: 1rem;
@@ -126,6 +125,11 @@
                     color: $primary-font-color;
                     padding: 0.5rem;
                     cursor: pointer;
+
+                    @include xs-mobile-breakpoint {
+                        padding: .125rem;
+                        font-size: .875rem;
+                    }
                 }
             }
         }
