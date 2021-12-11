@@ -10,19 +10,13 @@
 
     &-container {
         @include flex (row, space-between, center);
-        max-width: 65rem;
+        max-width: 80%;
 
         @include xs-mobile-breakpoint {
-            flex-direction: column;
-            max-width: 18rem;
+            flex-direction: column;   
         }
         @include mobile-breakpoint {
-            flex-direction: column;
-            max-width: 22rem;
-        }
-
-        @include tablet-breakpoint {
-            max-width: 40rem;
+            flex-direction: column;  
         }
 
         .hero-img {
@@ -33,21 +27,12 @@
         }
 
         .intro {
-            margin: auto;
-            width: 25rem;
+            margin: 0 auto;
+            width: 100%;
             padding: 1rem;
             border-radius: .6rem;
 
-            @include xs-mobile-breakpoint {
-                width: 16rem;
-            }
-
-            @include mobile-breakpoint {
-                width: 15rem;
-            }
-
             .hero-header {
-                
                 .intro-title {
                     font-size: 2.5em;
                     line-height: 3rem;

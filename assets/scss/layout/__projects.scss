@@ -1,10 +1,17 @@
 .projects {
-    padding: 3.2rem 2rem;
-    margin-top: 2rem;
+    padding: 3rem;
+    margin: 3rem auto;
 
-    .project-pic {
-        width: 65%;
-        height: 60%;
+
+    &-header {
+        margin-bottom: 1rem;
+        padding: 2rem 0;
+
+        .projects-title {
+            font-size: 2em;
+            margin-bottom: $bottom-margin;
+            text-align: left;
+        }
     }
 
     .projects-container {
@@ -44,6 +51,7 @@
             .project-image-container {
                 flex: 0 0 350px;
                 height: auto;
+
 
                 img {
                     display: block;
@@ -93,7 +101,7 @@
                     margin-inline-start: 0px;
                     margin-inline-end: 0px;
 
-                    .tech-stack {
+                    .project-info {
                         font-family: $body-font-family;
                         display: inline-block;
                         padding: 0 .5rem;
@@ -110,13 +118,18 @@
                     }
                 }
                 .project-links {
-                    padding: 1rem 0;
+                    padding: 1rem;
                     margin-top: 1rem;
                 }
                 .project-links a {
                     color: $primary-font-color;
-                    padding: 1rem;
+                    padding: 0.5rem;
                     cursor: pointer;
+
+                    @include xs-mobile-breakpoint {
+                        padding: .125rem;
+                        font-size: .875rem;
+                    }
                 }
             }
         }
