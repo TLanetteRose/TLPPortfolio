@@ -21,6 +21,10 @@ Good afternoon. I decided to abandon Bootstrap. I remembered why I didn't want t
 
 Happy Thanksgiving! I'm back. Trying to focus on the structure and design of my site before I deal with the wording of my about section.
 
+### 12/11/2021
+
+I'm back. It's been tough to code after a full day of school. The kids are excited about the holidays. I am too. My focus today is to fix the sizing for responsiveness. I was using rem for sizing.
+
 ---
 
 My name is Trista Lanette Pollard. My journey towards becoming a Front-End Web Developer started over 4 years ago. I became interested in computer coding after a parent approached me about sponsoring the "Hour of Code" with Code.org at our school. Once I attended a training session in New York City, I was hooked!

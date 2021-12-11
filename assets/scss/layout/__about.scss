@@ -1,7 +1,6 @@
 .more-about {
     padding: 3rem 6rem;
     margin: 3rem auto;
-    max-width: 68rem;
 
     @include xs-mobile-breakpoint {
         padding: 2rem;
@@ -13,17 +12,26 @@
 
     .more-about-header {
        padding: 2rem 0;
+       margin: auto;
        margin-bottom: 1rem;
+       max-width: 90%;
 
        .more-about-title {
            margin-bottom: $bottom-margin;
-           text-align: center;
+           text-align: left;
            font-size: 2em;
        }
     }
-    .more-about-text {
-        font-size: 1.2em;
-        line-height: $line-height;
-        padding: 0.4rem;
+
+    &-container {
+        max-width: 90%;
+        margin: auto;
+
+        .more-about-text {
+            font-size: 1.2em;
+            line-height: $line-height;
+            padding: 0.4rem;
+        }
     }
+    
 }
