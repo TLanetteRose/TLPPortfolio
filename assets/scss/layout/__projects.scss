@@ -17,6 +17,7 @@
     .projects-container {
         @include flex (column, space-between, center);
         margin: auto;
+        max-width: 90%;
         @include xs-mobile-breakpoint {
             padding: 0;
         }
@@ -26,6 +27,7 @@
         }
 
         .project-card {
+            max-width: 90%;
             @include flex (row, center, center);
             margin: 2rem;
             padding: 3rem;
@@ -53,9 +55,10 @@
                 height: auto;
 
 
-                img {
+                .project-pic {
                     display: block;
-                    width: 100%;
+                    max-width: 90%;
+                    margin: auto;
                     border-radius: 10px;
                     vertical-align: middle;
                     padding: 1rem;
