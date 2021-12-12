@@ -461,7 +461,7 @@ h5 {
 
 .contact {
   max-width: 90%;
-  padding: 3rem;
+  padding: 2rem;
   margin: 3rem auto;
   background-color: #1c1b1d;
 }
@@ -489,8 +489,8 @@ h5 {
 .contact .contact-header .contact-text {
   max-width: 80%;
   text-align: left;
+  margin: 1rem;
   padding: 1rem;
-  margin: auto;
   font-size: 1.5em;
   line-height: 26px;
 }
@@ -768,157 +768,120 @@ footer p a {
 }
 
 .projects {
-  padding: 3rem;
-  margin: 3rem auto;
+  padding: 2rem;
 }
 .projects-header {
+  padding: 1.25rem 0;
+  margin: auto;
   margin-bottom: 1rem;
-  padding: 2rem 0;
+  max-width: 90%;
 }
 .projects-header .projects-title {
   font-size: 2em;
   margin-bottom: 0.5rem;
   text-align: left;
 }
-.projects .projects-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
+.projects-container {
   max-width: 90%;
+  margin: 1.25rem auto;
+  padding: 1rem;
 }
 @media screen and (max-width: 374px) {
-  .projects .projects-container {
+  .projects-container {
     padding: 0;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 767px) {
-  .projects .projects-container {
+  .projects-container {
     padding: 0;
   }
 }
-.projects .projects-container .project-card {
+.projects-container .project-card {
+  margin: 1.25rem auto;
+  padding: 3rem;
   max-width: 90%;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  margin: 2rem;
-  padding: 3rem;
   border-radius: 1rem;
   border: 1px solid #FFE4E1;
   box-shadow: 0 0.3rem 1rem #E7C2BB;
 }
 @media screen and (max-width: 374px) {
-  .projects .projects-container .project-card {
-    display: block;
-    padding: 0;
+  .projects-container .project-card {
+    padding: 1rem;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 767px) {
-  .projects .projects-container .project-card {
-    display: block;
-    padding: 0;
+  .projects-container .project-card {
+    padding: 0.75rem;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .projects .projects-container .project-card {
-    display: block;
-    padding: 0;
+@media screen and (min-width: 1200px) {
+  .projects-container .project-card {
+    flex-direction: row;
   }
 }
-.projects .projects-container .project-card .project-image-container {
-  flex: 0 0 350px;
+.projects-container .project-card .project-image-container {
   height: auto;
-}
-.projects .projects-container .project-card .project-image-container .project-pic {
-  display: block;
-  max-width: 90%;
-  margin: auto;
-  border-radius: 10px;
-  vertical-align: middle;
-  padding: 1rem;
-}
-.projects .projects-container .project-card .project-work-container {
-  flex: 0 1 calc(100% - 350px);
-  margin-left: 2.5rem;
+  margin: 1.25rem;
+  overflow: hidden;
 }
 @media screen and (max-width: 374px) {
-  .projects .projects-container .project-card .project-work-container {
-    margin-left: 0;
-    padding: 1rem;
+  .projects-container .project-card .project-image-container {
+    padding: 0;
   }
 }
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  .projects .projects-container .project-card .project-work-container {
-    margin-left: 0;
-    padding: 1rem;
+.projects-container .project-card .project-image-container .project-pic {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  border-radius: 0.625rem;
+}
+@media screen and (max-width: 374px) {
+  .projects-container .project-card .project-image-container .project-pic {
+    width: 100%;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .projects .projects-container .project-card .project-work-container {
-    margin-left: 0;
-    padding: 1rem;
-  }
+.projects-container .project-card .project-work-container {
+  padding: 1rem;
 }
-.projects .projects-container .project-card .project-work-container .project-title {
+.projects-container .project-card .project-work-container .project-title {
   display: block;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  -webkit-margin-before: 1em;
-          margin-block-start: 1em;
-  -webkit-margin-after: 1em;
-          margin-block-end: 1em;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
 }
-.projects .projects-container .project-card .project-work-container .project-subtitle {
+.projects-container .project-card .project-work-container .project-subtitle {
   font-weight: 400;
   display: block;
-  -webkit-margin-before: 1.33em;
-          margin-block-start: 1.33em;
-  -webkit-margin-after: 1.33em;
-          margin-block-end: 1.33em;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
+  padding: 0.5rem;
 }
-.projects .projects-container .project-card .project-work-container .project-subtitle .project-info {
+.projects-container .project-card .project-work-container .project-subtitle .project-info {
   font-family: "Open Sans", sans-serif;
   display: inline-block;
   padding: 0 0.5rem;
 }
-.projects .projects-container .project-card .project-work-container .project-items {
+.projects-container .project-card .project-work-container .project-items {
   list-style-type: disc;
   margin-left: 1.5rem;
   padding: 1rem 0;
-  font-size: 1.25em;
+  font-size: 1.15em;
 }
 @media screen and (max-width: 374px) {
-  .projects .projects-container .project-card .project-work-container .project-items {
-    font-size: 0.9em;
+  .projects-container .project-card .project-work-container .project-items {
+    font-size: 0.9rem;
   }
 }
-.projects .projects-container .project-card .project-work-container .project-links {
-  padding: 1rem;
-  margin-top: 1rem;
-}
-.projects .projects-container .project-card .project-work-container .project-links a {
-  color: #FFE4E1;
-  padding: 0.5rem;
-  cursor: pointer;
-}
-@media screen and (max-width: 374px) {
-  .projects .projects-container .project-card .project-work-container .project-links a {
-    padding: 0.125rem;
-    font-size: 0.875rem;
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .projects-container .project-card .project-work-container .project-items {
+    font-size: 1em;
   }
 }
-
 .skills {
   padding: 2rem;
 }

@@ -27,20 +27,13 @@ I'm back. It's been tough to code after a full day of school. The kids are excit
 
 ### 12/12/2021
 
-Had to fix my hamburger menu. I keep having a problem with 'forEach'. From what I read, this happens when I use forEach with an object and not an array. It keeps saying that 'forEach is not a function'. I used another reference code instead.
+Had to fix my hamburger menu. I keep having a problem with 'forEach'. From what I read, this happens when I use forEach with an object and not an array. It keeps saying that 'forEach is not a function'. I used another reference code instead. Note for next time-- I want the images to be the same size. I may use background image for each one.
 
 Resources:
 
 - [Easy Hamburger Menu with JS](https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0)
 
 ---
-
-
-
-
-
-
-
 
 My name is Trista Lanette Pollard. My journey towards becoming a Front-End Web Developer started over 4 years ago. I became interested in computer coding after a parent approached me about sponsoring the "Hour of Code" with Code.org at our school. Once I attended a training session in New York City, I was hooked!
 

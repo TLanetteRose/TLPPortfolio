@@ -1,11 +1,11 @@
 .projects {
-    padding: 3rem;
-    margin: 3rem auto;
-
+    padding: 2rem;
 
     &-header {
+        padding: 1.25rem 0;
+        margin: auto;
         margin-bottom: 1rem;
-        padding: 2rem 0;
+        max-width: 90%;
 
         .projects-title {
             font-size: 2em;
@@ -14,10 +14,11 @@
         }
     }
 
-    .projects-container {
-        @include flex (column, space-between, center);
-        margin: auto;
+    &-container {
         max-width: 90%;
+        margin: 1.25rem auto;
+        padding: 1rem;
+
         @include xs-mobile-breakpoint {
             padding: 0;
         }
@@ -27,117 +28,97 @@
         }
 
         .project-card {
-            max-width: 90%;
-            @include flex (row, center, center);
-            margin: 2rem;
-            padding: 3rem;
-            border-radius: 1rem;
-            border: 1px solid $primary-font-color;
-            box-shadow: 0 .3rem 1rem $secondary-shadow;
+             margin: 1.25rem auto;
+             padding: 3rem;
+             max-width: 90%;
+             @include flex (column, space-between, center);
+             border-radius: 1rem;
+             border: 1px solid $primary-font-color;
+             box-shadow: 0 .3rem 1rem $secondary-shadow;
 
-            @include xs-mobile-breakpoint {
-                display: block;
-                padding: 0;
-            }
+             @include xs-mobile-breakpoint {
+                 padding: 1rem;
+             }
 
-            @include mobile-breakpoint {
-                display: block;
-                padding: 0;
-            }
+             @include mobile-breakpoint {
+                 padding: 0.75rem;
+             }
 
-            @include tablet-breakpoint {
-                display: block;
-                padding: 0;
-            }
+             @include desktop-breakpoint {
+                 flex-direction: row;
+             }
 
-            .project-image-container {
-                flex: 0 0 350px;
-                height: auto;
+             .project-image-container {
+                 height: auto;
+                 margin: 1.25rem;
+                 overflow: hidden;
 
+                 @include xs-mobile-breakpoint {
+                     //display: block;
+                     padding: 0;
+                 }
 
-                .project-pic {
-                    display: block;
-                    max-width: 90%;
-                    margin: auto;
-                    border-radius: 10px;
-                    vertical-align: middle;
-                    padding: 1rem;
+                 .project-pic {
+                     display: block;
+                     max-width: 100%;
+                     width: 100%;
+                     height: auto;
+                     margin: auto;
+                     border-radius: .625rem;
+                     //vertical-align: middle;
+                     //padding: 1rem;
 
-                }
-                
-            }
+                     @include xs-mobile-breakpoint {
+                         width: 100%;
+                     }
+                 }
 
-            .project-work-container {
-                flex: 0 1  calc(100% - 350px);
-                margin-left: 2.5rem;
+             }
 
-                @include xs-mobile-breakpoint {
-                    margin-left: 0;
-                    padding: 1rem;
-                }
+             .project-work-container {
+                 padding: 1rem;
 
-                @include mobile-breakpoint {
-                    margin-left: 0;
-                    padding: 1rem;
-                }
+                 .project-title {
+                     display: block;
+                     font-family: $body-font-family;
+                     font-weight: $weight-bold;
+                     padding: 0.5rem;
+                     margin-bottom: $bottom-margin-2;
+                 }
 
-                @include tablet-breakpoint {
-                    margin-left: 0;
-                    padding: 1rem;
-                }
+                 .project-subtitle {
+                     font-weight: $weight-normal;
+                     display: block;
+                     padding: 0.5rem;
 
-                .project-title {
-                    display: block;
-                    font-family: $body-font-family;
-                    font-weight: $weight-bold;
-                    margin-block-start: 1em;
-                    margin-block-end: 1em;
-                    margin-inline-start: 0px;
-                    margin-inline-end: 0px;
-                }
+                     .project-info {
+                         font-family: $body-font-family;
+                         display: inline-block;
+                         padding: 0 0.5rem;
+                     }
+                 }
 
-                .project-subtitle {
-                    font-weight: $weight-normal;
-                    display: block;
-                    margin-block-start: 1.33em;
-                    margin-block-end: 1.33em;
-                    margin-inline-start: 0px;
-                    margin-inline-end: 0px;
+                 .project-items {
+                     list-style-type: disc;
+                     margin-left: 1.5rem;
+                     padding: 1rem 0;
+                     font-size: 1.15em;
 
-                    .project-info {
-                        font-family: $body-font-family;
-                        display: inline-block;
-                        padding: 0 .5rem;
-                    }
-                }
-                .project-items {
-                    list-style-type: disc;
-                    margin-left: 1.5rem;
-                    padding: 1rem 0;
-                    font-size: 1.25em;
+                     @include xs-mobile-breakpoint {
+                         font-size: 0.9rem;
+                     }
 
-                    @include xs-mobile-breakpoint {
-                        font-size: .9em;
-                    }
-                }
-                .project-links {
-                    padding: 1rem;
-                    margin-top: 1rem;
-                }
-                .project-links a {
-                    color: $primary-font-color;
-                    padding: 0.5rem;
-                    cursor: pointer;
+                     @include mobile-breakpoint {
+                         font-size: 1em;
+                     }
 
-                    @include xs-mobile-breakpoint {
-                        padding: .125rem;
-                        font-size: .875rem;
-                    }
-                }
-            }
+                     @include tablet-breakpoint {
+                         //font-size: 1.15em;
+                     }
+                 }
+             }
         }
-
-        
     }
+    
     
 }
