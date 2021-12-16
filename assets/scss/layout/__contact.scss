@@ -7,7 +7,7 @@
     .contact-header {
         //@include flex (column, center, center);
         max-width: 90%;
-        padding: 2rem 0;
+        padding: 1.25rem;
         margin: 2rem auto;
         margin-bottom: 1rem;
 
@@ -16,6 +16,7 @@
         }
         
         .contact-title {
+            padding: 1.25rem;
             span {
                 margin-bottom: $bottom-margin;
                 text-align: left;

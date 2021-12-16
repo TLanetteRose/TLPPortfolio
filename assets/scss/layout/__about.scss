@@ -11,12 +11,14 @@
     }
 
     .more-about-header {
-       padding: 2rem 0;
+       padding: 1.25rem;
        margin: auto;
        margin-bottom: 1rem;
        max-width: 90%;
 
        .more-about-title {
+           padding: 1.25rem;
+
            span {
             margin-bottom: $bottom-margin;
             text-align: left;

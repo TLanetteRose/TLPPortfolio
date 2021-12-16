@@ -2,12 +2,13 @@
     padding: 2rem;
 
    &-header {
-       padding: 1.25rem 0;
+       padding: 1.25rem;
        margin: auto;
        margin-bottom: 1rem;
        max-width: 90%;
 
        .skills-title {
+           padding: 1.25rem;
            span {
                 margin: 5% auto;
                 text-align: left;
