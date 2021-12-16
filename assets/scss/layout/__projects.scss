@@ -1,19 +1,36 @@
 .projects {
+    height: 100%;
+    padding: 1.25rem;
+       
+    &-header {
+        padding: 1.25rem;
+
+        .projects-title { 
+            padding: 1.25rem;
+            span{
+                margin: 5% auto;
+                font-size: 2em;
+            }
+            
+        }
+    }
     
     &-container {
 
         .project-card {
             @include flex (column, center, center);
 
-            @media screen and (min-width: $bp-tablet-end) {
+            @media screen and (min-width: $bp-tablet-start) {
                 flex-direction: row;
             }
             .project-image-container {
                 @include flex (column, center, center);
-
-                @include desktop-breakpoint {
-                    width: calc(50% - 50px);
+                width: calc(50% - 50px);
+                
+                @media screen and (min-width: $bp-xs-mobile) and (max-width: $bp-lg-mobile) {
+                    width: 100%;
                 }
+                
                 
                 .project-pic {
                     width: 100%;
@@ -25,7 +42,12 @@
 
             .project-work-container {
                 @include flex (column, center, flex-start);
-                margin: 0 auto;
+                width: calc(50% - 50px);
+                margin: 0 auto; 
+
+                @media screen and (min-width: $bp-xs-mobile) and (max-width: $bp-lg-mobile) {
+                    width: 100%;
+                }
             }
         }
         

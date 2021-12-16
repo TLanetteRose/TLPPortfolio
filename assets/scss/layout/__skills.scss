@@ -8,9 +8,11 @@
        max-width: 90%;
 
        .skills-title {
-            margin-bottom: $bottom-margin;
-            text-align: left;
-            font-size: 2em;
+           span {
+                margin: 5% auto;
+                text-align: left;
+                font-size: 2em;
+            }
        }
    }
 

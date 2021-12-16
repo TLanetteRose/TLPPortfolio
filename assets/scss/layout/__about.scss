@@ -17,9 +17,12 @@
        max-width: 90%;
 
        .more-about-title {
-           margin-bottom: $bottom-margin;
-           text-align: left;
-           font-size: 2em;
+           span {
+            margin-bottom: $bottom-margin;
+            text-align: left;
+            font-size: 2em;
+           }
+           
        }
     }
 

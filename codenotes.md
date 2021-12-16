@@ -1,7 +1,6 @@
 # Coding Notes: TLP Portfolio
 
 ### 11/13/2021
-
 Decided to redo my web design portfolio. I found an interesting tool to use called [Favicon.io](https://favicon.io/). You can generate our own favicon for your browser tab. I also used a [Fancy Border Radius Generator](https://9elements.github.io/fancy-border-radius/) to change the shape of my profile picture. I added a wave svg to my background. I included the website link because it's a good resource.
 
 Resources:
@@ -10,23 +9,18 @@ Resources:
 - [Waverly](https://wavelry.vercel.app/): used to make a wave svg for hero background.
 
 ### 11/20/2021
-
 Hi again. I decided to use Bootstrap for my portfolio page. I am taking too long to put this page together.
 
 ### 11/21/2021
-
 Good afternoon. I decided to abandon Bootstrap. I remembered why I didn't want to use it as much--it's too restrictive in some cases. I'm trying a different approach. I am using a portfolio website as a guide. My indecision gets the best of me. I just need to make a portfolio webpage. I'm back to the tutorial from FreeCodeCamp.
 
 ### 11/25/2021
-
 Happy Thanksgiving! I'm back. Trying to focus on the structure and design of my site before I deal with the wording of my about section.
 
 ### 12/11/2021
-
 I'm back. It's been tough to code after a full day of school. The kids are excited about the holidays. I am too. My focus today is to fix the sizing for responsiveness. I was using rem for sizing.
 
 ### 12/12/2021
-
 Had to fix my hamburger menu. I keep having a problem with 'forEach'. From what I read, this happens when I use forEach with an object and not an array. It keeps saying that 'forEach is not a function'. I used another reference code instead. Note for next time-- I want the images to be the same size. I may use background image for each one.
 
 Resources:
@@ -39,7 +33,8 @@ Resources:
 ### 12/14/2021
 Decided to take a personal day to work on my portfolio. I'm going to try adding my images as background images. Changing my skill set to a ul list. 
 
-
+### 12/16/2021
+I'm home on quarrantine, so I back working on my portfolio. 
 
 
 ---

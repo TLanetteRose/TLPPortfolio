@@ -16,13 +16,14 @@
         }
         
         .contact-title {
-            margin-bottom: $bottom-margin;
-            text-align: left;
-            font-size: 2em;
-            @include xs-mobile-breakpoint {
-                max-width: 100%;
+            span {
+                margin-bottom: $bottom-margin;
+                text-align: left;
+                font-size: 2em;
+                @include xs-mobile-breakpoint {
+                    max-width: 100%;
+                }
             }
-            
         }
 
         .contact-text {
