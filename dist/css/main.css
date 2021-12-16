@@ -852,87 +852,11 @@ footer p a {
 }
 .skills-header {
   padding: 1.25rem;
-  margin: auto;
-  margin-bottom: 1rem;
-  max-width: 90%;
 }
 .skills-header .skills-title {
   padding: 1.25rem;
 }
 .skills-header .skills-title span {
   margin: 5% auto;
-  text-align: left;
   font-size: 2em;
-}
-.skills-container {
-  max-width: 90%;
-  margin: 1.25rem auto;
-}
-.skills-container .skill-crediential-container .credentials {
-  margin: 1.25rem 0;
-}
-.skills-container .skill-crediential-container .credentials .credentials-header {
-  padding: 1rem;
-}
-.skills-container .skill-crediential-container .credentials .credentials-header .credentials-title {
-  font-size: 1.75em;
-}
-.skills-container .skill-crediential-container .credential-item {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 1rem;
-}
-.skills-container .skill-crediential-container .credential-item-icon {
-  width: 10%;
-}
-.skills-container .skill-crediential-container .credential-item-text {
-  width: 80%;
-}
-.skills-container .skill-crediential-container .skill-items {
-  padding: 1rem;
-  margin: 1.25rem 0;
-}
-.skills-container .skill-crediential-container .skill-items-header {
-  padding: 1rem;
-}
-.skills-container .skill-crediential-container .skill-items-header .skill-items-title {
-  font-size: 1.75em;
-}
-.skills-container .skill-crediential-container .skill-items .skill-list-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 6% auto;
-}
-.skills-container .skill-crediential-container .skill-items .skill-list-container .skill-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-basis: 23%;
-  margin: 0.625rem;
-  padding: 0.625rem;
-}
-.skills-container .skill-crediential-container .skill-items .skill-list-container .skill-title .icon-card {
-  background-color: #4a484b;
-  border-radius: 0.6875rem;
-  box-shadow: 0 0.1875rem 0.625rem #E7C2BB;
-  margin: 0.625rem;
-  padding: 0.25rem;
-}
-@media screen and (max-width: 374px) {
-  .skills-container .skill-crediential-container .skill-items .skill-list-container .skill-title .icon {
-    width: 3rem;
-    margin: 0.5rem;
-  }
-}
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  .skills-container .skill-crediential-container .skill-items .skill-list-container .skill-title .icon {
-    width: 3rem;
-    margin: 1rem;
-  }
 }/*# sourceMappingURL=main.css.map */
