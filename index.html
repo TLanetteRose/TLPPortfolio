@@ -25,10 +25,10 @@
   <nav class="navbar"> 
     <h1 class="brand">TLP.</h1>
     <ul class="nav-items">
-      <li><a href="#about" class="nav-link">About</a></li>
-      <li><a href="#skills" class="nav-link">Skills</a></li>
-      <li><a href="#projects" class="nav-link">Projects</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li tabindex="0"><a href="#about" class="nav-link">About</a></li>
+      <li tabindex="0"><a href="#skills" class="nav-link">Skills</a></li>
+      <li tabindex="0"><a href="#projects" class="nav-link">Projects</a></li>
+      <li tabindex="0"><a href="#contact" class="nav-link">Contact</a></li>
       <div class="nav-social-icons">
         <ion-icon name="logo-github" class="social-icon"></ion-icon>
         <ion-icon name="logo-linkedin" class="social-icon"></ion-icon>
@@ -84,7 +84,7 @@
           <div class="credentials-header">
             <h3 class="credentials-title">Credentials</h3>
           </div>
-          <ul>
+          <ul class="skill-credential-container">
             <li class="credential-item">
               <img src="assets/icons/icons8-macbook-90.png" alt="" loading="lazy" class="credential-item-icon"/>
               <p class="credential-item-text">Front End Libraries, FreeCodeCamp, May 16, 2020</p>
@@ -109,18 +109,44 @@
           <div class="skill-items-header">
             <h3 class="skill-items-title">Skills</h3>
           </div>
-          <div class="skill-row-container">
-            <div class="skill-row">
+          <ul class="skill-list-container">
+            <li class="skill-title">
               <img src="assets/icons/icons8-html-5-96.png" alt="" loading="lazy" class="icon icon-card" />
+              <p>HTML5</p>
+            </li>
+            <li class="skill-title">
               <img src="assets/icons/icons8-css3-96.png" alt="" loading="lazy" class="icon icon-card" />
+              <p>CSS3</p>
+            </li>
+            <li class="skill-title">
               <img src="assets/icons/icons8-javascript-96.png" alt="" loading="lazy" class="icon icon-card" />
-            </div>
-            <div class="skill-row">
+              <p>JavaScript + ES6</p>
+            </li>
+            <li class="skill-title">
+              <img src="assets/icons/icons8-jquery-is-a-javascript-library-designed-to-simplify-html-96.png" alt="" loading="lazy" class="icon icon-card" />
+              <p>JQuery</p>
+            </li>
+            <li class="skill-title">
               <img src="assets/icons/icons8-bootstrap-96.png" alt="" loading="lazy" class="icon icon-card" />
+              <p>Bootstrap</p>
+            </li>
+            <li class="skill-title">
               <img src="assets/icons/icons8-react-native-96.png" alt="" loading="lazy" class="icon icon-card" />
+              <p>React</p>
+            </li>
+            <li class="skill-title">
+              <img src="assets/icons/icons8-sass-96.png" alt="" loading="lazy" class="icon icon-card" />
+              <p>Sass</p>
+            </li>
+            <li class="skill-title">
               <img src="assets/icons/icons8-git-96.png" alt="" loading="lazy" class="icon icon-card" />
-            </div>
-          </div>
+              <p>Git</p>
+            </li>
+            <li class="skill-title">
+              <img src="assets/icons/icons8-responsive-96 (5).png" alt="" loading="lazy" class="icon icon-card" />
+              <p>Responsive Design</p>
+            </li>
+          </ul>
         </div>
       </div>
     </article>
@@ -134,7 +160,8 @@
     <div class="projects-container">
         <article class="project-card">
           <div class="project-image-container">
-            <img src="assets/images/CascadeCafeTLPChallenge.png" alt="coffee cafe landing page" loading="lazy" class="project-pic" />
+            <!--<div class="img project-pic image1"></div>-->
+            <img src="assets/images/CascadeCafeTLPChallenge.png" alt="coffee cafe landing page" loading="lazy" class="project-pic img-fluid" />
           </div>
           <div class="project-work-container">
             <h3 class="project-title">Cascade Cafe Landing Page</h3>
@@ -287,6 +314,12 @@
       <h2 class="contact-title">Get In Touch With Me </h2>
       <p class="contact-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupida non proident, sunt in culpa qui officia</p>
     </div>
+    <div class="nav-social-icons">
+        <ion-icon name="logo-github" class="social-icon"></ion-icon>
+        <ion-icon name="logo-linkedin" class="social-icon"></ion-icon>
+        <ion-icon name="logo-twitter" class="social-icon"></ion-icon>     
+    </div>
+    <div class="spacer"></div>
     <div class="contact-container">
       <div class="contact-form-container">
         <div class="contact-form">

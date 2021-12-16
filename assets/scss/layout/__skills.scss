@@ -18,7 +18,8 @@
        max-width: 90%;
        margin: 1.25rem auto;
        
-       .skill-container {
+       .skill-crediential-container {
+            
 
             .credentials {
                 margin: 1.25rem 0;
@@ -57,11 +58,16 @@
                     }
                 }
 
-                .skill-row-container {
-                    .skill-row {
-                        @include flex(row, center, center);
-                        width: 90%;
-                        margin: 1rem auto;
+                .skill-list-container {
+                    @include flex (row, center, center);
+                    flex-wrap: wrap;
+                    margin: 6% auto;
+
+                    .skill-title {
+                        @include flex (column, center, center);
+                        flex-basis: 23%;
+                        margin: .625rem;
+                        padding: .625rem;
 
                         .icon-card {
                             background-color: $icon-card-color;

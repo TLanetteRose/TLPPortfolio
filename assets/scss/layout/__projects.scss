@@ -1,124 +1,36 @@
 .projects {
-    padding: 2rem;
-
-    &-header {
-        padding: 1.25rem 0;
-        margin: auto;
-        margin-bottom: 1rem;
-        max-width: 90%;
-
-        .projects-title {
-            font-size: 2em;
-            margin-bottom: $bottom-margin;
-            text-align: left;
-        }
-    }
-
+    
     &-container {
-        max-width: 90%;
-        margin: 1.25rem auto;
-        padding: 1rem;
-
-        @include xs-mobile-breakpoint {
-            padding: 0;
-        }
-
-        @include mobile-breakpoint {
-            padding: 0;
-        }
 
         .project-card {
-             margin: 1.25rem auto;
-             padding: 3rem;
-             max-width: 90%;
-             @include flex (column, space-between, center);
-             border-radius: 1rem;
-             border: 1px solid $primary-font-color;
-             box-shadow: 0 .3rem 1rem $secondary-shadow;
+            @include flex (column, center, center);
 
-             @include xs-mobile-breakpoint {
-                 padding: 1rem;
-             }
+            @media screen and (min-width: $bp-tablet-end) {
+                flex-direction: row;
+            }
+            .project-image-container {
+                @include flex (column, center, center);
 
-             @include mobile-breakpoint {
-                 padding: 0.75rem;
-             }
+                @include desktop-breakpoint {
+                    width: calc(50% - 50px);
+                }
+                
+                .project-pic {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                    padding: 2rem;
+                }
+            }
 
-             @include desktop-breakpoint {
-                 flex-direction: row;
-             }
-
-             .project-image-container {
-                 height: auto;
-                 margin: 1.25rem;
-                 overflow: hidden;
-
-                 @include xs-mobile-breakpoint {
-                     //display: block;
-                     padding: 0;
-                 }
-
-                 .project-pic {
-                     display: block;
-                     max-width: 100%;
-                     width: 100%;
-                     height: auto;
-                     margin: auto;
-                     border-radius: .625rem;
-                     //vertical-align: middle;
-                     //padding: 1rem;
-
-                     @include xs-mobile-breakpoint {
-                         width: 100%;
-                     }
-                 }
-
-             }
-
-             .project-work-container {
-                 padding: 1rem;
-
-                 .project-title {
-                     display: block;
-                     font-family: $body-font-family;
-                     font-weight: $weight-bold;
-                     padding: 0.5rem;
-                     margin-bottom: $bottom-margin-2;
-                 }
-
-                 .project-subtitle {
-                     font-weight: $weight-normal;
-                     display: block;
-                     padding: 0.5rem;
-
-                     .project-info {
-                         font-family: $body-font-family;
-                         display: inline-block;
-                         padding: 0 0.5rem;
-                     }
-                 }
-
-                 .project-items {
-                     list-style-type: disc;
-                     margin-left: 1.5rem;
-                     padding: 1rem 0;
-                     font-size: 1.15em;
-
-                     @include xs-mobile-breakpoint {
-                         font-size: 0.9rem;
-                     }
-
-                     @include mobile-breakpoint {
-                         font-size: 1em;
-                     }
-
-                     @include tablet-breakpoint {
-                         //font-size: 1.15em;
-                     }
-                 }
-             }
+            .project-work-container {
+                @include flex (column, center, flex-start);
+                margin: 0 auto;
+            }
         }
+        
+
     }
     
-    
 }
+   

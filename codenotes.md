@@ -33,6 +33,15 @@ Resources:
 
 - [Easy Hamburger Menu with JS](https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0)
 
+* [Simple CSS Solutions: How to fit images with different dimensions in set containers](https://medium.com/@kimcodeashian/simple-css-solutions-how-to-resize-images-with-different-dimensions-without-cropping-eb744e93246d)
+
+
+### 12/14/2021
+Decided to take a personal day to work on my portfolio. I'm going to try adding my images as background images. Changing my skill set to a ul list. 
+
+
+
+
 ---
 
 My name is Trista Lanette Pollard. My journey towards becoming a Front-End Web Developer started over 4 years ago. I became interested in computer coding after a parent approached me about sponsoring the "Hour of Code" with Code.org at our school. Once I attended a training session in New York City, I was hooked!

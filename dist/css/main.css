@@ -767,121 +767,42 @@ footer p a {
   display: none;
 }
 
-.projects {
-  padding: 2rem;
-}
-.projects-header {
-  padding: 1.25rem 0;
-  margin: auto;
-  margin-bottom: 1rem;
-  max-width: 90%;
-}
-.projects-header .projects-title {
-  font-size: 2em;
-  margin-bottom: 0.5rem;
-  text-align: left;
-}
-.projects-container {
-  max-width: 90%;
-  margin: 1.25rem auto;
-  padding: 1rem;
-}
-@media screen and (max-width: 374px) {
-  .projects-container {
-    padding: 0;
-  }
-}
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  .projects-container {
-    padding: 0;
-  }
-}
 .projects-container .project-card {
-  margin: 1.25rem auto;
-  padding: 3rem;
-  max-width: 90%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  border-radius: 1rem;
-  border: 1px solid #FFE4E1;
-  box-shadow: 0 0.3rem 1rem #E7C2BB;
 }
-@media screen and (max-width: 374px) {
-  .projects-container .project-card {
-    padding: 1rem;
-  }
-}
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  .projects-container .project-card {
-    padding: 0.75rem;
-  }
-}
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .projects-container .project-card {
     flex-direction: row;
   }
 }
 .projects-container .project-card .project-image-container {
-  height: auto;
-  margin: 1.25rem;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-@media screen and (max-width: 374px) {
+@media screen and (min-width: 1200px) {
   .projects-container .project-card .project-image-container {
-    padding: 0;
+    width: calc(50% - 50px);
   }
 }
 .projects-container .project-card .project-image-container .project-pic {
-  display: block;
-  max-width: 100%;
   width: 100%;
   height: auto;
-  margin: auto;
-  border-radius: 0.625rem;
-}
-@media screen and (max-width: 374px) {
-  .projects-container .project-card .project-image-container .project-pic {
-    width: 100%;
-  }
+  display: block;
+  padding: 2rem;
 }
 .projects-container .project-card .project-work-container {
-  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
 }
-.projects-container .project-card .project-work-container .project-title {
-  display: block;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-}
-.projects-container .project-card .project-work-container .project-subtitle {
-  font-weight: 400;
-  display: block;
-  padding: 0.5rem;
-}
-.projects-container .project-card .project-work-container .project-subtitle .project-info {
-  font-family: "Open Sans", sans-serif;
-  display: inline-block;
-  padding: 0 0.5rem;
-}
-.projects-container .project-card .project-work-container .project-items {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-  padding: 1rem 0;
-  font-size: 1.15em;
-}
-@media screen and (max-width: 374px) {
-  .projects-container .project-card .project-work-container .project-items {
-    font-size: 0.9rem;
-  }
-}
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  .projects-container .project-card .project-work-container .project-items {
-    font-size: 1em;
-  }
-}
+
 .skills {
   padding: 2rem;
 }
@@ -900,47 +821,56 @@ footer p a {
   max-width: 90%;
   margin: 1.25rem auto;
 }
-.skills-container .skill-container .credentials {
+.skills-container .skill-crediential-container .credentials {
   margin: 1.25rem 0;
 }
-.skills-container .skill-container .credentials .credentials-header {
+.skills-container .skill-crediential-container .credentials .credentials-header {
   padding: 1rem;
 }
-.skills-container .skill-container .credentials .credentials-header .credentials-title {
+.skills-container .skill-crediential-container .credentials .credentials-header .credentials-title {
   font-size: 1.75em;
 }
-.skills-container .skill-container .credential-item {
+.skills-container .skill-crediential-container .credential-item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   padding: 1rem;
 }
-.skills-container .skill-container .credential-item-icon {
+.skills-container .skill-crediential-container .credential-item-icon {
   width: 10%;
 }
-.skills-container .skill-container .credential-item-text {
+.skills-container .skill-crediential-container .credential-item-text {
   width: 80%;
 }
-.skills-container .skill-container .skill-items {
+.skills-container .skill-crediential-container .skill-items {
   padding: 1rem;
   margin: 1.25rem 0;
 }
-.skills-container .skill-container .skill-items-header {
+.skills-container .skill-crediential-container .skill-items-header {
   padding: 1rem;
 }
-.skills-container .skill-container .skill-items-header .skill-items-title {
+.skills-container .skill-crediential-container .skill-items-header .skill-items-title {
   font-size: 1.75em;
 }
-.skills-container .skill-container .skill-items .skill-row-container .skill-row {
+.skills-container .skill-crediential-container .skill-items .skill-list-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 90%;
-  margin: 1rem auto;
+  flex-wrap: wrap;
+  margin: 6% auto;
 }
-.skills-container .skill-container .skill-items .skill-row-container .skill-row .icon-card {
+.skills-container .skill-crediential-container .skill-items .skill-list-container .skill-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 23%;
+  margin: 0.625rem;
+  padding: 0.625rem;
+}
+.skills-container .skill-crediential-container .skill-items .skill-list-container .skill-title .icon-card {
   background-color: #4a484b;
   border-radius: 0.6875rem;
   box-shadow: 0 0.1875rem 0.625rem #E7C2BB;
@@ -948,13 +878,13 @@ footer p a {
   padding: 0.25rem;
 }
 @media screen and (max-width: 374px) {
-  .skills-container .skill-container .skill-items .skill-row-container .skill-row .icon {
+  .skills-container .skill-crediential-container .skill-items .skill-list-container .skill-title .icon {
     width: 3rem;
     margin: 0.5rem;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 767px) {
-  .skills-container .skill-container .skill-items .skill-row-container .skill-row .icon {
+  .skills-container .skill-crediential-container .skill-items .skill-list-container .skill-title .icon {
     width: 3rem;
     margin: 1rem;
   }
