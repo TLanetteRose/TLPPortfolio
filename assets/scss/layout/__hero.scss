@@ -10,7 +10,7 @@
 
     &-container {
         @include flex (row, space-between, center);
-        max-width: 80%;
+        //max-width: 80%;
 
         @include xs-mobile-breakpoint {
             flex-direction: column;   
@@ -33,22 +33,24 @@
             border-radius: .6rem;
 
             .hero-header {
+                padding: 1.25rem;
                 .intro-title {
+                    
                     span {
                         font-size: 1.75em;
                         line-height: 3rem;
-                        padding: 1rem 0;
+                        padding: 1.25rem;
 
                         @include xs-mobile-breakpoint {
-                            font-size: .75em;
+                            font-size: .55em;
                         }
 
                         @include mobile-breakpoint {
-                            font-size: 1.2em;
+                            font-size: .75em;
                         }
 
                         @include tablet-breakpoint {
-                            font-size: 1.25em;
+                            font-size: .8em;
                         }
                     }
 

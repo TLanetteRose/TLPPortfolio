@@ -386,6 +386,10 @@ li {
   width: 90%;
 }
 
+.spacer {
+  height: 20vh;
+}
+
 /* Scroll Up */
 .scroll-up {
   position: fixed;
@@ -602,7 +606,6 @@ footer p a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  max-width: 80%;
 }
 @media screen and (max-width: 374px) {
   .hero-container {
@@ -626,24 +629,27 @@ footer p a {
   padding: 1rem;
   border-radius: 0.6rem;
 }
+.hero-container .intro .hero-header {
+  padding: 1.25rem;
+}
 .hero-container .intro .hero-header .intro-title span {
   font-size: 1.75em;
   line-height: 3rem;
-  padding: 1rem 0;
+  padding: 1.25rem;
 }
 @media screen and (max-width: 374px) {
   .hero-container .intro .hero-header .intro-title span {
-    font-size: 0.75em;
+    font-size: 0.55em;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 767px) {
   .hero-container .intro .hero-header .intro-title span {
-    font-size: 1.2em;
+    font-size: 0.75em;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero-container .intro .hero-header .intro-title span {
-    font-size: 1.25em;
+    font-size: 0.8em;
   }
 }
 .hero-container .intro .hero-header .greeting,
