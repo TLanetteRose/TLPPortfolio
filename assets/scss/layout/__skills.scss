@@ -1,5 +1,6 @@
 .skills {
     padding: 2rem;
+    height: 100%;
 
    &-header {
        padding: 1.25rem;
@@ -15,8 +16,79 @@
                 }
             }
        }
-
        
+   }
+   .credentials-container {
+       @include flex(column, center, center);
+       margin: 2rem 0;
+
+       .credentials-header {
+           width: 100%;
+           padding: 1.25rem;
+
+           .credentials-title {
+               span {
+                   margin-top: 2rem;
+                   text-align: left;
+                   font-size: 2em;
+               }
+           }
+       }
+
+       .skill-credential-container {
+           margin: 2rem 0;
+           padding: 2rem;
+          .credential-item {
+              @include flex(row, flex-start, center);
+
+              &-icon {
+                  padding: .5rem;
+              }
+          } 
+       }
+   }
+
+   .tech-skills-container {
+       @include flex(column, center, center);
+       margin: 2rem 0;
+
+        .tech-skills-header {
+            width: 100%;
+           padding: 1.25rem;
+           //@include flex (row, center, center);
+
+           .skill-items-title {
+               span {
+                   margin-top: 2rem;
+                   text-align: left;
+                   font-size: 2em;
+               }
+           }
+        }
+       
+
+       .skill-list-container {
+           @include flex(row, center, center);
+           flex-wrap: wrap;
+           margin: 6% auto;
+
+           .skill-title {
+               @include flex (column, center, center);
+               flex-basis: 23%;
+               margin: .625rem;
+               padding: .625rem;
+           }
+
+           .icon {
+               font-size: 5.5rem;
+               vertical-align: middle;
+           }
+           
+           p {
+               text-align: center;
+               font-size: 1.5rem;
+           }
+       }
    }
 
    

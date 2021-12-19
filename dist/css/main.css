@@ -387,7 +387,7 @@ li {
 }
 
 .spacer {
-  height: 20vh;
+  height: 10vh;
 }
 
 /* Scroll Up */
@@ -876,6 +876,7 @@ footer p a {
 
 .skills {
   padding: 2rem;
+  height: 100%;
 }
 .skills-header {
   padding: 1.25rem;
@@ -891,4 +892,74 @@ footer p a {
   .skills-header .skills-title span {
     font-size: 1.5em;
   }
+}
+.skills .credentials-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+.skills .credentials-container .credentials-header {
+  width: 100%;
+  padding: 1.25rem;
+}
+.skills .credentials-container .credentials-header .credentials-title span {
+  margin-top: 2rem;
+  text-align: left;
+  font-size: 2em;
+}
+.skills .credentials-container .skill-credential-container {
+  margin: 2rem 0;
+  padding: 2rem;
+}
+.skills .credentials-container .skill-credential-container .credential-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.skills .credentials-container .skill-credential-container .credential-item-icon {
+  padding: 0.5rem;
+}
+.skills .tech-skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+.skills .tech-skills-container .tech-skills-header {
+  width: 100%;
+  padding: 1.25rem;
+}
+.skills .tech-skills-container .tech-skills-header .skill-items-title span {
+  margin-top: 2rem;
+  text-align: left;
+  font-size: 2em;
+}
+.skills .tech-skills-container .skill-list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 6% auto;
+}
+.skills .tech-skills-container .skill-list-container .skill-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 23%;
+  margin: 0.625rem;
+  padding: 0.625rem;
+}
+.skills .tech-skills-container .skill-list-container .icon {
+  font-size: 5.5rem;
+  vertical-align: middle;
+}
+.skills .tech-skills-container .skill-list-container p {
+  text-align: center;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=main.css.map */
