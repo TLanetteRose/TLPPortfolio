@@ -25,10 +25,10 @@
   <nav class="navbar"> 
     <h1 class="brand">TLP.</h1>
     <ul class="nav-items">
-      <li><a href="#about" class="nav-link">About</a></li>
-      <li><a href="#skills" class="nav-link">Skills</a></li>
-      <li><a href="#projects" class="nav-link">Projects</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li tabindex="0"><a href="#about" class="nav-link">About</a></li>
+      <li tabindex="0"><a href="#skills" class="nav-link">Skills</a></li>
+      <li tabindex="0"><a href="#projects" class="nav-link">Projects</a></li>
+      <li tabindex="0"><a href="#contact" class="nav-link">Contact</a></li>
       <div class="nav-social-icons">
         <ion-icon name="logo-github" class="social-icon"></ion-icon>
         <ion-icon name="logo-linkedin" class="social-icon"></ion-icon>
@@ -46,45 +46,51 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-container">
-      <img src="assets/images/TLPProfileUP.JPG" alt="trista-lanette-pollard" loading="lazy" class="hero-img" />
-      <article class="intro">
-        <div class="hero-header">
-          <p class="greeting">Hi! I'm</p>
-          <h1 class="intro-title"><span>Trista Lanette</span> Pollard</h1>
-          <p class="intro-text">A Creative <span>Front-End Web Developer</span> who loves to design beautiful and functional websites. </p>
-        </div>
-        
-        <div class="resume">
-          <a class="resume-link" href="" alt="Trista Lanette Pollard's resume" target="_blank" rel="noopener noreferrer">Resume</a>
-        </div>
-      </article>
+    <div class="wrapper">
+      <div class="hero-container">
+        <img src="assets/images/TLPProfileUP.JPG" alt="trista-lanette-pollard" loading="lazy" class="hero-img" />
+        <article class="intro">
+          <div class="hero-header">
+            <p class="greeting">Hi! I'm</p>
+            <h1 class="intro-title"><span>Trista Lanette Pollard</span> </h1>
+            <p class="intro-text">A Creative <span>Front-End Web Developer</span> who loves to design beautiful and functional websites. </p>
+          </div>
+          
+          <div class="resume">
+            <a class="resume-link" href="" alt="Trista Lanette Pollard's resume" target="_blank" rel="noopener noreferrer">Resume</a>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
   <!-- About Section -->
   <section class="more-about" id="about">
-    <div class="more-about-header">
-      <h2 class="more-about-title">More About Me</h2>
-    </div>
-    <div class="more-about-container">
-      <p class="more-about-text">My journey towards becoming a Front-End Web Developer started over 4 years ago. I became interested in computer coding after a parent approached me about sponsoring the "Hour of Code" with Code.org at our school. Once I attended a training session in New York City, I was hooked!</p>
-      <p class="more-about-text">I started working on tutorials at FreeCodeCamp in January 2017. I have earned three certificates from FreeCodeCamp. I earned my Front-End Web Developer Nanodegree from Udacity in 2019.</p>
+    <div class="wrapper">
+      <div class="more-about-header">
+        <h2 class="more-about-title">
+          <span>More About Me</span></h2>
+      </div>
+      <div class="more-about-container">
+        <p class="more-about-text">My journey towards becoming a Front-End Web Developer started over 4 years ago. I became interested in computer coding after a parent approached me about sponsoring the "Hour of Code" with Code.org at our school. Once I attended a training session in New York City, I was hooked!</p>
+        <p class="more-about-text">I started working on tutorials at FreeCodeCamp in January 2017. I have earned three certificates from FreeCodeCamp. I earned my Front-End Web Developer Nanodegree from Udacity in 2019.</p>
+      </div>
     </div>
   </section>
-
+  <div class="spacer"></div>
   <!-- Skills Section -->
   <section class="skills"  id="skills">
-    <div class="skills-header">
-        <h2 class="skills-title">My Credentials & Skills</h2>
-    </div>
-    <div class="skills-container">
-      <article class="skill-container">
-        <div class="credentials">
+    <div class="wrapper">
+      <div class="skills-header">
+          <h2 class="skills-title">
+            <span>My Credentials & Skills</span></h2>
+      </div>
+      <article class="credentials">
+        <div class="credentials-container">
           <div class="credentials-header">
-            <h3 class="credentials-title">Credentials</h3>
+            <h3 class="credentials-title"><span>Credentials</span></h3>
           </div>
-          <ul>
+          <ul class="skill-credential-container">
             <li class="credential-item">
               <img src="assets/icons/icons8-macbook-90.png" alt="" loading="lazy" class="credential-item-icon"/>
               <p class="credential-item-text">Front End Libraries, FreeCodeCamp, May 16, 2020</p>
@@ -102,214 +108,259 @@
               <img src="assets/icons/icons8-macbook-90.png" alt="" loading="lazy" class="credential-item-icon"/>
               <p class="credential-item-text">Responsive Web Design, FreeCodeCamp, November 15, 2018</p>
             </li>
+          </ul> 
+        </div>  
+      </article>
+      <article class="tech-skills">
+        <div class="tech-skills-container">
+          <div class="tech-skills-header">
+            <h3 class="skill-items-title">
+              <span>Skills</span></h3>
+          </div>
+          <ul class="skill-list-container">
+            <li class="skill-title">
+              <img src="assets/icons/icons8-html-5-96.png" alt="" loading="lazy" class="icon icon-card" />
+              <p>HTML5</p>
+            </li>
+            <li class="skill-title">
+              <img src="assets/icons/icons8-css3-96.png" alt="" loading="lazy" class="icon icon-card" />
+              <p>CSS3</p>
+            </li>
+            <li class="skill-title">
+              <img src="assets/icons/icons8-javascript-96.png" alt="" loading="lazy" class="icon icon-card" />
+              <p>JavaScript + ES6</p>
+            </li>
+            <li class="skill-title">
+              <img src="assets/icons/icons8-jquery-is-a-javascript-library-designed-to-simplify-html-96.png" alt="" loading="lazy" class="icon icon-card" />
+              <p>JQuery</p>
+            </li>
+            <li class="skill-title">
+              <img src="assets/icons/icons8-bootstrap-96.png" alt="" loading="lazy" class="icon icon-card" />
+              <p>Bootstrap</p>
+            </li>
+            <li class="skill-title">
+              <img src="assets/icons/icons8-react-native-96.png" alt="" loading="lazy" class="icon icon-card" />
+              <p>React</p>
+            </li>
+            <li class="skill-title">
+              <img src="assets/icons/icons8-sass-96.png" alt="" loading="lazy" class="icon icon-card" />
+              <p>Sass</p>
+            </li>
+            <li class="skill-title">
+              <img src="assets/icons/icons8-git-96.png" alt="" loading="lazy" class="icon icon-card" />
+              <p>Git</p>
+            </li>
+            <li class="skill-title">
+              <img src="assets/icons/icons8-responsive-96 (5).png" alt="" loading="lazy" class="icon icon-card" />
+              <p>Responsive Design</p>
+            </li>
           </ul>
         </div>
-
-        <div class="skill-items">
-          <div class="skill-items-header">
-            <h3 class="skill-items-title">Skills</h3>
-          </div>
-          <div class="skill-row-container">
-            <div class="skill-row">
-              <img src="assets/icons/icons8-html-5-96.png" alt="" loading="lazy" class="icon icon-card" />
-              <img src="assets/icons/icons8-css3-96.png" alt="" loading="lazy" class="icon icon-card" />
-              <img src="assets/icons/icons8-javascript-96.png" alt="" loading="lazy" class="icon icon-card" />
-            </div>
-            <div class="skill-row">
-              <img src="assets/icons/icons8-bootstrap-96.png" alt="" loading="lazy" class="icon icon-card" />
-              <img src="assets/icons/icons8-react-native-96.png" alt="" loading="lazy" class="icon icon-card" />
-              <img src="assets/icons/icons8-git-96.png" alt="" loading="lazy" class="icon icon-card" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
+      </article>
+    </div>
   </section>
+  <div class="spacer"></div>
   <!-- Projects Section -->
 
   <section class="projects" id="projects">
-    <div class="projects-header">
-      <h2 class="projects-title">Some of my Recent Projects</h2>
-    </div>
-    <div class="projects-container">
-        <article class="project-card">
-          <div class="project-image-container">
-            <img src="assets/images/CascadeCafeTLPChallenge.png" alt="coffee cafe landing page" loading="lazy" class="project-pic" />
-          </div>
-          <div class="project-work-container">
-            <h3 class="project-title">Cascade Cafe Landing Page</h3>
-            <h4 class="project-subtitle">Technologies Used: 
-              <span class="project-info">HTML</span>
-              <span class="project-info">Sass</span>
-              <span class="project-info">JavaScript</span>
-            </h4>
-            <ul>
-              <li class="project-items">Landing page for coffee house restaurant with drink and bakery menu;</li>
-              <li class="project-items">Designed using Sketch design software based on challenge guidelines;</li>
-              <li class="project-items">Color choices based on colors from main image.</li>
-            </ul>
-          
-            <div class="project-links">
-              <a href="https://codepen.io/TLanette/live/JjNjzzW" target="_blank" class="live-link" rel="noopener noreferrer">Live</a>
-              <a href="https://codepen.io/TLanette/details/JjNjzzW" target="_blank" class="repo-link" rel="noopener noreferrer">Repo</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-image-container">
-            <img src="assets/images/InsureWebsiteFrontendMentor.png" alt="landing page" loading="lazy" class="project-pic" />
-          </div>
-          <div class="project-work-container">
-            <h3 class="project-title">Insure Landing Page</h3>
-            <h4 class="project-subtitle">Technologies Used: 
-              <span class="project-info">HTML</span>
-              <span class="project-info">Sass</span>
-              <span class="project-info">Bootstrap</span>
-            </h4>
-            <ul>
-              <li class="project-items">Landing page for insurance company;</li>
-              <li class="project-items">Includes optimal layout based on device screen size;</li>
-              <li class="project-items">Includes hover states for all interactive elements on the page</li>
-            </ul>
-          
-            <div class="project-links">
-              <a href="https://insure-landing-page-tlp.vercel.app/" target="_blank" class="live-link" rel="noopener noreferrer">Live</a>
-              <a href="https://github.com/TLanetteRose/Insure-Landing-Page-TLP" target="_blank" class="repo-link" rel="noopener noreferrer">Repo</a>
-            </div>
-          </div>
-        </article><!-- project-card -->
-
-        <article class="project-card">
-          <div class="project-image-container">
-            <img src="assets/images/JobListingsPageJS.png" alt="job listing page" loading="lazy" class="project-pic" />
-          </div>
-          <div class="project-work-container">
-            <h3 class="project-title">Job Listings Page</h3>
-            <h4 class="project-subtitle">Technologies Used: 
-              <span class="project-info">HTML</span>
-              <span class="project-info">Sass</span>
-              <span class="project-info">JavaScript</span>
-            </h4>
-            <ul>
-              <li class="project-items">Job listing page where user can filter jobs based on categories; </li>
-              <li class="project-items">Includes hover states for all interactive elements on the page;</li>
-              <li class="project-items">Filters job listings using data from JSON file.</li>
-            </ul>
-          
-            <div class="project-links">
-              <a href="https://tlanetterose.github.io/Job-Listings-Page-Using-VanillaJS-TLP/" target="_blank" class="live-link" rel="noopener noreferrer">Live</a>
-              <a href="https://github.com/TLanetteRose/Job-Listings-Page-Using-VanillaJS-TLP" target="_blank" class="repo-link" rel="noopener noreferrer">Repo</a>
-            </div>
-          </div>
-        </article><!-- project-card -->
+    <div class="wrapper">
+      <div class="projects-header">
+        <h2 class="projects-title">
+          <span>Some of my Recent Projects</span></h2>
       </div>
-
       <div class="projects-container">
-
-        <article class="project-card">
-          <div class="project-image-container">
-            <img src="assets/images/ClockApp.jpg" alt="pomodoro clock" loading="lazy" class="project-pic" />
-          </div>
-          <div class="project-work-container">
-            <h3 class="project-title">Clock App</h3>
-            <h4 class="project-subtitle">Technologies Used: 
-              <span class="project-info">HTML5</span>
-              <span class="project-info">Sass</span>
-              <span class="project-info">JavaScript</span>
-            </h4>
-            <ul>
-              <li class="project-items">Users can view the optimal layout for the site based on device screen size;</li>
-              <li class="project-items">View current time and location based on IP address;</li>
-              <li class="project-items">Generates random quotes by clicking a refresh icon near quote.</li>
-            </ul>
-          
-            <div class="project-links">
-              <a href="clock-app-tlp.vercel.app" target="_blank" class="live-link" rel="noopener noreferrer">Live</a>
-              <a href="https://github.com/TLanetteRose/Clock-App-TLP" target="_blank" class="repo-link" rel="noopener noreferrer">Repo</a>
+          <article class="project-card">
+            <div class="project-image-container">
+              <!--<div class="img project-pic image1"></div>-->
+              <img src="assets/images/CascadeCafeTLPChallenge.png" alt="coffee cafe landing page" loading="lazy" class="project-pic img-fluid" />
             </div>
-          </div>
-        </article><!-- project-card -->
-
-        <article class="project-card">
-          <div class="project-image-container">
-            <img src="assets/images/PricingComponentFrontendMentor.png" alt="pricing component page" loading="lazy" class="project-pic" />
-          </div>
-          <div class="project-work-container">
-            <h3 class="project-title">Pricing Component</h3>
-            <h4 class="project-subtitle">Technologies Used: 
-              <span class="project-info">HTML5</span>
-              <span class="project-info">Sass</span>
-              <span class="project-info">JavaScript</span>
-            </h4>
-            <ul>
-              <li class="project-items">Pricing Component page that has toggle between monthly and annual pricing; </li>
-              <li class="project-items">Toggle can be controlled with both mouse/trackpad and keyboard;</li>
-              <li class="project-items">Can be viewed in optimal layout based on device screen size.</li>
-            </ul>
-          
-            <div class="project-links">
-              <a href="https://tlanetterose.github.io/Pricing-Component-w-Toggle-TLP/" target="_blank" class="live-link" rel="noopener noreferrer">Live</a>
-              <a href="https://github.com/TLanetteRose/Pricing-Component-w-Toggle-TLP" target="_blank" class="repo-link" rel="noopener noreferrer">Repo</a>
+            <div class="project-work-container">
+              <h3 class="project-title">Cascade Cafe Landing Page</h3>
+              <h4 class="project-subtitle">Technologies Used: 
+                <span class="project-info">HTML</span>
+                <span class="project-info">Sass</span>
+                <span class="project-info">JavaScript</span>
+              </h4>
+              <ul>
+                <li class="project-items">Landing page for coffee house restaurant with drink and bakery menu;</li>
+                <li class="project-items">Designed using Sketch design software based on challenge guidelines;</li>
+                <li class="project-items">Color choices based on colors from main image.</li>
+              </ul>
+            
+              <div class="project-links">
+                <a href="https://codepen.io/TLanette/live/JjNjzzW" target="_blank" class="live-link" rel="noopener noreferrer">Live</a>
+                <a href="https://codepen.io/TLanette/details/JjNjzzW" target="_blank" class="repo-link" rel="noopener noreferrer">Repo</a>
+              </div>
             </div>
-          </div>
-        </article><!-- project-card -->
+          </article>
 
-        <article class="project-card">
-          <div class="project-image-container">
-            <img src="assets/images/CalculatorApp.png" alt="travel landing page" loading="lazy" class="project-pic" />
-          </div>
-          <div class="project-work-container">
-            <h3 class="project-title">Calculator App</h3>
-            <h4 class="project-subtitle">Technologies Used: 
-              <span class="project-info">HTML</span>
-              <span class="project-info">Sass</span>
-              <span class="project-info">JavaScript</span>
-            </h4>
-            <ul>
-              <li class="project-items">Calculator App with a toggle between three themes;</li>
-              <li class="project-items">Performs mathematical operations: addition, subtraction, multiplication, and division;</li>
-              <li class="project-items">Size of the elements adjust based on device's screen size.</li>
-            </ul>
-          
-            <div class="project-links">
-              <a href="https://calculator-app-with-vanilla-js.vercel.app/" target="_blank" class="live-link" rel="noopener noreferrer">Live</a>
-              <a href="https://github.com/TLanetteRose/Calculator-App-with-Vanilla-JS" target="_blank" class="repo-link" rel="noopener noreferrer">Repo</a>
+          <article class="project-card">
+            <div class="project-image-container">
+              <img src="assets/images/InsureWebsiteFrontendMentor.png" alt="landing page" loading="lazy" class="project-pic" />
             </div>
-          </div>
-        </article><!-- project-card -->
-    </div><!-- projects-container -->
+            <div class="project-work-container">
+              <h3 class="project-title">Insure Landing Page</h3>
+              <h4 class="project-subtitle">Technologies Used: 
+                <span class="project-info">HTML</span>
+                <span class="project-info">Sass</span>
+                <span class="project-info">Bootstrap</span>
+              </h4>
+              <ul>
+                <li class="project-items">Landing page for insurance company;</li>
+                <li class="project-items">Includes optimal layout based on device screen size;</li>
+                <li class="project-items">Includes hover states for all interactive elements on the page</li>
+              </ul>
+            
+              <div class="project-links">
+                <a href="https://insure-landing-page-tlp.vercel.app/" target="_blank" class="live-link" rel="noopener noreferrer">Live</a>
+                <a href="https://github.com/TLanetteRose/Insure-Landing-Page-TLP" target="_blank" class="repo-link" rel="noopener noreferrer">Repo</a>
+              </div>
+            </div>
+          </article><!-- project-card -->
+
+          <article class="project-card">
+            <div class="project-image-container">
+              <img src="assets/images/JobListingsPageJS.png" alt="job listing page" loading="lazy" class="project-pic" />
+            </div>
+            <div class="project-work-container">
+              <h3 class="project-title">Job Listings Page</h3>
+              <h4 class="project-subtitle">Technologies Used: 
+                <span class="project-info">HTML</span>
+                <span class="project-info">Sass</span>
+                <span class="project-info">JavaScript</span>
+              </h4>
+              <ul>
+                <li class="project-items">Job listing page where user can filter jobs based on categories; </li>
+                <li class="project-items">Includes hover states for all interactive elements on the page;</li>
+                <li class="project-items">Filters job listings using data from JSON file.</li>
+              </ul>
+            
+              <div class="project-links">
+                <a href="https://tlanetterose.github.io/Job-Listings-Page-Using-VanillaJS-TLP/" target="_blank" class="live-link" rel="noopener noreferrer">Live</a>
+                <a href="https://github.com/TLanetteRose/Job-Listings-Page-Using-VanillaJS-TLP" target="_blank" class="repo-link" rel="noopener noreferrer">Repo</a>
+              </div>
+            </div>
+          </article><!-- project-card -->
+        </div>
+
+        <div class="projects-container">
+
+          <article class="project-card">
+            <div class="project-image-container">
+              <img src="assets/images/ClockApp.png" alt="clock" loading="lazy" class="project-pic" />
+            </div>
+            <div class="project-work-container">
+              <h3 class="project-title">Clock App</h3>
+              <h4 class="project-subtitle">Technologies Used: 
+                <span class="project-info">HTML5</span>
+                <span class="project-info">Sass</span>
+                <span class="project-info">JavaScript</span>
+              </h4>
+              <ul>
+                <li class="project-items">Users can view the optimal layout for the site based on device screen size;</li>
+                <li class="project-items">View current time and location based on IP address;</li>
+                <li class="project-items">Generates random quotes by clicking a refresh icon near quote.</li>
+              </ul>
+            
+              <div class="project-links">
+                <a href="clock-app-tlp.vercel.app" target="_blank" class="live-link" rel="noopener noreferrer">Live</a>
+                <a href="https://github.com/TLanetteRose/Clock-App-TLP" target="_blank" class="repo-link" rel="noopener noreferrer">Repo</a>
+              </div>
+            </div>
+          </article><!-- project-card -->
+
+          <article class="project-card">
+            <div class="project-image-container">
+              <img src="assets/images/PricingComponentFrontendMentor.png" alt="pricing component page" loading="lazy" class="project-pic" />
+            </div>
+            <div class="project-work-container">
+              <h3 class="project-title">Pricing Component</h3>
+              <h4 class="project-subtitle">Technologies Used: 
+                <span class="project-info">HTML5</span>
+                <span class="project-info">Sass</span>
+                <span class="project-info">JavaScript</span>
+              </h4>
+              <ul>
+                <li class="project-items">Pricing Component page that has toggle between monthly and annual pricing; </li>
+                <li class="project-items">Toggle can be controlled with both mouse/trackpad and keyboard;</li>
+                <li class="project-items">Can be viewed in optimal layout based on device screen size.</li>
+              </ul>
+            
+              <div class="project-links">
+                <a href="https://tlanetterose.github.io/Pricing-Component-w-Toggle-TLP/" target="_blank" class="live-link" rel="noopener noreferrer">Live</a>
+                <a href="https://github.com/TLanetteRose/Pricing-Component-w-Toggle-TLP" target="_blank" class="repo-link" rel="noopener noreferrer">Repo</a>
+              </div>
+            </div>
+          </article><!-- project-card -->
+
+          <article class="project-card">
+            <div class="project-image-container">
+              <img src="assets/images/CalculatorApp.png" alt="travel landing page" loading="lazy" class="project-pic" />
+            </div>
+            <div class="project-work-container">
+              <h3 class="project-title">Calculator App</h3>
+              <h4 class="project-subtitle">Technologies Used: 
+                <span class="project-info">HTML</span>
+                <span class="project-info">Sass</span>
+                <span class="project-info">JavaScript</span>
+              </h4>
+              <ul>
+                <li class="project-items">Calculator App with a toggle between three themes;</li>
+                <li class="project-items">Performs mathematical operations: addition, subtraction, multiplication, and division;</li>
+                <li class="project-items">Size of the elements adjust based on device's screen size.</li>
+              </ul>
+            
+              <div class="project-links">
+                <a href="https://calculator-app-with-vanilla-js.vercel.app/" target="_blank" class="live-link" rel="noopener noreferrer">Live</a>
+                <a href="https://github.com/TLanetteRose/Calculator-App-with-Vanilla-JS" target="_blank" class="repo-link" rel="noopener noreferrer">Repo</a>
+              </div>
+            </div>
+          </article><!-- project-card -->
+      </div><!-- projects-container -->
+    </div>
   </section>
+  <div class="spacer"></div>
 
   <!-- Contact Section -->
   <section class="contact" id="contact">
-    <div class="contact-header">
-      <h2 class="contact-title">Get In Touch With Me </h2>
-      <p class="contact-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupida non proident, sunt in culpa qui officia</p>
-    </div>
-    <div class="contact-container">
-      <div class="contact-form-container">
-        <div class="contact-form">
-          <form action="" method="POST">
-            <div class="form-control">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field" required />
-            </div>
-            <div class="form-control">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field" required />
-            </div>
-            <div class="form-control">
-              <label for="message">Message</label>
-              <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message" class="input-field" required ></textarea>
-            </div>
-            <input type="submit" value="submit" id="submit-btn" class="submit-btn" />
-          </form>
+    <div class="wrapper">
+      <div class="contact-header">
+        <h2 class="contact-title">
+          <span>Get In Touch With Me</span></h2>
+        <p class="contact-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupida non proident, sunt in culpa qui officia</p>
+      </div>
+      <div class="nav-social-icons">
+          <span><ion-icon name="logo-github" class="social-icon"></ion-icon></span>
+          <span><ion-icon name="logo-linkedin" class="social-icon"></ion-icon></span>
+          <span><ion-icon name="logo-twitter" class="social-icon"></ion-icon></span>     
+      </div>
+
+      <div class="spacer"></div>
+
+      <div class="contact-container">
+        <div class="contact-form-container">
+          <div class="contact-form">
+            <form action="" method="POST">
+              <div class="form-control">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field" required />
+              </div>
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field" required />
+              </div>
+              <div class="form-control">
+                <label for="message">Message</label>
+                <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message" class="input-field" required ></textarea>
+              </div>
+              <input type="submit" value="submit" id="submit-btn" class="submit-btn" />
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
+  <div class="spacer"></div>
   <!-- Scroll to Top  -->
   <i class="scroll-up" id="scroll-up">
     <img src="assets/icons/icons8-up-2-90.png" class="up-arrow" alt="scroll-up" />

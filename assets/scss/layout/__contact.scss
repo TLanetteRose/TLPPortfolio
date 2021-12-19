@@ -1,13 +1,13 @@
 .contact {
     max-width: 90%;
-    padding: 3rem;
+    padding: 2rem;
     margin: 3rem auto;
     background-color: $secondary-bg-color-2;
 
     .contact-header {
         //@include flex (column, center, center);
         max-width: 90%;
-        padding: 2rem 0;
+        padding: 1.25rem;
         margin: 2rem auto;
         margin-bottom: 1rem;
 
@@ -16,20 +16,22 @@
         }
         
         .contact-title {
-            margin-bottom: $bottom-margin;
-            text-align: left;
-            font-size: 2em;
-            @include xs-mobile-breakpoint {
-                max-width: 100%;
+            padding: 1.25rem;
+            span {
+                margin-bottom: $bottom-margin;
+                text-align: left;
+                font-size: 2em;
+                @include xs-mobile-breakpoint {
+                    max-width: 100%;
+                }
             }
-            
         }
 
         .contact-text {
             max-width: 80%;
             text-align: left;
+            margin: 1rem;
             padding: 1rem;
-            margin: auto;
             font-size: 1.5em;
             line-height: 26px;
         }

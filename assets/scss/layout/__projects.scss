@@ -1,143 +1,90 @@
 .projects {
-    padding: 3rem;
-    margin: 3rem auto;
-
-
+    height: 100%;
+    padding: 1.25rem;
+       
     &-header {
-        margin-bottom: 1rem;
-        padding: 2rem 0;
+        padding: 1.25rem;
 
-        .projects-title {
-            font-size: 2em;
-            margin-bottom: $bottom-margin;
-            text-align: left;
+        .projects-title { 
+            padding: 1.25rem;
+            span{
+                margin: 5% auto;
+                font-size: 2em;
+            }
+            
         }
     }
-
-    .projects-container {
-        @include flex (column, space-between, center);
-        margin: auto;
-        max-width: 90%;
-        @include xs-mobile-breakpoint {
-            padding: 0;
-        }
-
-        @include mobile-breakpoint {
-            padding: 0;
-        }
+    
+    &-container {
 
         .project-card {
-            max-width: 90%;
-            @include flex (row, center, center);
-            margin: 2rem;
-            padding: 3rem;
-            border-radius: 1rem;
-            border: 1px solid $primary-font-color;
-            box-shadow: 0 .3rem 1rem $secondary-shadow;
+            @include flex (column, center, center);
+            padding: 1rem;
+            margin: 2rem 0;
 
-            @include xs-mobile-breakpoint {
-                display: block;
-                padding: 0;
+            @media screen and (min-width: $bp-tablet-start) {
+                flex-direction: row;
             }
-
-            @include mobile-breakpoint {
-                display: block;
-                padding: 0;
-            }
-
-            @include tablet-breakpoint {
-                display: block;
-                padding: 0;
-            }
-
             .project-image-container {
-                flex: 0 0 350px;
-                height: auto;
-
-
-                .project-pic {
-                    display: block;
-                    max-width: 90%;
-                    margin: auto;
-                    border-radius: 10px;
-                    vertical-align: middle;
-                    padding: 1rem;
-
+                @include flex (column, center, center);
+                width: calc(50% - 50px);
+                
+                @media screen and (min-width: 320px) and (max-width: $bp-lg-mobile) {
+                    width: 100%;
                 }
                 
+                
+                .project-pic {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                    padding: 2rem;
+                }
             }
 
             .project-work-container {
-                flex: 0 1  calc(100% - 350px);
-                margin-left: 2.5rem;
+                @include flex (column, center, flex-start);
+                width: calc(50% - 50px);
+                margin: .5rem auto; 
 
-                @include xs-mobile-breakpoint {
-                    margin-left: 0;
-                    padding: 1rem;
+                @media screen and (min-width: 320px) and (max-width: $bp-lg-mobile) {
+                    width: 100%;
                 }
 
-                @include mobile-breakpoint {
-                    margin-left: 0;
-                    padding: 1rem;
+                h3,
+                h4 {
+                    margin: .625rem 0;
+                    padding: .25rem;
                 }
 
-                @include tablet-breakpoint {
-                    margin-left: 0;
-                    padding: 1rem;
+                .project-info {
+                    padding: 0 .5rem;
                 }
 
-                .project-title {
-                    display: block;
-                    font-family: $body-font-family;
-                    font-weight: $weight-bold;
-                    margin-block-start: 1em;
-                    margin-block-end: 1em;
-                    margin-inline-start: 0px;
-                    margin-inline-end: 0px;
-                }
+                ul {
+                    margin: 1.25rem 0;
 
-                .project-subtitle {
-                    font-weight: $weight-normal;
-                    display: block;
-                    margin-block-start: 1.33em;
-                    margin-block-end: 1.33em;
-                    margin-inline-start: 0px;
-                    margin-inline-end: 0px;
-
-                    .project-info {
-                        font-family: $body-font-family;
-                        display: inline-block;
-                        padding: 0 .5rem;
+                    .project-items {
+                        list-style-type: disc;
+                        margin-left: 1.5rem;
+                        padding: .5rem;
+                        font-size: 1em;
                     }
                 }
-                .project-items {
-                    list-style-type: disc;
-                    margin-left: 1.5rem;
-                    padding: 1rem 0;
-                    font-size: 1.25em;
 
-                    @include xs-mobile-breakpoint {
-                        font-size: .9em;
-                    }
-                }
                 .project-links {
                     padding: 1rem;
-                    margin-top: 1rem;
                 }
-                .project-links a {
-                    color: $primary-font-color;
-                    padding: 0.5rem;
-                    cursor: pointer;
 
-                    @include xs-mobile-breakpoint {
-                        padding: .125rem;
-                        font-size: .875rem;
-                    }
+                .project-links a {
+                    color: $secondary-font-color;
+                    font-weight: $weight-bold;
+                    padding: .5rem;
                 }
             }
-        }
-
         
+        }
     }
     
 }
+   

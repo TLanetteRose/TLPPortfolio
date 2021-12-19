@@ -39,6 +39,15 @@ li {
     text-decoration: none;
 }
 
+.wrapper {
+    max-width: 75rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.spacer {
+    height: 10vh;
+}
 /* Scroll Up */
 .scroll-up {
     position: fixed;

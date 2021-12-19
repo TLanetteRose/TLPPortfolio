@@ -27,20 +27,27 @@ I'm back. It's been tough to code after a full day of school. The kids are excit
 
 ### 12/12/2021
 
-Had to fix my hamburger menu. I keep having a problem with 'forEach'. From what I read, this happens when I use forEach with an object and not an array. It keeps saying that 'forEach is not a function'. I used another reference code instead.
+Had to fix my hamburger menu. I keep having a problem with 'forEach'. From what I read, this happens when I use forEach with an object and not an array. It keeps saying that 'forEach is not a function'. I used another reference code instead. Note for next time-- I want the images to be the same size. I may use background image for each one.
 
 Resources:
 
 - [Easy Hamburger Menu with JS](https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0)
 
+* [Simple CSS Solutions: How to fit images with different dimensions in set containers](https://medium.com/@kimcodeashian/simple-css-solutions-how-to-resize-images-with-different-dimensions-without-cropping-eb744e93246d)
+
+### 12/14/2021
+
+Decided to take a personal day to work on my portfolio. I'm going to try adding my images as background images. Changing my skill set to a ul list.
+
+### 12/16/2021
+
+I'm home on quarrantine, so I back working on my portfolio.
+
+### 12/18/2021
+
+Hi. Still home. This time I have to isolate due to a positive Covid19 test. No symptoms so far. It feels like a waiting game. So, now I will have more time to code for the next few weeks. Today I am adjusting the sizing in my projects section. Next I will adjust my skills section.
+
 ---
-
-
-
-
-
-
-
 
 My name is Trista Lanette Pollard. My journey towards becoming a Front-End Web Developer started over 4 years ago. I became interested in computer coding after a parent approached me about sponsoring the "Hour of Code" with Code.org at our school. Once I attended a training session in New York City, I was hooked!
 

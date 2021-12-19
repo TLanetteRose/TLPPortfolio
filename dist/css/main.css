@@ -380,6 +380,16 @@ li {
   text-decoration: none;
 }
 
+.wrapper {
+  max-width: 75rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.spacer {
+  height: 10vh;
+}
+
 /* Scroll Up */
 .scroll-up {
   position: fixed;
@@ -439,12 +449,15 @@ h5 {
   }
 }
 .more-about .more-about-header {
-  padding: 2rem 0;
+  padding: 1.25rem;
   margin: auto;
   margin-bottom: 1rem;
   max-width: 90%;
 }
 .more-about .more-about-header .more-about-title {
+  padding: 1.25rem;
+}
+.more-about .more-about-header .more-about-title span {
   margin-bottom: 0.5rem;
   text-align: left;
   font-size: 2em;
@@ -461,13 +474,13 @@ h5 {
 
 .contact {
   max-width: 90%;
-  padding: 3rem;
+  padding: 2rem;
   margin: 3rem auto;
   background-color: #1c1b1d;
 }
 .contact .contact-header {
   max-width: 90%;
-  padding: 2rem 0;
+  padding: 1.25rem;
   margin: 2rem auto;
   margin-bottom: 1rem;
 }
@@ -477,20 +490,23 @@ h5 {
   }
 }
 .contact .contact-header .contact-title {
+  padding: 1.25rem;
+}
+.contact .contact-header .contact-title span {
   margin-bottom: 0.5rem;
   text-align: left;
   font-size: 2em;
 }
 @media screen and (max-width: 374px) {
-  .contact .contact-header .contact-title {
+  .contact .contact-header .contact-title span {
     max-width: 100%;
   }
 }
 .contact .contact-header .contact-text {
   max-width: 80%;
   text-align: left;
+  margin: 1rem;
   padding: 1rem;
-  margin: auto;
   font-size: 1.5em;
   line-height: 26px;
 }
@@ -590,7 +606,6 @@ footer p a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  max-width: 80%;
 }
 @media screen and (max-width: 374px) {
   .hero-container {
@@ -614,19 +629,27 @@ footer p a {
   padding: 1rem;
   border-radius: 0.6rem;
 }
-.hero-container .intro .hero-header .intro-title {
-  font-size: 2.5em;
+.hero-container .intro .hero-header {
+  padding: 1.25rem;
+}
+.hero-container .intro .hero-header .intro-title span {
+  font-size: 1.75em;
   line-height: 3rem;
-  padding: 1rem 0;
+  padding: 1.25rem;
 }
 @media screen and (max-width: 374px) {
-  .hero-container .intro .hero-header .intro-title {
-    font-size: 1.75rem;
+  .hero-container .intro .hero-header .intro-title span {
+    font-size: 0.55em;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 767px) {
-  .hero-container .intro .hero-header .intro-title {
-    font-size: 2em;
+  .hero-container .intro .hero-header .intro-title span {
+    font-size: 0.75em;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-container .intro .hero-header .intro-title span {
+    font-size: 0.8em;
   }
 }
 .hero-container .intro .hero-header .greeting,
@@ -768,231 +791,175 @@ footer p a {
 }
 
 .projects {
-  padding: 3rem;
-  margin: 3rem auto;
+  height: 100%;
+  padding: 1.25rem;
 }
 .projects-header {
-  margin-bottom: 1rem;
-  padding: 2rem 0;
+  padding: 1.25rem;
 }
 .projects-header .projects-title {
-  font-size: 2em;
-  margin-bottom: 0.5rem;
-  text-align: left;
+  padding: 1.25rem;
 }
-.projects .projects-container {
+.projects-header .projects-title span {
+  margin: 5% auto;
+  font-size: 2em;
+}
+.projects-container .project-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-  max-width: 90%;
-}
-@media screen and (max-width: 374px) {
-  .projects .projects-container {
-    padding: 0;
-  }
-}
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  .projects .projects-container {
-    padding: 0;
-  }
-}
-.projects .projects-container .project-card {
-  max-width: 90%;
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 2rem;
-  padding: 3rem;
-  border-radius: 1rem;
-  border: 1px solid #FFE4E1;
-  box-shadow: 0 0.3rem 1rem #E7C2BB;
-}
-@media screen and (max-width: 374px) {
-  .projects .projects-container .project-card {
-    display: block;
-    padding: 0;
-  }
-}
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  .projects .projects-container .project-card {
-    display: block;
-    padding: 0;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .projects .projects-container .project-card {
-    display: block;
-    padding: 0;
-  }
-}
-.projects .projects-container .project-card .project-image-container {
-  flex: 0 0 350px;
-  height: auto;
-}
-.projects .projects-container .project-card .project-image-container .project-pic {
-  display: block;
-  max-width: 90%;
-  margin: auto;
-  border-radius: 10px;
-  vertical-align: middle;
   padding: 1rem;
+  margin: 2rem 0;
 }
-.projects .projects-container .project-card .project-work-container {
-  flex: 0 1 calc(100% - 350px);
-  margin-left: 2.5rem;
-}
-@media screen and (max-width: 374px) {
-  .projects .projects-container .project-card .project-work-container {
-    margin-left: 0;
-    padding: 1rem;
+@media screen and (min-width: 768px) {
+  .projects-container .project-card {
+    flex-direction: row;
   }
 }
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  .projects .projects-container .project-card .project-work-container {
-    margin-left: 0;
-    padding: 1rem;
+.projects-container .project-card .project-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(50% - 50px);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .projects-container .project-card .project-image-container {
+    width: 100%;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .projects .projects-container .project-card .project-work-container {
-    margin-left: 0;
-    padding: 1rem;
-  }
-}
-.projects .projects-container .project-card .project-work-container .project-title {
+.projects-container .project-card .project-image-container .project-pic {
+  width: 100%;
+  height: auto;
   display: block;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  -webkit-margin-before: 1em;
-          margin-block-start: 1em;
-  -webkit-margin-after: 1em;
-          margin-block-end: 1em;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
+  padding: 2rem;
 }
-.projects .projects-container .project-card .project-work-container .project-subtitle {
-  font-weight: 400;
-  display: block;
-  -webkit-margin-before: 1.33em;
-          margin-block-start: 1.33em;
-  -webkit-margin-after: 1.33em;
-          margin-block-end: 1.33em;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
+.projects-container .project-card .project-work-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: calc(50% - 50px);
+  margin: 0.5rem auto;
 }
-.projects .projects-container .project-card .project-work-container .project-subtitle .project-info {
-  font-family: "Open Sans", sans-serif;
-  display: inline-block;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .projects-container .project-card .project-work-container {
+    width: 100%;
+  }
+}
+.projects-container .project-card .project-work-container h3,
+.projects-container .project-card .project-work-container h4 {
+  margin: 0.625rem 0;
+  padding: 0.25rem;
+}
+.projects-container .project-card .project-work-container .project-info {
   padding: 0 0.5rem;
 }
-.projects .projects-container .project-card .project-work-container .project-items {
+.projects-container .project-card .project-work-container ul {
+  margin: 1.25rem 0;
+}
+.projects-container .project-card .project-work-container ul .project-items {
   list-style-type: disc;
   margin-left: 1.5rem;
-  padding: 1rem 0;
-  font-size: 1.25em;
-}
-@media screen and (max-width: 374px) {
-  .projects .projects-container .project-card .project-work-container .project-items {
-    font-size: 0.9em;
-  }
-}
-.projects .projects-container .project-card .project-work-container .project-links {
-  padding: 1rem;
-  margin-top: 1rem;
-}
-.projects .projects-container .project-card .project-work-container .project-links a {
-  color: #FFE4E1;
   padding: 0.5rem;
-  cursor: pointer;
+  font-size: 1em;
 }
-@media screen and (max-width: 374px) {
-  .projects .projects-container .project-card .project-work-container .project-links a {
-    padding: 0.125rem;
-    font-size: 0.875rem;
-  }
+.projects-container .project-card .project-work-container .project-links {
+  padding: 1rem;
+}
+.projects-container .project-card .project-work-container .project-links a {
+  color: #F5F5F5;
+  font-weight: 700;
+  padding: 0.5rem;
 }
 
 .skills {
   padding: 2rem;
+  height: 100%;
 }
 .skills-header {
-  padding: 1.25rem 0;
-  margin: auto;
-  margin-bottom: 1rem;
-  max-width: 90%;
+  padding: 1.25rem;
 }
 .skills-header .skills-title {
-  margin-bottom: 0.5rem;
+  padding: 1.25rem;
+}
+.skills-header .skills-title span {
+  margin: 5% auto;
+  font-size: 2em;
+}
+@media screen and (max-width: 374px) {
+  .skills-header .skills-title span {
+    font-size: 1.5em;
+  }
+}
+.skills .credentials-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+.skills .credentials-container .credentials-header {
+  width: 100%;
+  padding: 1.25rem;
+}
+.skills .credentials-container .credentials-header .credentials-title span {
+  margin-top: 2rem;
   text-align: left;
   font-size: 2em;
 }
-.skills-container {
-  max-width: 90%;
-  margin: 1.25rem auto;
+.skills .credentials-container .skill-credential-container {
+  margin: 2rem 0;
+  padding: 2rem;
 }
-.skills-container .skill-container .credentials {
-  margin: 1.25rem 0;
-}
-.skills-container .skill-container .credentials .credentials-header {
-  padding: 1rem;
-}
-.skills-container .skill-container .credentials .credentials-header .credentials-title {
-  font-size: 1.75em;
-}
-.skills-container .skill-container .credential-item {
+.skills .credentials-container .skill-credential-container .credential-item {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 1rem;
+  justify-content: flex-start;
+  align-items: center;
 }
-.skills-container .skill-container .credential-item-icon {
-  width: 10%;
+.skills .credentials-container .skill-credential-container .credential-item-icon {
+  padding: 0.5rem;
 }
-.skills-container .skill-container .credential-item-text {
-  width: 80%;
+.skills .tech-skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
 }
-.skills-container .skill-container .skill-items {
-  padding: 1rem;
-  margin: 1.25rem 0;
+.skills .tech-skills-container .tech-skills-header {
+  width: 100%;
+  padding: 1.25rem;
 }
-.skills-container .skill-container .skill-items-header {
-  padding: 1rem;
+.skills .tech-skills-container .tech-skills-header .skill-items-title span {
+  margin-top: 2rem;
+  text-align: left;
+  font-size: 2em;
 }
-.skills-container .skill-container .skill-items-header .skill-items-title {
-  font-size: 1.75em;
-}
-.skills-container .skill-container .skill-items .skill-row-container .skill-row {
+.skills .tech-skills-container .skill-list-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 90%;
-  margin: 1rem auto;
+  flex-wrap: wrap;
+  margin: 6% auto;
 }
-.skills-container .skill-container .skill-items .skill-row-container .skill-row .icon-card {
-  background-color: #4a484b;
-  border-radius: 0.6875rem;
-  box-shadow: 0 0.1875rem 0.625rem #E7C2BB;
+.skills .tech-skills-container .skill-list-container .skill-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 23%;
   margin: 0.625rem;
-  padding: 0.25rem;
+  padding: 0.625rem;
 }
-@media screen and (max-width: 374px) {
-  .skills-container .skill-container .skill-items .skill-row-container .skill-row .icon {
-    width: 3rem;
-    margin: 0.5rem;
-  }
+.skills .tech-skills-container .skill-list-container .icon {
+  font-size: 5.5rem;
+  vertical-align: middle;
 }
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  .skills-container .skill-container .skill-items .skill-row-container .skill-row .icon {
-    width: 3rem;
-    margin: 1rem;
-  }
+.skills .tech-skills-container .skill-list-container p {
+  text-align: center;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=main.css.map */
