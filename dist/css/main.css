@@ -809,6 +809,8 @@ footer p a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
+  margin: 2rem 0;
 }
 @media screen and (min-width: 768px) {
   .projects-container .project-card {
@@ -839,12 +841,37 @@ footer p a {
   justify-content: center;
   align-items: flex-start;
   width: calc(50% - 50px);
-  margin: 0 auto;
+  margin: 0.5rem auto;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .projects-container .project-card .project-work-container {
     width: 100%;
   }
+}
+.projects-container .project-card .project-work-container h3,
+.projects-container .project-card .project-work-container h4 {
+  margin: 0.625rem 0;
+  padding: 0.25rem;
+}
+.projects-container .project-card .project-work-container .project-info {
+  padding: 0 0.5rem;
+}
+.projects-container .project-card .project-work-container ul {
+  margin: 1.25rem 0;
+}
+.projects-container .project-card .project-work-container ul .project-items {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  padding: 0.5rem;
+  font-size: 1em;
+}
+.projects-container .project-card .project-work-container .project-links {
+  padding: 1rem;
+}
+.projects-container .project-card .project-work-container .project-links a {
+  color: #F5F5F5;
+  font-weight: 700;
+  padding: 0.5rem;
 }
 
 .skills {
@@ -859,4 +886,9 @@ footer p a {
 .skills-header .skills-title span {
   margin: 5% auto;
   font-size: 2em;
+}
+@media screen and (max-width: 374px) {
+  .skills-header .skills-title span {
+    font-size: 1.5em;
+  }
 }/*# sourceMappingURL=main.css.map */
