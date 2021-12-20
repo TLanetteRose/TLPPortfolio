@@ -447,25 +447,29 @@ h5 {
     padding: 3rem 2rem;
   }
 }
-.more-about .more-about-header {
+.more-about .more-about-container {
+  box-shadow: 0 0.3rem 1rem #5F5F5F;
+  border-radius: 0.625rem;
+}
+.more-about .more-about-container .more-about-header {
   padding: 1.25rem;
   margin: auto;
   margin-bottom: 1rem;
   max-width: 90%;
 }
-.more-about .more-about-header .more-about-title {
+.more-about .more-about-container .more-about-header .more-about-title {
   padding: 1.25rem;
 }
-.more-about .more-about-header .more-about-title span {
+.more-about .more-about-container .more-about-header .more-about-title span {
   margin-bottom: 0.5rem;
   text-align: left;
   font-size: 2em;
 }
-.more-about-container {
+.more-about .more-about-container .my-info-container {
   max-width: 90%;
   margin: auto;
 }
-.more-about-container .more-about-text {
+.more-about .more-about-container .my-info-container .my-info-text {
   font-size: 1.2em;
   line-height: 1.7rem;
   padding: 0.4rem;
