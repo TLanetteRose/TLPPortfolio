@@ -37,12 +37,31 @@
 
        .skill-credential-container {
            margin: 2rem 0;
-           padding: 2rem;
+           padding: 1rem;
           .credential-item {
               @include flex(row, flex-start, center);
 
               &-icon {
+                  margin: .625rem;
                   padding: .5rem;
+
+                  @include xs-mobile-breakpoint {
+                      width: 30%;
+                  }
+              }
+              &-text {
+                  margin: .625rem; 
+                  @include xs-mobile-breakpoint {
+                      font-size: 0.75em;
+                  }
+                  @include tablet-breakpoint {
+                      font-size: 1.375em;
+                  } 
+                  
+                  @include desktop-breakpoint {
+                      font-size: 1.625em;
+                  }
+                  
               }
           } 
        }

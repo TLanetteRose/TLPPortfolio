@@ -911,7 +911,7 @@ footer p a {
 }
 .skills .credentials-container .skill-credential-container {
   margin: 2rem 0;
-  padding: 2rem;
+  padding: 1rem;
 }
 .skills .credentials-container .skill-credential-container .credential-item {
   display: flex;
@@ -920,7 +920,31 @@ footer p a {
   align-items: center;
 }
 .skills .credentials-container .skill-credential-container .credential-item-icon {
+  margin: 0.625rem;
   padding: 0.5rem;
+}
+@media screen and (max-width: 374px) {
+  .skills .credentials-container .skill-credential-container .credential-item-icon {
+    width: 30%;
+  }
+}
+.skills .credentials-container .skill-credential-container .credential-item-text {
+  margin: 0.625rem;
+}
+@media screen and (max-width: 374px) {
+  .skills .credentials-container .skill-credential-container .credential-item-text {
+    font-size: 0.75em;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .skills .credentials-container .skill-credential-container .credential-item-text {
+    font-size: 1.375em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .skills .credentials-container .skill-credential-container .credential-item-text {
+    font-size: 1.625em;
+  }
 }
 .skills .tech-skills-container {
   display: flex;
