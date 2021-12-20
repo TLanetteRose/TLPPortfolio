@@ -47,6 +47,10 @@ I'm home on quarrantine, so I back working on my portfolio.
 
 Hi. Still home. This time I have to isolate due to a positive Covid19 test. No symptoms so far. It feels like a waiting game. So, now I will have more time to code for the next few weeks. Today I am adjusting the sizing in my projects section. Next I will adjust my skills section.
 
+### 12/20/2021
+
+Good morning. My hope is to finish my portfolio today. Then I can work on my resume.
+
 ---
 
 My name is Trista Lanette Pollard. My journey towards becoming a Front-End Web Developer started over 4 years ago. I became interested in computer coding after a parent approached me about sponsoring the "Hour of Code" with Code.org at our school. Once I attended a training session in New York City, I was hooked!
