@@ -49,7 +49,7 @@ Hi. Still home. This time I have to isolate due to a positive Covid19 test. No s
 
 ### 12/20/2021
 
-Good morning. My hope is to finish my portfolio today. Then I can work on my resume.
+Good morning. My hope is to finish my portfolio today. Then I can work on my resume. Question: What does visually-hidden mean and why is it important? 
 
 ---
 
@@ -579,3 +579,68 @@ padding: 1.5rem 1rem;
 }
 
 \*/
+
+---
+
+.contact-container {
+max-width: 90%;
+margin: 2rem auto;
+
+        h3 {
+          font-size: 1.5rem;
+          text-align: center;
+          padding: 2rem;
+        }
+
+        .contact-form-container {
+            background-color: $primary-bg-color;
+            max-width: 90%;
+            margin: 0 auto;
+            padding: 0.938rem;
+            border-radius: .5rem;
+            box-shadow: 0 .3rem 1rem $primary-shadow;
+
+            .contact-form {
+                max-width: 100%;
+                margin: auto;
+
+                label {
+                    line-height: 2.7em;
+                    font-weight: $weight-bold;
+                }
+
+                textarea {
+                    width: 100%;
+                    min-height: 6.25rem;
+                    font-size: 1em;
+
+                    @include xs-mobile-breakpoint {
+                        max-width: 100%;
+                    }
+                }
+
+                .input-field {
+                    width: 100%;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    border-radius: .5rem;
+                    border: none;
+                    border: .2rem outset $primary-bg-color;
+                    font-size: 1em;
+                    outline: none;
+
+                    @include xs-mobile-breakpoint {
+                        max-width: 100%;
+                        font-size: 0.75em;
+                    }
+                }
+
+                .input-field::placeholder {
+                    padding: 0.5rem;
+                    color: $primary-bg-color;
+                }
+
+            }
+
+        }
+    }

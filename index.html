@@ -327,10 +327,36 @@
   <section class="contact" id="contact">
     <div class="wrapper">
       <div class="contact-header">
-        <h2 class="contact-title">
+        <h2 class="contact-header-title">
           <span>Get In Touch With Me</span></h2>
-        <p class="contact-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupida non proident, sunt in culpa qui officia</p>
       </div>
+      <div class="form-container">
+        <form action="https://formspree.io/f/mdobovvn"
+          method="POST">
+          <label class="visually-hidden" for="name">Enter Name</label>
+          <input type="text" name="name" id="name" placeholder="Your name" required tabindex="0">
+
+          <label class="visually-hidden" for="name">Enter email</label>
+          <input type="email" name="email" id="email" placeholder="Your email" required tabindex="0">
+          
+          <label class="visually-hidden" for="message">Write a message</label>
+          <textarea name="message" id="message" placeholder="Your message" rows="6" cols="50" wrap="hard" required tabindex="0"></textarea>
+          
+          <!-- your other form fields go here -->
+          <button type="submit" name="submit">Get in touch</button>
+        </form>
+      
+        <div class="form-text">
+          <p>If you have any questions about me or my projects, send me a message.</p>
+          <br>
+          <p>Thank you for stopping by to view my portfolio! </p>
+          <br>
+          <p>Reach me directly through email: 
+            <a href="mailto:tlanpollard@comcast.net?subject=Getting in Touch with Trista Lanette Pollard" target="_blank" rel="noopener noreferrer" aria-hidden="true" title="Email Trista Lanette directly">TLanPollard@comcast.net</a>
+          </p>
+        </div>
+      </div>  
+      
       <div class="contact-social-icons">
           <span><ion-icon name="logo-github" class="social-icon"></ion-icon></span>
           <span><ion-icon name="logo-linkedin" class="social-icon"></ion-icon></span>
@@ -339,7 +365,7 @@
 
       <div class="spacer"></div>
 
-      <div class="contact-container">
+      <!--<div class="contact-container">
         <div class="contact-form-container">
           <div class="contact-form">
             <form action="" method="POST">
@@ -359,7 +385,7 @@
             </form>
           </div>
         </div>
-      </div>
+      </div>-->
     </div>
   </section>
   <div class="spacer"></div>
