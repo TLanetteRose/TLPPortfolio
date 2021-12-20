@@ -1,6 +1,7 @@
 .skills {
     padding: 2rem;
     height: 100%;
+    background-color: $secondary-bg-color-2;
 
    &-header {
        padding: 1.25rem;
@@ -10,6 +11,7 @@
            span {
                 margin: 5% auto;
                 font-size: 2em;
+                border-bottom: .0625rem solid $primary-font-color;
 
                 @include xs-mobile-breakpoint {
                     font-size: 1.5em;
@@ -21,16 +23,19 @@
    .credentials-container {
        @include flex(column, center, center);
        margin: 2rem 0;
+       
 
        .credentials-header {
            width: 100%;
            padding: 1.25rem;
 
            .credentials-title {
+               
                span {
                    margin-top: 2rem;
                    text-align: left;
                    font-size: 2em;
+                   border-bottom: .03125rem solid $primary-font-color;
                }
            }
        }
@@ -70,6 +75,8 @@
    .tech-skills-container {
        @include flex(column, center, center);
        margin: 2rem 0;
+       box-shadow: 0 .3rem 1rem $primary-shadow;
+       border-radius: .625rem;
 
         .tech-skills-header {
             width: 100%;
@@ -81,6 +88,7 @@
                    margin-top: 2rem;
                    text-align: left;
                    font-size: 2em;
+                   border-bottom: .03125rem solid $primary-font-color;
                }
            }
         }
@@ -90,6 +98,7 @@
            @include flex(row, center, center);
            flex-wrap: wrap;
            margin: 6% auto;
+           
 
            .skill-title {
                @include flex (column, center, center);

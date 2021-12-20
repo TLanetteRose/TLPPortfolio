@@ -349,7 +349,6 @@ html {
 * {
   margin: 0;
   padding: 0;
-  outline: 1px solid white;
 }
 
 *,
@@ -476,7 +475,6 @@ h5 {
   max-width: 90%;
   padding: 2rem;
   margin: 3rem auto;
-  background-color: #1c1b1d;
 }
 .contact .contact-header {
   max-width: 90%;
@@ -496,6 +494,7 @@ h5 {
   margin-bottom: 0.5rem;
   text-align: left;
   font-size: 2em;
+  border-bottom: 0.0625rem solid #FFE4E1;
 }
 @media screen and (max-width: 374px) {
   .contact .contact-header .contact-title span {
@@ -835,6 +834,7 @@ footer p a {
 .projects-header .projects-title span {
   margin: 5% auto;
   font-size: 2em;
+  border-bottom: 0.0625rem solid #FFE4E1;
 }
 .projects-container .project-card {
   display: flex;
@@ -843,6 +843,8 @@ footer p a {
   align-items: center;
   padding: 1rem;
   margin: 2rem 0;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.3rem 1rem #5F5F5F;
 }
 @media screen and (min-width: 768px) {
   .projects-container .project-card {
@@ -909,6 +911,7 @@ footer p a {
 .skills {
   padding: 2rem;
   height: 100%;
+  background-color: #1c1b1d;
 }
 .skills-header {
   padding: 1.25rem;
@@ -919,6 +922,7 @@ footer p a {
 .skills-header .skills-title span {
   margin: 5% auto;
   font-size: 2em;
+  border-bottom: 0.0625rem solid #FFE4E1;
 }
 @media screen and (max-width: 374px) {
   .skills-header .skills-title span {
@@ -940,6 +944,7 @@ footer p a {
   margin-top: 2rem;
   text-align: left;
   font-size: 2em;
+  border-bottom: 0.03125rem solid #FFE4E1;
 }
 .skills .credentials-container .skill-credential-container {
   margin: 2rem 0;
@@ -984,6 +989,8 @@ footer p a {
   justify-content: center;
   align-items: center;
   margin: 2rem 0;
+  box-shadow: 0 0.3rem 1rem #5F5F5F;
+  border-radius: 0.625rem;
 }
 .skills .tech-skills-container .tech-skills-header {
   width: 100%;
@@ -993,6 +1000,7 @@ footer p a {
   margin-top: 2rem;
   text-align: left;
   font-size: 2em;
+  border-bottom: 0.03125rem solid #FFE4E1;
 }
 .skills .tech-skills-container .skill-list-container {
   display: flex;
