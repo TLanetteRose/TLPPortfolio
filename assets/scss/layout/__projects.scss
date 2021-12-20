@@ -10,6 +10,7 @@
             span{
                 margin: 5% auto;
                 font-size: 2em;
+                border-bottom: .0625rem solid $primary-font-color;
             }
             
         }
@@ -21,6 +22,8 @@
             @include flex (column, center, center);
             padding: 1rem;
             margin: 2rem 0;
+            border-radius: .625rem;
+            box-shadow: 0 .3rem 1rem $primary-shadow;
 
             @media screen and (min-width: $bp-tablet-start) {
                 flex-direction: row;
