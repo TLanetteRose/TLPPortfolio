@@ -6,11 +6,15 @@ body {
 
 
 h1,
-h2,
+h2 {
+    font-family: $header-font-family;
+    color: $primary-font-color;
+}
+
 h3,
 h4,
 h5 {
-    font-family: $header-font-family;
+    font-family: $body-font-family;
     color: $primary-font-color;
 }
 

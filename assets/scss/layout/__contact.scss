@@ -91,11 +91,15 @@
                 font-size: .688em;
             }
 
+            @include tablet-breakpoint {
+                font-size: 1.15em;
+            }
+
             @include desktop-breakpoint {
                 width: 50%;
                 margin-left: 3.125rem;
                 align-self: stretch;
-                font-size: 2em;
+                font-size: 1.5em;
             }
 
             p {

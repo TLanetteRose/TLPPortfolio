@@ -438,16 +438,21 @@ body {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5 {
+h2 {
   font-family: "Gravitas", cursive;
   color: #FFE4E1;
 }
 
+h3,
+h4,
+h5 {
+  font-family: "Open Sans", sans-serif;
+  color: #FFE4E1;
+}
+
 .more-about {
-  padding: 3rem;
+  height: 100%;
+  padding: 2rem;
   margin: 3rem auto;
 }
 @media screen and (max-width: 374px) {
@@ -597,12 +602,17 @@ h5 {
     font-size: 0.688em;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact .form-container .form-text {
+    font-size: 1.15em;
+  }
+}
 @media screen and (min-width: 1200px) {
   .contact .form-container .form-text {
     width: 50%;
     margin-left: 3.125rem;
     align-self: stretch;
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }
 .contact .form-container .form-text p {
@@ -949,6 +959,9 @@ footer p a {
 .projects-container .project-card .project-work-container h4 {
   margin: 0.625rem 0;
   padding: 0.25rem;
+}
+.projects-container .project-card .project-work-container .project-subtitle {
+  font-family: "Gravitas", cursive;
 }
 .projects-container .project-card .project-work-container .project-info {
   padding: 0 0.5rem;
