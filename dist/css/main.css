@@ -438,16 +438,21 @@ body {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5 {
+h2 {
   font-family: "Gravitas", cursive;
   color: #FFE4E1;
 }
 
+h3,
+h4,
+h5 {
+  font-family: "Open Sans", sans-serif;
+  color: #FFE4E1;
+}
+
 .more-about {
-  padding: 3rem;
+  height: 100%;
+  padding: 2rem;
   margin: 3rem auto;
 }
 @media screen and (max-width: 374px) {
@@ -954,6 +959,9 @@ footer p a {
 .projects-container .project-card .project-work-container h4 {
   margin: 0.625rem 0;
   padding: 0.25rem;
+}
+.projects-container .project-card .project-work-container .project-subtitle {
+  font-family: "Gravitas", cursive;
 }
 .projects-container .project-card .project-work-container .project-info {
   padding: 0 0.5rem;
