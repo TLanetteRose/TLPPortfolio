@@ -478,18 +478,21 @@ h5 {
   text-align: left;
   font-size: 2em;
 }
-.more-about .more-about-container {
+.more-about .my-info-container {
+  padding: 1.25rem;
   box-shadow: 0 0.3rem 1rem #5F5F5F;
   border-radius: 0.625rem;
 }
-.more-about .more-about-container .my-info-container {
-  max-width: 90%;
-  margin: auto;
-}
-.more-about .more-about-container .my-info-container .my-info-text {
+.more-about .my-info-container .my-info-text {
   font-size: 1.2em;
   line-height: 1.7rem;
-  padding: 0.4rem;
+  padding: 1.25rem;
+  margin: 1.25rem;
+}
+@media screen and (max-width: 374px) {
+  .more-about .my-info-container .my-info-text {
+    font-size: 1em;
+  }
 }
 
 .contact {

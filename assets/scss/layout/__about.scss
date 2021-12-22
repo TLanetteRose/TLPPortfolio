@@ -27,20 +27,22 @@
 
         }
     }
+   
 
-    .more-about-container {
+    .my-info-container {
+        
+        padding: 1.25rem;
         box-shadow: 0 .3rem 1rem $primary-shadow;
         border-radius: .625rem;
-        
 
-        .my-info-container {
-            max-width: 90%;
-            margin: auto;
+        .my-info-text {
+            font-size: 1.2em;
+            line-height: $line-height;
+            padding: 1.25rem;
+            margin: 1.25rem;
 
-            .my-info-text {
-                font-size: 1.2em;
-                line-height: $line-height;
-                padding: 0.4rem;
+            @include xs-mobile-breakpoint {
+                font-size: 1em;
             }
         }
     }
