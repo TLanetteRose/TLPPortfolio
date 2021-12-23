@@ -49,7 +49,16 @@ Hi. Still home. This time I have to isolate due to a positive Covid19 test. No s
 
 ### 12/20/2021
 
-Good morning. My hope is to finish my portfolio today. Then I can work on my resume. Question: What does visually-hidden mean and why is it important? 
+Good morning. My hope is to finish my portfolio today. Then I can work on my resume. Question: What does visually-hidden mean and why is it important?
+
+### 12/23/2021
+
+Good afternoon! I did code yesterday, but didn't add to my notes. I'm almost close to completing my portfolio. I'm looking at animation options. I think I found one. I've been referring to a portfolio of Afua Deborah. It has a black background and I really liked her style. She used Animate on Scroll.
+
+Resources:
+
+- [Afua Deborah](https://afuadeborahcodes.com/)
+- [Animate On Scroll Library](https://michalsnik.github.io/aos/)
 
 ---
 
