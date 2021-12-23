@@ -60,11 +60,19 @@
                 .intro-title,
                 .intro-text {
                     color: $secondary-font-color;
+                    padding: 1.25rem;
                 }
 
                 .intro-title span,
                 .intro-text span {
                     color: $primary-font-color;
+                }
+
+                .intro-text  {
+                    margin-top: 1rem;
+                    @include desktop-breakpoint {
+                        font-size: 1.125em;
+                    } 
                 }
 
             }

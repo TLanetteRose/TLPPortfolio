@@ -758,10 +758,19 @@ footer p a {
 .hero-container .intro .hero-header .intro-title,
 .hero-container .intro .hero-header .intro-text {
   color: #F5F5F5;
+  padding: 1.25rem;
 }
 .hero-container .intro .hero-header .intro-title span,
 .hero-container .intro .hero-header .intro-text span {
   color: #FFE4E1;
+}
+.hero-container .intro .hero-header .intro-text {
+  margin-top: 1rem;
+}
+@media screen and (min-width: 1200px) {
+  .hero-container .intro .hero-header .intro-text {
+    font-size: 1.125em;
+  }
 }
 .hero-container .intro .resume-link {
   color: #FFE4E1;
@@ -967,6 +976,11 @@ footer p a {
 .projects-container .project-card .project-work-container h4 {
   margin: 0.625rem 0;
   padding: 0.25rem;
+}
+@media screen and (min-width: 1200px) {
+  .projects-container .project-card .project-work-container .project-title {
+    font-size: 1.5em;
+  }
 }
 .projects-container .project-card .project-work-container .project-subtitle {
   font-family: "Gravitas", cursive;
