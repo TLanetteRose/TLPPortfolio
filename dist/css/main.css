@@ -691,11 +691,6 @@ footer p a {
 }
 
 .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2.5rem;
   max-width: 100%;
   background-image: url(/assets/images/bg_new_wave_.png);
   background-repeat: no-repeat;
@@ -706,7 +701,7 @@ footer p a {
 .hero-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 @media screen and (max-width: 374px) {
@@ -724,47 +719,6 @@ footer p a {
   width: 40%;
   margin: 2rem;
   border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
-}
-.hero-container .intro {
-  margin: 0 auto;
-  width: 100%;
-  padding: 1rem;
-  border-radius: 0.6rem;
-}
-.hero-container .intro .hero-header {
-  padding: 1.25rem;
-}
-.hero-container .intro .hero-header .intro-title span {
-  font-size: 1.75em;
-  line-height: 3rem;
-  padding: 1.25rem;
-}
-@media screen and (max-width: 374px) {
-  .hero-container .intro .hero-header .intro-title span {
-    font-size: 0.55em;
-  }
-}
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  .hero-container .intro .hero-header .intro-title span {
-    font-size: 0.75em;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .hero-container .intro .hero-header .intro-title span {
-    font-size: 0.8em;
-  }
-}
-.hero-container .intro .hero-header .greeting,
-.hero-container .intro .hero-header .intro-title,
-.hero-container .intro .hero-header .intro-text {
-  color: #F5F5F5;
-}
-.hero-container .intro .hero-header .intro-title span,
-.hero-container .intro .hero-header .intro-text span {
-  color: #FFE4E1;
-}
-.hero-container .intro .resume-link {
-  color: #FFE4E1;
 }
 
 .navbar {
@@ -967,6 +921,11 @@ footer p a {
 .projects-container .project-card .project-work-container h4 {
   margin: 0.625rem 0;
   padding: 0.25rem;
+}
+@media screen and (min-width: 1200px) {
+  .projects-container .project-card .project-work-container .project-title {
+    font-size: 1.5em;
+  }
 }
 .projects-container .project-card .project-work-container .project-subtitle {
   font-family: "Gravitas", cursive;

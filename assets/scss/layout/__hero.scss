@@ -1,6 +1,6 @@
 .hero {
-    @include flex (column, center, center);
-    gap: 2.5rem;
+    //@include flex (column, center, center);
+    //gap: 2.5rem;
     max-width: 100%;
     background-image: url(/assets/images/bg_new_wave_.png);
     background-repeat: no-repeat;
@@ -9,7 +9,7 @@
     padding: 2rem 0;
 
     &-container {
-        @include flex (row, space-between, center);
+        @include flex (row, space-around, center);
         //max-width: 80%;
 
         @include xs-mobile-breakpoint {
@@ -24,57 +24,6 @@
             width: 40%;
             margin: 2rem;
             border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-        }
-
-        .intro {
-            margin: 0 auto;
-            width: 100%;
-            padding: 1rem;
-            border-radius: .6rem;
-
-            .hero-header {
-                padding: 1.25rem;
-                .intro-title {
-                    
-                    span {
-                        font-size: 1.75em;
-                        line-height: 3rem;
-                        padding: 1.25rem;
-
-                        @include xs-mobile-breakpoint {
-                            font-size: .55em;
-                        }
-
-                        @include mobile-breakpoint {
-                            font-size: .75em;
-                        }
-
-                        @include tablet-breakpoint {
-                            font-size: .8em;
-                        }
-                    }
-
-                }
-            
-                .greeting,
-                .intro-title,
-                .intro-text {
-                    color: $secondary-font-color;
-                }
-
-                .intro-title span,
-                .intro-text span {
-                    color: $primary-font-color;
-                }
-
-            }
-
-            .resume {
-                &-link {
-                    color: $link-color;
-                }
-            }
-
         }
 
     }
