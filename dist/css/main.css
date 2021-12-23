@@ -829,6 +829,11 @@ footer p a {
     transition: transform 0.5s ease-in;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navbar ul {
+    width: 75%;
+  }
+}
 .navbar ul li {
   font-weight: 700;
 }
@@ -889,10 +894,12 @@ footer p a {
 @media screen and (max-width: 767px) {
   .navbar .burger-menu {
     display: block;
+    cursor: pointer;
   }
 }
 .navbar .burger-menu .close-icon {
   display: none;
+  cursor: pointer;
 }
 
 .projects {
@@ -1020,8 +1027,23 @@ footer p a {
 .skills .credentials-container .credentials-header .credentials-title span {
   margin-top: 2rem;
   text-align: left;
-  font-size: 2em;
+  font-size: 1.75em;
   border-bottom: 0.03125rem solid #FFE4E1;
+}
+@media screen and (max-width: 374px) {
+  .skills .credentials-container .credentials-header .credentials-title span {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .skills .credentials-container .credentials-header .credentials-title span {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .skills .credentials-container .credentials-header .credentials-title span {
+    font-size: 1.75em;
+  }
 }
 .skills .credentials-container .skill-credential-container {
   margin: 2rem 0;
@@ -1074,10 +1096,25 @@ footer p a {
   padding: 1.25rem;
 }
 .skills .tech-skills-container .tech-skills-header .skill-items-title span {
-  margin-top: 2rem;
+  margin-top: 1.75rem;
   text-align: left;
   font-size: 2em;
   border-bottom: 0.03125rem solid #FFE4E1;
+}
+@media screen and (max-width: 374px) {
+  .skills .tech-skills-container .tech-skills-header .skill-items-title span {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .skills .tech-skills-container .tech-skills-header .skill-items-title span {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .skills .tech-skills-container .tech-skills-header .skill-items-title span {
+    font-size: 1.75em;
+  }
 }
 .skills .tech-skills-container .skill-list-container {
   display: flex;
