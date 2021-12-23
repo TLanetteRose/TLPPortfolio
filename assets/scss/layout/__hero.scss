@@ -68,10 +68,20 @@
                     color: $primary-font-color;
                 }
 
+                .greeting {
+                    @include tablet-breakpoint {
+                        font-size: 1.25em;
+                    }
+                    @include desktop-breakpoint {
+                        font-size: 1.5em;
+                    }
+                }
+
                 .intro-text  {
                     margin-top: 1rem;
+
                     @include desktop-breakpoint {
-                        font-size: 1.125em;
+                        font-size: 1.25em;
                     } 
                 }
 
