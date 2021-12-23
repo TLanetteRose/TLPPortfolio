@@ -2,7 +2,7 @@
 
 ### 11/13/2021
 
-Decided to redo my web design portfolio. I found an interesting tool to use called [Favicon.io](https://favicon.io/). You can generate our own favicon for your browser tab. I also used a [Fancy Border Radius Generator](https://9elements.github.io/fancy-border-radius/) to change the shape of my profile picture. I added a wave svg to my background. I included the website link because it's a good resource.
+Decided to redo my web design portfolio. I found an interesting tool to use called [Favicon.io](https://favicon.io/). You can generate our own favicon for your browser tab. I also used a [Fancy Border Radius Generator](https://9elements.github.io/fancy-border-radius/) to change the shape of my profile picture. I added a wave svg to my background. I included the website link because it's a good resource. I realize now that I need to use more tools online. 
 
 Resources:
 
@@ -49,7 +49,16 @@ Hi. Still home. This time I have to isolate due to a positive Covid19 test. No s
 
 ### 12/20/2021
 
-Good morning. My hope is to finish my portfolio today. Then I can work on my resume. Question: What does visually-hidden mean and why is it important? 
+Good morning. My hope is to finish my portfolio today. Then I can work on my resume. Question: What does visually-hidden mean and why is it important?
+
+### 12/23/2021
+
+Good afternoon! I did code yesterday, but didn't add to my notes. I'm almost close to completing my portfolio. I'm looking at animation options. I think I found one. I've been referring to a portfolio of Afua Deborah. It has a black background and I really liked her style. She used Animate on Scroll.
+
+Resources:
+
+- [Afua Deborah](https://afuadeborahcodes.com/)
+- [Animate On Scroll Library](https://michalsnik.github.io/aos/)
 
 ---
 

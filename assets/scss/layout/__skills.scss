@@ -34,8 +34,20 @@
                span {
                    margin-top: 2rem;
                    text-align: left;
-                   font-size: 2em;
+                   font-size: 1.75em;
                    border-bottom: .03125rem solid $primary-font-color;
+
+                   @include xs-mobile-breakpoint {
+                       font-size: 1.5em;
+                   }
+
+                   @include mobile-breakpoint {
+                       font-size: 1.5em;
+                   }
+
+                   @include tablet-breakpoint {
+                       font-size: 1.75em;
+                   }
                }
            }
        }
@@ -85,10 +97,22 @@
 
            .skill-items-title {
                span {
-                   margin-top: 2rem;
+                   margin-top: 1.75rem;
                    text-align: left;
                    font-size: 2em;
                    border-bottom: .03125rem solid $primary-font-color;
+
+                   @include xs-mobile-breakpoint {
+                       font-size: 1.5em;
+                   }
+
+                   @include mobile-breakpoint {
+                       font-size: 1.5em;
+                   }
+
+                   @include tablet-breakpoint {
+                       font-size: 1.75em;
+                   }
                }
            }
         }

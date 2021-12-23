@@ -56,6 +56,10 @@
             transition: transform 0.5s ease-in;
         }
 
+        @include tablet-breakpoint {
+            width: 75%;
+        }
+
         li {
             font-weight: $weight-bold;
             @include xs-mobile-breakpoint {
@@ -73,6 +77,8 @@
                 font-size: 0.9em;
                 padding: .5rem;
             }
+
+            
         }
 
         .nav-link:hover {
@@ -113,10 +119,12 @@
 
         @media screen and (max-width: $bp-lg-mobile) {
             display: block;
+            cursor: pointer;
         }
 
         .close-icon {
             display: none;
+            cursor: pointer;
         }
 
     }
