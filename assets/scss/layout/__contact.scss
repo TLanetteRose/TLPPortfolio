@@ -23,7 +23,6 @@
                 margin-bottom: $bottom-margin;
                 text-align: left;
                 font-size: 2em;
-                border-bottom: .0625rem solid $primary-font-color;
                 @include xs-mobile-breakpoint {
                     max-width: 100%;
                 }
@@ -68,6 +67,7 @@
                 background-color: $button-color;
                 border-radius: .1875rem;
                 margin-top: 1rem;
+                cursor: pointer; 
             }
         }
 
@@ -141,6 +141,7 @@
             color: $primary-font-color;
             margin: 0 .625rem;
             padding: .5rem;
+            cursor: pointer;
 
             @include xs-mobile-breakpoint {
                 font-size: 1rem;
