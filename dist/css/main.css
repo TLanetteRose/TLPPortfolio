@@ -691,7 +691,12 @@ footer p a {
 }
 
 .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   max-width: 100%;
+  min-height: 90vh;
   background-image: url(/assets/images/bg_new_wave_.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -699,10 +704,12 @@ footer p a {
   padding: 2rem 0;
 }
 .hero-container {
+  min-height: 90vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  height: 100%;
 }
 @media screen and (max-width: 374px) {
   .hero-container {
@@ -714,11 +721,22 @@ footer p a {
     flex-direction: column;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-container {
+    flex-direction: column;
+  }
+}
 .hero-container .hero-img {
-  height: 40%;
-  width: 40%;
+  height: 50%;
+  width: 50%;
   margin: 2rem;
   border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+}
+.hero-container .intro {
+  padding: 2.5rem 0;
+}
+.hero-container .intro .hero-header {
+  padding: 1.25rem;
 }
 
 .navbar {
