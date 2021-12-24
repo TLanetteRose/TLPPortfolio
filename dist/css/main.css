@@ -349,7 +349,6 @@ html {
 * {
   margin: 0;
   padding: 0;
-  outline: 1px solid white;
 }
 
 *,
@@ -704,10 +703,11 @@ footer p a {
   padding: 2rem 0;
 }
 .hero-container {
+  min-width: 100%;
   min-height: 90vh;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 100%;
 }
@@ -724,6 +724,12 @@ footer p a {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero-container {
     flex-direction: column;
+    padding: 1.875rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    padding: 1.875rem;
   }
 }
 .hero-container .hero-img {
@@ -732,11 +738,55 @@ footer p a {
   margin: 2rem;
   border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-container .hero-img {
+    margin: 3rem 2rem 0;
+  }
+}
 .hero-container .intro {
   padding: 2.5rem 0;
 }
+@media screen and (min-width: 1200px) {
+  .hero-container .intro {
+    margin: 2rem;
+  }
+}
 .hero-container .intro .hero-header {
   padding: 1.25rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-container .intro .hero-header .greeting {
+    font-size: 1.375em;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-container .intro .hero-header .intro-title {
+    font-size: 3em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-container .intro .hero-header .intro-title {
+    font-size: 2.5em;
+  }
+}
+.hero-container .intro .hero-header .intro-text span {
+  color: #FFE4E1;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-container .intro .hero-header .intro-text {
+    font-size: 1.375em;
+  }
+}
+.hero-container .intro .resume {
+  padding: 1.25rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-container .intro .resume {
+    font-size: 1.375em;
+  }
+}
+.hero-container .intro .resume a {
+  color: #FFE4E1;
 }
 
 .navbar {

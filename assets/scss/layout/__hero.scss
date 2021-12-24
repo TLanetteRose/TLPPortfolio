@@ -9,9 +9,11 @@
     background-position: top center;
     padding: 2rem 0;
 
+
     &-container {
+        min-width: 100%;
         min-height: 90vh;
-        @include flex (row, space-around, center);
+        @include flex (row, space-between, center);
         //max-width: 80%;
         height: 100%;
 
@@ -24,6 +26,11 @@
 
         @include tablet-breakpoint {
             flex-direction: column;
+            padding: 1.875rem;
+        }
+
+        @include desktop-breakpoint {
+            padding: 1.875rem;
         }
 
         .hero-img {
@@ -31,16 +38,63 @@
             width: 50%;
             margin: 2rem;
             border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+
+            @include tablet-breakpoint {
+                margin: 3rem 2rem 0;
+            }
         }
 
         .intro {
             padding: 2.5rem 0;
+
+            @include desktop-breakpoint {
+                margin: 2rem;
+            }
+
             .hero-header {
                 padding: 1.25rem;
+
+                .greeting {
+                    @include tablet-breakpoint {
+                        font-size: 1.375em;
+                    }
+                }
+
+                .intro-title {
+                    @include tablet-breakpoint {
+                    font-size: 3em; 
+                    }
+
+                    @include desktop-breakpoint {
+                        font-size: 2.5em;
+                    }
+                }
+
+                .intro-text {
+                    span {
+                        color: $primary-font-color;
+                    }
+                    
+                    @include tablet-breakpoint {
+                        font-size: 1.375em;   
+                    }
+                }
+            }
+            .resume {
+                padding: 1.25rem;
+
+                @include tablet-breakpoint {
+                    font-size: 1.375em;
+                }
+
+                a {
+                    color: $link-color;
+                }
             }
         }
 
-    }
+    
 
+    }
     
 }
