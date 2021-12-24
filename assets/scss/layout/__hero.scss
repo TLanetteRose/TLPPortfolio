@@ -1,7 +1,8 @@
 .hero {
-    //@include flex (column, center, center);
+    @include flex (column, center, center);
     //gap: 2.5rem;
     max-width: 100%;
+    min-height: 90vh;
     background-image: url(/assets/images/bg_new_wave_.png);
     background-repeat: no-repeat;
     background-size: cover;
