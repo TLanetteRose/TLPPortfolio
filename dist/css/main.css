@@ -716,16 +716,19 @@ footer p a {
 @media screen and (max-width: 374px) {
   .hero-container {
     flex-direction: column;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 767px) {
   .hero-container {
     flex-direction: column;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero-container {
     flex-direction: column;
+    justify-content: space-around;
     padding: 1.875rem;
   }
 }
@@ -734,14 +737,14 @@ footer p a {
     padding: 1.875rem;
   }
 }
-.hero-container .hero-img {
+.hero-container .hero-image-container .hero-img {
   height: 50%;
   width: 50%;
-  margin: 2rem;
+  margin: 2rem auto;
   border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .hero-container .hero-img {
+  .hero-container .hero-image-container .hero-img {
     margin: 3rem 2rem 0;
   }
 }
@@ -760,6 +763,10 @@ footer p a {
   .hero-container .intro .hero-header .greeting {
     font-size: 1.375em;
   }
+}
+.hero-container .intro .hero-header .intro-title {
+  font-size: 2em;
+  padding: 1.25rem 0;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero-container .intro .hero-header .intro-title {

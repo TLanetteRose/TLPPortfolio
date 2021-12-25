@@ -18,14 +18,17 @@
         height: 100%;
 
         @include xs-mobile-breakpoint {
-            flex-direction: column;   
+            flex-direction: column; 
+            justify-content: space-around;  
         }
         @include mobile-breakpoint {
-            flex-direction: column;  
+            flex-direction: column; 
+            justify-content: space-around; 
         }
 
         @include tablet-breakpoint {
             flex-direction: column;
+            justify-content: space-around;
             padding: 1.875rem;
         }
 
@@ -33,14 +36,17 @@
             padding: 1.875rem;
         }
 
-        .hero-img {
-            height: 50%;
-            width: 50%;
-            margin: 2rem;
-            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        .hero-image-container {
 
-            @include tablet-breakpoint {
-                margin: 3rem 2rem 0;
+            .hero-img {
+                height: 50%;
+                width: 50%;
+                margin: 2rem auto;
+                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+
+                @include tablet-breakpoint {
+                    margin: 3rem 2rem 0;
+                }
             }
         }
 
@@ -61,6 +67,9 @@
                 }
 
                 .intro-title {
+                    font-size: 2em;
+                    padding: 1.25rem 0;
+
                     @include tablet-breakpoint {
                     font-size: 3em; 
                     }
