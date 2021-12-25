@@ -11,7 +11,6 @@
            span {
                 margin: 5% auto;
                 font-size: 2em;
-                border-bottom: .0625rem solid $primary-font-color;
 
                 @include xs-mobile-breakpoint {
                     font-size: 1.5em;
