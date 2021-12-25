@@ -28,7 +28,7 @@ navLink.forEach(
     }
 )*/
 
-const menu = document.querySelector('.nav-items');
+const menu = document.querySelector('.navbar-collapse');
 const menuItems = document.querySelectorAll('.nav-link');
 const hamburger = document.querySelector('#burger-menu');
 const closeIcon = document.querySelector('.close-icon');

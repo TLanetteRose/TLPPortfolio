@@ -2,7 +2,7 @@
 
 ### 11/13/2021
 
-Decided to redo my web design portfolio. I found an interesting tool to use called [Favicon.io](https://favicon.io/). You can generate our own favicon for your browser tab. I also used a [Fancy Border Radius Generator](https://9elements.github.io/fancy-border-radius/) to change the shape of my profile picture. I added a wave svg to my background. I included the website link because it's a good resource. I realize now that I need to use more tools online. 
+Decided to redo my web design portfolio. I found an interesting tool to use called [Favicon.io](https://favicon.io/). You can generate our own favicon for your browser tab. I also used a [Fancy Border Radius Generator](https://9elements.github.io/fancy-border-radius/) to change the shape of my profile picture. I added a wave svg to my background. I included the website link because it's a good resource. I realize now that I need to use more tools online.
 
 Resources:
 
@@ -59,6 +59,10 @@ Resources:
 
 - [Afua Deborah](https://afuadeborahcodes.com/)
 - [Animate On Scroll Library](https://michalsnik.github.io/aos/)
+
+### 12/24/2021
+
+Happy Christmas Eve! I did some styling on the hero section of page. I did put my html through the validator. Need to redo the navbar again. I will do that tomorrow.
 
 ---
 
