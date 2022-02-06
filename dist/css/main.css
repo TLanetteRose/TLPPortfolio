@@ -696,16 +696,21 @@ footer p a {
   justify-content: center;
   align-items: center;
   max-width: 100%;
-  max-height: 80vh;
+  height: 100%;
   background-image: url(/assets/images/bg_new_wave_.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
   padding: 2rem 0;
 }
+@media screen and (max-width: 374px) {
+  .hero {
+    margin-top: 2rem;
+  }
+}
 .hero-container {
   min-width: 100%;
-  max-height: 80vh;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -716,6 +721,7 @@ footer p a {
   .hero-container {
     flex-direction: column;
     justify-content: space-around;
+    min-height: 90vh;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 767px) {
@@ -742,6 +748,11 @@ footer p a {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 374px) {
+  .hero-container .hero-image-container {
+    margin-top: 5rem;
+  }
+}
 .hero-container .hero-image-container .hero-img {
   height: 50%;
   width: 50%;
@@ -755,11 +766,16 @@ footer p a {
 }
 @media screen and (min-width: 1200px) {
   .hero-container .hero-image-container .hero-img {
-    width: 100%;
+    width: 80%;
   }
 }
 .hero-container .intro {
   padding: 2.5rem 0;
+}
+@media screen and (max-width: 374px) {
+  .hero-container .intro {
+    padding: 1rem;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero-container .intro {
@@ -778,6 +794,11 @@ footer p a {
   font-size: 2em;
   padding: 1.25rem 0;
 }
+@media screen and (max-width: 374px) {
+  .hero-container .intro .hero-header .intro-title {
+    font-size: 2em;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero-container .intro .hero-header .intro-title {
     font-size: 3em;
@@ -790,6 +811,11 @@ footer p a {
 }
 .hero-container .intro .hero-header .intro-text span {
   color: #FFE4E1;
+}
+@media screen and (max-width: 374px) {
+  .hero-container .intro .hero-header .intro-text {
+    font-size: 1em;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero-container .intro .hero-header .intro-text {
